@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1f2328;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="32.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="173.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Downloads/IMG_5085.PNG" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Downloads/text-1670934836035.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Separator opacity="0.18" orientation="VERTICAL" prefHeight="57.0" prefWidth="40.0">
+               <padding>
+                  <Insets bottom="5.0" left="27.0" right="10.0" top="5.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <Pane prefHeight="57.0" prefWidth="692.0" />
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="353.0" spacing="7.0">
+               <children>
+                  <TextField opacity="0.11" prefHeight="25.0" prefWidth="200.0" promptText="Search" style="-fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" />
+                  <ImageView fitHeight="19.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Search-Icon-PNG.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@GameStore-master/src/resources/images/icons/ic_account_box_white_48dp_2x.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="663.0" prefWidth="176.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="60.0" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+                     <image>
+                        <Image url="@GameStore-master/src/resources/images/icons/ic_store_white_48dp_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="STORE" textFill="#b5a5a5">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="15.0" layoutY="60.0" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+                     <image>
+                        <Image url="@GameStore-master/src/resources/images/icons/ic_video_library_white_48dp_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="LIBRARY" textFill="#b5a5a5">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-radius: 20 0 0 20; -fx-background-color: #27282d; -fx-border-radius: 20 0 0 20; -fx-opacity: 1;">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+                     <image>
+                        <Image url="@GameStore-master/src/resources/images/icons/ic_shopping_cart_white_48dp_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="CART" textFill="#b5a5a5">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="15.0" layoutY="106.0" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;" />
+            <Separator opacity="0.18" prefWidth="200.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="30.0" top="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </Separator>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="5.0" top="50.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-border-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="24.0" prefWidth="269.0" text="YOUR SHOPPING CART" textFill="#b5a5a5">
+               <font>
+                  <Font name="Bodoni MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0">
+               <opaqueInsets>
+                  <Insets bottom="30.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+            </Separator>
+            <ScrollPane maxWidth="900.0" prefHeight="350.0" prefWidth="900.0">
+               <content>
+                  <AnchorPane maxWidth="2000.0" prefHeight="374.0" prefWidth="885.0" style="-fx-background-color: #1f2328;">
+                     <children>
+                        <VBox prefHeight="419.0" prefWidth="885.0">
+                           <children>
+                              <HBox prefHeight="31.0" prefWidth="885.0" style="-fx-background-color: #3D4146;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="448.0" text="TITLE" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator opacity="0.18" orientation="VERTICAL" prefHeight="17.0" prefWidth="4.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="175.0" text="PRICE" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="458.0" layoutY="10.0" opacity="0.18" orientation="VERTICAL" prefHeight="17.0" prefWidth="4.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="464.0" layoutY="10.0" prefHeight="31.0" prefWidth="251.0" text="QUANTITY" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="75.0" prefWidth="875.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="78.0" prefWidth="100.0" text="The Hunter" textFill="WHITE">
+                                       <font>
+                                          <Font name="Franklin Gothic Demi" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Separator opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0">
+                                       <HBox.margin>
+                                          <Insets left="222.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="75.0" prefWidth="155.0" text="\$4.45 USD" textFill="WHITE" />
+                                    <Separator layoutX="448.0" layoutY="10.0" opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0" />
+                                    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="225.0" spacing="5.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.62" prefHeight="21.0" prefWidth="32.0" style="-fx-border-color: grey; -fx-background-color: #27282d;" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </Label>
+                                          <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pics/2899227.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Separator opacity="0.18" prefWidth="200.0" />
+                              <HBox layoutX="20.0" layoutY="41.0" prefHeight="75.0" prefWidth="875.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pics/Screenshot%202022-12-15%20192735.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="78.0" prefWidth="100.0" text="The last of us" textFill="WHITE">
+                                       <font>
+                                          <Font name="Franklin Gothic Demi" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Separator opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0">
+                                       <HBox.margin>
+                                          <Insets left="222.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="75.0" prefWidth="155.0" text="\$29.34 USD" textFill="WHITE" />
+                                    <Separator layoutX="448.0" layoutY="10.0" opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0" />
+                                    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="225.0" spacing="5.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.62" prefHeight="21.0" prefWidth="32.0" style="-fx-border-color: grey; -fx-background-color: #27282d;" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </Label>
+                                          <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pics/2899227.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator layoutX="10.0" layoutY="116.0" opacity="0.18" prefWidth="200.0" />
+                              <HBox layoutX="10.0" layoutY="119.0" prefHeight="75.0" prefWidth="875.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pics/Screenshot%202022-12-13%20184152.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="78.0" prefWidth="100.0" text="Call of Duty " textFill="WHITE">
+                                       <font>
+                                          <Font name="Franklin Gothic Demi" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Separator opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0">
+                                       <HBox.margin>
+                                          <Insets left="222.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="75.0" prefWidth="155.0" text="\$69.99 USD" textFill="WHITE" />
+                                    <Separator layoutX="448.0" layoutY="10.0" opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0" />
+                                    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="225.0" spacing="5.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.62" prefHeight="21.0" prefWidth="32.0" style="-fx-border-color: grey; -fx-background-color: #27282d;" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </Label>
+                                          <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pics/2899227.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator layoutX="10.0" layoutY="194.0" opacity="0.18" prefWidth="200.0" />
+                              <HBox layoutX="10.0" layoutY="197.0" prefHeight="75.0" prefWidth="875.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="78.0" prefWidth="100.0" text="The Hunter" textFill="WHITE">
+                                       <font>
+                                          <Font name="Franklin Gothic Demi" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Separator opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0">
+                                       <HBox.margin>
+                                          <Insets left="222.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="75.0" prefWidth="155.0" text="\$4.45 USD" textFill="WHITE" />
+                                    <Separator layoutX="448.0" layoutY="10.0" opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0" />
+                                    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="225.0" spacing="5.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.62" prefHeight="21.0" prefWidth="32.0" style="-fx-border-color: grey; -fx-background-color: #27282d;" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </Label>
+                                          <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pics/2899227.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator layoutX="10.0" layoutY="116.0" opacity="0.18" prefWidth="200.0" />
+                              <HBox layoutX="10.0" layoutY="275.0" prefHeight="75.0" prefWidth="875.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="78.0" prefWidth="100.0" text="The Hunter" textFill="WHITE">
+                                       <font>
+                                          <Font name="Franklin Gothic Demi" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Separator opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0">
+                                       <HBox.margin>
+                                          <Insets left="222.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="75.0" prefWidth="155.0" text="\$4.45 USD" textFill="WHITE" />
+                                    <Separator layoutX="448.0" layoutY="10.0" opacity="0.18" orientation="VERTICAL" prefHeight="64.0" prefWidth="4.0" />
+                                    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="225.0" spacing="5.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.62" prefHeight="21.0" prefWidth="32.0" style="-fx-border-color: grey; -fx-background-color: #27282d;" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Label>
+                                          <ImageView fitHeight="28.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pics/2899227.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <HBox prefHeight="77.0" prefWidth="1072.0" style="-fx-background-color: #1f2328;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="169.0" style="-fx-background-radius: 5px; -fx-background-color: #116b6a;" text="CONTINUE SHOPPING">
+                     <HBox.margin>
+                        <Insets left="250.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Total : " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="\$ 114.67 USD" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button layoutX="260.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="142.0" style="-fx-background-radius: 5px; -fx-background-color: #116b6a;" text="CHECKOUT">
+                     <HBox.margin>
+                        <Insets left="130.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="30.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
