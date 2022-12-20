@@ -24,6 +24,7 @@ public class StoreController extends HelloApplication {
     public Button btnLogout;
 
     public void handleLogout(ActionEvent e) throws IOException{
+        System.out.println("Github");
         super.sceneSwitch("Sign in.fxml", 718, 476, e);
     }
 //    public void handleCart(MouseEvent e) throws IOException{
