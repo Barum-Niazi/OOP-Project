@@ -78,7 +78,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="fieldPassword" prefHeight="32.0" prefWidth="205.0" promptText="Password" style="-fx-background-radius: 10px; -fx-opacity: 0.3;" />
+                  <TextField fx:id="fieldPassword" onAction="#handleSignIn" prefHeight="32.0" prefWidth="205.0" promptText="Password" style="-fx-background-radius: 10px; -fx-opacity: 0.3;" />
                </children>
             </HBox>
             <Button fx:id="btnIn" alignment="CENTER" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #116b6a; -fx-background-radius: 5px;" text="Sign in">
@@ -99,7 +99,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Label text="Sign up" textFill="#116b6a">
+                  <Label fx:id="signupLabel" onMouseClicked="#handleSignup" text="Sign up" textFill="#116b6a">
                      <font>
                         <Font size="13.0" />
                      </font>

@@ -110,7 +110,7 @@
                         <Image url="@GameStore-master/src/resources/images/icons/ic_video_library_white_48dp_2x.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="libraryLabel" text="LIBRARY" textFill="#b5a5a5">
+                  <Label fx:id="libraryLabel" onMouseClicked="#handleLibrary" text="LIBRARY" textFill="#b5a5a5">
                      <font>
                         <Font name="Arial Black" size="15.0" />
                      </font>
@@ -124,7 +124,7 @@
                         <Image url="@GameStore-master/src/resources/images/icons/ic_shopping_cart_white_48dp_2x.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="cartLabel" text="CART" textFill="#b5a5a5">
+                  <Label fx:id="cartLabel" onMouseClicked="#handleCart" text="CART" textFill="#b5a5a5">
                      <font>
                         <Font name="Arial Black" size="15.0" />
                      </font>
@@ -193,7 +193,7 @@
                                              <children>
                                                 <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                                    <children>
-                                                      <ImageView fx:id="image1" fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
                                                             <Image url="@pics/Screenshot%202022-12-13%20194208.png" />
                                                          </image>
@@ -432,7 +432,7 @@
                                              <children>
                                                 <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                                    <children>
-                                                      <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="88.0" fitWidth="142.0" onMouseClicked="#handleDescription" pickOnBounds="true" preserveRatio="true">
                                                          <image>
                                                             <Image url="@pics/Screenshot%202022-12-13%20194208.png" />
                                                          </image>
@@ -440,7 +440,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vboxDesc" onMouseClicked="#handleDescription" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Red Dead" textFill="WHITE">
                                                                <font>
