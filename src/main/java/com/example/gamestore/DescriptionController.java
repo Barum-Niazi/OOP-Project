@@ -8,7 +8,7 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class DescriptionControlller extends HelloApplication{
+public class DescriptionController extends HelloApplication{
     @FXML
     public Label libraryLabel;
     public Label cartLabel;
@@ -27,9 +27,9 @@ public class DescriptionControlller extends HelloApplication{
         super.sceneSwitch("STORE.fxml", 1280, 720, m, "Store");
     }
     public void handleCart(MouseEvent m) throws IOException{
-        sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
+        super.sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
     }
     public void handleAddCart(ActionEvent e) throws IOException{
-        sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
+        super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
     }
 }

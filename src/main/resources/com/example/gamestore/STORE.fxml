@@ -103,28 +103,28 @@
                   <DropShadow />
                </effect>
             </HBox>
-            <HBox alignment="CENTER" layoutX="20.0" layoutY="60.0" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
+            <HBox fx:id="library" alignment="CENTER" layoutX="20.0" layoutY="60.0" onMouseClicked="#handleLibrary" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
                      <image>
                         <Image url="@GameStore-master/src/resources/images/icons/ic_video_library_white_48dp_2x.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="libraryLabel" onMouseClicked="#handleLibrary" text="LIBRARY" textFill="#b5a5a5">
+                  <Label onMouseClicked="#handleLibrary" text="LIBRARY" textFill="#b5a5a5">
                      <font>
                         <Font name="Arial Black" size="15.0" />
                      </font>
                   </Label>
                </children>
             </HBox>
-            <HBox alignment="CENTER" layoutX="15.0" layoutY="106.0" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
+            <HBox fx:id="cart" alignment="CENTER" layoutX="15.0" layoutY="106.0" onMouseClicked="#handleCart" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
                      <image>
                         <Image url="@GameStore-master/src/resources/images/icons/ic_shopping_cart_white_48dp_2x.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="cartLabel" onMouseClicked="#handleCart" text="CART" textFill="#b5a5a5">
+                  <Label onMouseClicked="#handleCart" text="CART" textFill="#b5a5a5">
                      <font>
                         <Font name="Arial Black" size="15.0" />
                      </font>

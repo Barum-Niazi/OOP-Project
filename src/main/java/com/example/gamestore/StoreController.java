@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -18,9 +19,9 @@ import java.io.IOException;
 
 public class StoreController extends HelloApplication {
     @FXML
-    public Label libraryLabel;
+    public HBox library;
     @FXML
-    public Label cartLabel;
+    public HBox cart;
     @FXML
     public Button btnLogout;
     public VBox vboxDesc;
@@ -32,10 +33,10 @@ public class StoreController extends HelloApplication {
         super.sceneSwitch("Library.fxml", 1280, 720, m, "Library");
     }
     public void handleCart(MouseEvent e) throws IOException{
-        sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
+        super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
     }
     public void handleDescription(MouseEvent m) throws IOException{
-        sceneSwitch("Description.fxml", 1280, 720, m, "Description");
+        super.sceneSwitch("Description.fxml", 1280, 720, m, "Description");
     }
 
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{
