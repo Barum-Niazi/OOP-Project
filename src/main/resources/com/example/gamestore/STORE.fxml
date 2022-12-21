@@ -432,9 +432,9 @@
                                              <children>
                                                 <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                                    <children>
-                                                      <ImageView fitHeight="88.0" fitWidth="142.0" onMouseClicked="#handleDescription" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="118.0" fitWidth="142.0" onMouseClicked="#handleDescription" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194208.png" />
+                                                            <Image url="@pics/Forza.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -442,12 +442,12 @@
                                                       </ImageView>
                                                       <VBox fx:id="vboxDesc" onMouseClicked="#handleDescription" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Red Dead" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Forza" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="13.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Redemption 2" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Horizon 4" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>

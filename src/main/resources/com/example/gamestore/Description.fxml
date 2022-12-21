@@ -263,7 +263,7 @@
                                     </Label>
                                     <ImageView fitHeight="180.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@pics/Screenshot%202022-12-15%20195109.png" />
+                                          <Image url="@pics/Forza.png" />
                                        </image>
                                        <effect>
                                           <DropShadow />
