@@ -31,7 +31,7 @@ public class StoreController extends HelloApplication {
     }
 
     public void handleLibrary(MouseEvent m) throws IOException{
-        super.sceneSwitch("Library.fxml", 1280, 720, m, "Library");
+        sceneSwitch("Library.fxml", 1280, 720, m, "Library");
     }
     public void handleCart(MouseEvent e) throws IOException{
         super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");

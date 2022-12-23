@@ -34,7 +34,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), x, y);
-        stage.setTitle(title);
+        //stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
     }

@@ -22,6 +22,9 @@ public class SignInController extends HelloApplication {
     public Button btnIn;
 
     public void handleSignIn(ActionEvent e) throws IOException {
+        for(int i =0; i < User.users.size(); i++){
+            System.out.println(User.users.get(i));
+        }
         for (int i = 0; i < User.users.size(); i++) {
 //            if(((fieldUsername.getText().toString().equalsIgnoreCase("Anas Asif"))
 //                    ||(fieldUsername.getText().toString().equalsIgnoreCase("Barum Niazi"))
@@ -32,12 +35,13 @@ public class SignInController extends HelloApplication {
             if(fieldUsername.getText().toString().equalsIgnoreCase(User.users.get(i).name)
                     && fieldPassword.getText().toString().equalsIgnoreCase(User.users.get(i).password)){
                 sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
+                break;
             }
-            else if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
-                fieldPassword.setText("Please Enter your credentials");
-            } else {
-                fieldUsername.setText("Wrong Username or Password");
-            }
+//            else if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
+//                fieldPassword.setText("Please Enter your credentials");
+//            } else {
+//                fieldUsername.setText("Wrong Username or Password");
+//            }
         }
     }
     public void handleSignup(MouseEvent m) throws IOException{
