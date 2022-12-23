@@ -25,7 +25,7 @@
                <children>
                   <ImageView fitHeight="37.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Downloads/IMG_5085.PNG" />
+                        <Image url="@pics/logo%20copter.PNG" />
                      </image>
                      <HBox.margin>
                         <Insets left="10.0" top="10.0" />
@@ -33,7 +33,7 @@
                   </ImageView>
                   <ImageView fitHeight="13.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Downloads/text-1670934836035.png" />
+                        <Image url="@pics/Text%20(1).png" />
                      </image>
                   </ImageView>
                </children>
@@ -69,7 +69,7 @@
                   </Label>
                   <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@GameStore-master/src/resources/images/icons/ic_account_box_white_48dp_2x.png" />
+                        <Image url="@pics/account%20box.png" />
                      </image>
                   </ImageView>
                </children>
@@ -87,7 +87,7 @@
                <children>
                   <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
                      <image>
-                        <Image url="@GameStore-master/src/resources/images/icons/ic_store_white_48dp_2x.png" />
+                        <Image url="@pics/store.png" />
                      </image>
                   </ImageView>
                   <Label text="STORE" textFill="#b5a5a5">
@@ -101,7 +101,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
                      <image>
-                        <Image url="@GameStore-master/src/resources/images/icons/ic_video_library_white_48dp_2x.png" />
+                        <Image url="@pics/library.png" />
                      </image>
                   </ImageView>
                   <Label text="LIBRARY" textFill="#b5a5a5">
@@ -121,7 +121,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
                      <image>
-                        <Image url="@GameStore-master/src/resources/images/icons/ic_shopping_cart_white_48dp_2x.png" />
+                        <Image url="@pics/cart.png" />
                      </image>
                   </ImageView>
                   <Label text="CART" textFill="#b5a5a5">

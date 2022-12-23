@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StoreController extends HelloApplication {
+    Stage stage;
     @FXML
     public HBox library;
     @FXML
