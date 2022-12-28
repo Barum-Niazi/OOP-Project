@@ -33,16 +33,17 @@ public class SignInController extends HelloApplication {
 //                sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
 //            }
             if(fieldUsername.getText().toString().equalsIgnoreCase(User.users.get(i).name)
-                    && fieldPassword.getText().toString().equalsIgnoreCase(User.users.get(i).password)){
+                    && fieldPassword.getText().toString().equalsIgnoreCase(User.users.get(i).password)) {
                 sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
                 break;
             }
-//            else if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
-//                fieldPassword.setText("Please Enter your credentials");
-//            } else {
-//                fieldUsername.setText("Wrong Username or Password");
-//            }
         }
+           if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
+                fieldPassword.setText("Please Enter your credentials");
+            } else {
+                fieldUsername.setText("Wrong Username or Password");
+            }
+
     }
     public void handleSignup(MouseEvent m) throws IOException{
         super.sceneSwitch("Sign up.fxml", 718, 476, m, "Sign up");

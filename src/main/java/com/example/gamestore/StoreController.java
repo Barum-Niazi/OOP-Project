@@ -26,6 +26,8 @@ public class StoreController extends HelloApplication {
     @FXML
     public Button btnLogout;
     public VBox vboxDesc;
+    public Label labelName;
+    
     public void handleLogout(ActionEvent e) throws IOException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
