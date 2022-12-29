@@ -56,6 +56,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
        //System.out.println("action 0" + Action[Game.counter].id);
         dynamicTextArea.setText(Action[Game.counter].src.description);
+//        System.out.println(Action[Game.counter].src.image1);
     //Ima = new Image(Action[0].games[Game.counter].src.image1);
         img1.setImage(new Image(Action[Game.counter].src.image1));
         //price.setText("$"+(Action[Game.counter].toString()));
