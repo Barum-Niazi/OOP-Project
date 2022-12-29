@@ -45,18 +45,19 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        System.out.println("test");
         //Game.counterList.add(8);
-       // Game[] Action=new Game[20];
-      // Action[Game.counter] = new Game();
-       //Action[Game.counter].Initialize(Action);
+        Game[] Action=new Game[20];
+       Action[Game.counter] = new Game();
+       Action[Game.counter].Initialize(Action);
        //Action[Game.counter].Initialize(Action);
 
-        Game g = new Game();
+//        Game g = new Game();
 
        //System.out.println("action 0" + Action[Game.counter].id);
-        dynamicTextArea.setText(g.games[Game.counter].src.description);
+        dynamicTextArea.setText(Action[Game.counter].src.description);
     //Ima = new Image(Action[0].games[Game.counter].src.image1);
-        //img1.setImage(new Image(Action[Game.counter].src.image1));
+        img1.setImage(new Image(Action[Game.counter].src.image1));
         //price.setText("$"+(Action[Game.counter].toString()));
        Game.counter = -1;
 
