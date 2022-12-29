@@ -37,7 +37,7 @@ public class SignUpController extends HelloApplication implements Serializable {
             fileName = fieldUsername.getText();
             File userFile = new File(fileName);
             //File generalFile = new File();
-            FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+userFile+".txt");
+            FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+userFile+".txt",true);
             ObjectOutputStream out = new ObjectOutputStream(file);
             FileOutputStream fileGEN = new FileOutputStream("src\\main\\resources\\generalSignIn.txt",true);
             ObjectOutputStream outGEN = new ObjectOutputStream(fileGEN);

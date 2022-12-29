@@ -39,7 +39,8 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     @FXML
     private Label price;
 
-
+    @FXML
+    private Button downloadbtn;
     @FXML
     private Label currentUser;
     public static int temp;
@@ -78,6 +79,8 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         while((rdcm = in.readObject()) instanceof END ==false){
             ((User)rdcm).gamesList.add(temp);
         }
+        filein.close();
+        in.close();
 
     }
 

@@ -82,6 +82,7 @@ public class Game {
                "Enjoy new high-performance vehicle upgrades and improvements like the Career Builder as well as all GTA Online gameplay upgrades, expansions, and content released since launch, ready to enjoy solo or with friends. Pull off daring co-operative Heists, enter adrenaline-fueled Stunt Races, compete in unique Adversary Modes, or hang out in social spaces including nightclubs, arcades, penthouse parties, car meetups, and much more.";
        games[1].src.image1 = "src\\main\\resources\\com.example.gamestore\\curve\\game1.jpg";
        games[1].price = 60.99;
+       games[1].name ="GTA 5";
 //        Game returnto = new Game();
 //        returnto = games[0];
 
