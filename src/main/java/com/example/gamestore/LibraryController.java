@@ -44,8 +44,9 @@ ArrayList<Integer> tempGames = new ArrayList<Integer>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         FileInputStream filein = null;
+        String h = SignInController.currentUser;
         try {
-            filein = new FileInputStream("src\\main\\resources\\generalSignIn.txt");
+            filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

@@ -60,7 +60,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
        //System.out.println("action 0" + Action[Game.counter].id);
         dynamicTextArea.setText(Action[Game.counter].src.description);
     //Ima = new Image(Action[0].games[Game.counter].src.image1);
-        img1.setImage(new Image(Action[Game.counter].src.image1));
+        //img1.setImage(new Image(Action[Game.counter].src.image1));
 
         //price.setText("$"+(Action[Game.counter].toString()));
        Game.counter = -1;
@@ -71,7 +71,8 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
        // FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+SignInController.currentUser+".txt",true);
         //ObjectOutputStream out = new ObjectOutputStream(file);
-        FileInputStream filein = new FileInputStream("src\\main\\resources\\generalSignIn.txt");
+        String h = SignInController.currentUser;
+        FileInputStream filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
         ObjectInputStream in = new ObjectInputStream(filein);
         Object rdcm = null;
 
