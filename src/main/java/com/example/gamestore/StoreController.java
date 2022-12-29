@@ -54,7 +54,7 @@ public class StoreController extends HelloApplication implements Initializable {
 //            if(labelName.getText() != " "){
 //                break;
 //            }
-//        labelName.setText(User.users.get(SignUpController.counter - 1).name);
+        labelName.setText(SignInController.currentUser);
 
     }
 

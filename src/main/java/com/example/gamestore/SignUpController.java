@@ -23,6 +23,7 @@ public class SignUpController extends HelloApplication implements Serializable {
     public Button btnSignUp;
 
     public String fileName;
+    public String generalName ="signIN";
     public void handleSignIn(MouseEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
@@ -35,9 +36,15 @@ public class SignUpController extends HelloApplication implements Serializable {
             User.users.add(newUser);
             fileName = fieldUsername.getText();
             File userFile = new File(fileName);
-            FileOutputStream file = new FileOutputStream(userFile+".txt");
+            //File generalFile = new File();
+            FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+userFile+".txt");
             ObjectOutputStream out = new ObjectOutputStream(file);
+            FileOutputStream fileGEN = new FileOutputStream("src\\main\\resources\\generalSignIn.txt",true);
+            ObjectOutputStream outGEN = new ObjectOutputStream(fileGEN);
             out.writeObject(newUser);
+            outGEN.writeObject(newUser);
+            fileGEN.close();
+            outGEN.close();
             out.close();
             file.close();
 
