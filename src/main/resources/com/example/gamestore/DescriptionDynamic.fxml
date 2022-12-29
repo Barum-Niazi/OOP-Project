@@ -233,6 +233,11 @@
                                           <DropShadow />
                                        </effect>
                                     </ImageView>
+                                    <Button fx:id="downloadbtn" mnemonicParsing="false" onAction="#handleAddCart" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #116b6a;" text="Download">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
                                     <ImageView fx:id="img4" fitHeight="205.0" fitWidth="425.0" layoutX="10.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
                                        <effect>
                                           <DropShadow />

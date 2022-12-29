@@ -10,7 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -42,7 +42,8 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
     @FXML
     private Label currentUser;
-
+    public static int temp;
+    public int tempStr;
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         System.out.println("test");
@@ -51,16 +52,32 @@ public class DynamicDescription extends HelloApplication implements Initializabl
        Action[Game.counter] = new Game();
        Action[Game.counter].Initialize(Action);
        //Action[Game.counter].Initialize(Action);
-
+         tempStr =Game.counter;
+        temp = tempStr;
 //        Game g = new Game();
 
        //System.out.println("action 0" + Action[Game.counter].id);
         dynamicTextArea.setText(Action[Game.counter].src.description);
     //Ima = new Image(Action[0].games[Game.counter].src.image1);
         img1.setImage(new Image(Action[Game.counter].src.image1));
+
         //price.setText("$"+(Action[Game.counter].toString()));
        Game.counter = -1;
 
+
+    }
+    public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
+
+       // FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+SignInController.currentUser+".txt",true);
+        //ObjectOutputStream out = new ObjectOutputStream(file);
+        FileInputStream filein = new FileInputStream("src\\main\\resources\\generalSignIn.txt");
+        ObjectInputStream in = new ObjectInputStream(filein);
+        Object rdcm = null;
+
+        first:
+        while((rdcm = in.readObject()) instanceof END ==false){
+            ((User)rdcm).gamesList.add(temp);
+        }
 
     }
 
