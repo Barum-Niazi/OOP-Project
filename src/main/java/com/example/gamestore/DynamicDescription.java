@@ -22,6 +22,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public Button btnLogout;
     public Button addCartbtn;
 
+    public Label labelName;
     @FXML
     public TextArea dynamicTextArea;
 
@@ -61,9 +62,10 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         dynamicTextArea.setText(Action[Game.counter].src.description);
 //        System.out.println(Action[Game.counter].src.image1);
     //Ima = new Image(Action[0].games[Game.counter].src.image1);
-        //img1.setImage(new Image(Action[Game.counter].src.image1));
+        img1.setImage(new Image(Action[Game.counter].src.image1));
 
-        //price.setText("$"+(Action[Game.counter].toString()));
+        price.setText("$"+(Action[Game.counter].price));
+        labelName.setText(Action[Game.counter].name);
        Game.counter = -1;
 
 
