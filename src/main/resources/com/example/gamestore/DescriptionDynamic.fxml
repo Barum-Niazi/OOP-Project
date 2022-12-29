@@ -63,7 +63,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
                <children>
-                  <Label prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
+                  <Label fx:id="currentUser" prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
                      </font>
@@ -192,7 +192,7 @@
                                                 <Insets />
                                              </HBox.margin>
                                           </Label>
-                                          <Label layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="315.0" text="\$14.49 USD" textFill="#b5a5a5">
+                                          <Label fx:id="price" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="315.0" textFill="#b5a5a5">
                                              <font>
                                                 <Font name="Leelawadee UI" size="16.0" />
                                              </font>
@@ -224,25 +224,16 @@
                               <VBox layoutX="724.0" layoutY="86.0" prefHeight="468.0" prefWidth="308.0" spacing="25.0">
                                  <children>
                                     <ImageView fx:id="img2" fitHeight="205.0" fitWidth="425.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@curve/ss_66354376f93c5581628e8564e663104cbb201665.1920x1080.jpg" />
-                                       </image>
                                        <effect>
                                           <DropShadow />
                                        </effect>
                                     </ImageView>
                                     <ImageView fx:id="img3" fitHeight="205.0" fitWidth="425.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@curve/ss_d2046bdb2f6acdf9b88c3c168e9eaec38495f063.1920x1080.jpg" />
-                                       </image>
                                        <effect>
                                           <DropShadow />
                                        </effect>
                                     </ImageView>
                                     <ImageView fx:id="img4" fitHeight="205.0" fitWidth="425.0" layoutX="10.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@curve/ss_56d3181c30a7975a46c4f2d8391861890508d7ba.1920x1080.jpg" />
-                                       </image>
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -262,9 +253,6 @@
                                        </font>
                                     </Label>
                                     <ImageView fx:id="img1" fitHeight="180.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@pics/Forza.png" />
-                                       </image>
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -276,7 +264,7 @@
                               </VBox>
                               <VBox layoutX="39.0" layoutY="316.0" prefHeight="520.0" prefWidth="661.0" spacing="10.0">
                                  <children>
-                                    <TextArea fx:id="dynamicTextArea" maxHeight="430.0" prefHeight="430.0" prefWidth="649.0" style="-fx-control-inner-background: #1f2328; -fx-border-color: #1f2328;" text="&#10;Dynamic seasons change everything at the world’s greatest automotive festival. &#10;Go it alone or team up with others to explore beautiful and historic Britain in a shared open world. &#10;Collect, modify and drive over 450 cars. Race, stunt, create and explore – choose your own path to &#10;become a Horizon Superstar.&#10;&#10;Collect Over 450 Cars :&#10;Enjoy the largest and most diverse Horizon car roster yet, including over 100 licensed manufacturers.&#10;&#10;Race. Stunt. Create. Explore :&#10;In the new open-ended campaign, everything you do progresses your game.&#10;&#10;Explore a Shared World : &#10;Real players populate your world. When time of day, weather and seasons change, everyone&#10;playing the game experiences it at the same time.&#10;&#10;Explore Beautiful, Historic Britain :&#10;This is Britain Like You’ve Never Seen it. Discover lakes, valleys, castles, and breathtaking scenery &#10;all in spectacular native 4K and HD ">
+                                    <TextArea fx:id="dynamicTextArea" maxHeight="430.0" prefHeight="430.0" prefWidth="649.0" style="-fx-control-inner-background: #1f2328; -fx-border-color: #1f2328;">
                                        <font>
                                           <Font name="Leelawadee UI" size="14.0" />
                                        </font>

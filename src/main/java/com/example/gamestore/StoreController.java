@@ -30,9 +30,13 @@ public class StoreController extends HelloApplication implements Initializable {
     public HBox cart;
     @FXML
     public Button btnLogout;
+    @FXML
     public VBox vboxDesc;
+    @FXML
     public Label labelName;
-    
+    @FXML
+    public VBox game1;
+
     public void handleLogout(ActionEvent e) throws IOException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
@@ -46,8 +50,23 @@ public class StoreController extends HelloApplication implements Initializable {
     public void handleDescription(MouseEvent m) throws IOException{
         super.sceneSwitch("Description.fxml", 1280, 720, m, "Description");
     }
+    public void ImageCLick(MouseEvent e) throws IOException {
+        VBox present = (VBox) e.getSource();
+        if(present == vboxDesc) {
+            Game.counter=0;
+            super.sceneSwitch("Description.fxml", 1280, 720, e, "Description");
 
-    @Override
+
+        }
+
+    //VBox present = (VBox) e.getSource();
+        if(present == game1) {
+            Game.counter=1;
+        super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
+
+
+    }}
+            @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 //        for(int i = 0; i < User.users.size(); i++){
 //            labelName.setText(User.users.get(i).name);

@@ -2,15 +2,19 @@ package com.example.gamestore;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class DescriptionController extends HelloApplication{
+public class DynamicDescription extends HelloApplication implements Initializable {
     @FXML
     public Label libraryLabel;
     public Label cartLabel;
@@ -32,7 +36,32 @@ public class DescriptionController extends HelloApplication{
 
     @FXML
     public ImageView img4;
+    @FXML
+    private Label price;
 
+
+    @FXML
+    private Label currentUser;
+
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        //Game.counterList.add(8);
+       // Game[] Action=new Game[20];
+      // Action[Game.counter] = new Game();
+       //Action[Game.counter].Initialize(Action);
+       //Action[Game.counter].Initialize(Action);
+
+        Game g = new Game();
+
+       //System.out.println("action 0" + Action[Game.counter].id);
+        dynamicTextArea.setText(g.games[Game.counter].src.description);
+    //Ima = new Image(Action[0].games[Game.counter].src.image1);
+        //img1.setImage(new Image(Action[Game.counter].src.image1));
+        //price.setText("$"+(Action[Game.counter].toString()));
+       Game.counter = -1;
+
+
+    }
 
     public void handleLogout(ActionEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
@@ -51,3 +80,5 @@ public class DescriptionController extends HelloApplication{
         super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
     }
 }
+
+
