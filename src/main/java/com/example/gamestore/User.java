@@ -1,8 +1,9 @@
 package com.example.gamestore;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class User{
+public class User implements Serializable {
     public String name;
     public String password;
     public String email;
