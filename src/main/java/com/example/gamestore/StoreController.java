@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -16,8 +17,12 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class StoreController extends HelloApplication {
+public class StoreController extends HelloApplication implements Initializable {
+
+
     Stage stage;
     @FXML
     public HBox library;
@@ -40,6 +45,17 @@ public class StoreController extends HelloApplication {
     }
     public void handleDescription(MouseEvent m) throws IOException{
         super.sceneSwitch("Description.fxml", 1280, 720, m, "Description");
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+//        for(int i = 0; i < User.users.size(); i++){
+//            labelName.setText(User.users.get(i).name);
+//            if(labelName.getText() != " "){
+//                break;
+//            }
+//        labelName.setText(User.users.get(SignUpController.counter - 1).name);
+
     }
 
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{

@@ -22,7 +22,7 @@ public class SignInController extends HelloApplication {
     public Button btnIn;
 
     public void handleSignIn(ActionEvent e) throws IOException {
-        for(int i =0; i < User.users.size(); i++){
+        for(int i = 0; i < User.users.size(); i++){
             System.out.println(User.users.get(i));
         }
         for (int i = 0; i < User.users.size(); i++) {

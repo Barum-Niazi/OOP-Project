@@ -7,6 +7,9 @@ public class User{
     public String password;
     public String email;
 
+    public ArrayList<Integer> gamesList = new ArrayList<Integer>();
+
+    public double wallet;
     public User(String name, String password, String email){
         this.name = name;
         this.password = password;
