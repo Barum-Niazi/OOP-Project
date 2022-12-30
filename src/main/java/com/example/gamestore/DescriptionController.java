@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
@@ -15,6 +17,23 @@ public class DescriptionController extends HelloApplication{
     public Label storeLabel;
     public Button btnLogout;
     public Button addCartbtn;
+
+    @FXML
+    public TextArea dynamicTextArea;
+
+    @FXML
+    public ImageView img1;
+
+    @FXML
+    public ImageView img2;
+
+    @FXML
+    public ImageView img3;
+
+    @FXML
+    public ImageView img4;
+
+
 
     public void handleLogout(ActionEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
