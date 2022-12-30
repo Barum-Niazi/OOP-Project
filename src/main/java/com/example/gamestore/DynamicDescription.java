@@ -46,16 +46,25 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     private Label currentUser;
     public static int temp;
     public int tempStr;
+    User usr = new User(SignInController.currentUser);
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         System.out.println("test");
         //Game.counterList.add(8);
-        Game[] Action=new Game[20];
-       Action[Game.counter] = new Game();
-       Action[Game.counter].Initialize(Action);
+        //Game[] Action=new Game[20];
+        Game[] Action = new Game[10];
+        Game g = new Game();
+       //Action[Game.counter] = new Game();
        //Action[Game.counter].Initialize(Action);
-         tempStr =Game.counter;
+       //Action[Game.counter].Initialize(Action);
+        g.Initialize(Action);
+        tempStr =Game.counter;
         temp = tempStr;
+        //g.gamesAdded.add(Game.counter);
+        //User usr = new User(SignInController.currentUser);
+
+        usr.gamesList.add(Game.counter);
+
 //        Game g = new Game();
 
        //System.out.println("action 0" + Action[Game.counter].id);
@@ -80,20 +89,31 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         Object rdcm = null;
 
         first:
-        while((rdcm = in.readObject()) instanceof END ==false){
-            ((User)rdcm).gamesList.add(temp);
-        }
+//        while((rdcm = in.readObject()) instanceof END ==false){
+//            ((User)rdcm).gamesList.add(temp);
+//        }
+        //Game gs =(Game)in.readObject();
         filein.close();
         in.close();
 
     }
 
     public void handleLogout(ActionEvent e) throws IOException {
+        String h = SignInController.currentUser;
+        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        out.writeObject(usr);
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
     public void handleLibrary(MouseEvent m) throws IOException{
-        super.sceneSwitch("Library.fxml", 1280, 720, m, "Library");
+        String h = SignInController.currentUser;
+        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        out.writeObject(usr);
+        fileOut.close();
+        out.close();
+        super.sceneSwitch("LibraryNew.fxml", 1280, 720, m, "Library");
     }
     public void handleStore(MouseEvent m) throws IOException{
         super.sceneSwitch("STORE.fxml", 1280, 720, m, "Store");
