@@ -331,6 +331,8 @@
                                     <Insets left="35.0" right="30.0" top="35.0" />
                                  </VBox.margin>
                               </FlowPane>
+                              <Label fx:id="gameb1" prefHeight="41.0" prefWidth="134.0" text="Label" textFill="#c7c7c7" />
+                              <Label fx:id="gameb2" prefHeight="32.0" prefWidth="68.0" text="Label" textFill="WHITE" />
                            </children>
                         </VBox>
                      </children>
