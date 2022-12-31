@@ -47,6 +47,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public static int temp;
     public int tempStr;
     User usr = new User(SignInController.currentUser);
+    public int currentChoice=Game.counter;
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         System.out.println("test");
@@ -58,7 +59,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
        //Action[Game.counter].Initialize(Action);
        //Action[Game.counter].Initialize(Action);
         g.Initialize(Action);
-        tempStr =Game.counter;
+        currentChoice =Game.counter;
         temp = tempStr;
         //g.gamesAdded.add(Game.counter);
         //User usr = new User(SignInController.currentUser);
@@ -84,17 +85,15 @@ public class DynamicDescription extends HelloApplication implements Initializabl
        // FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+SignInController.currentUser+".txt",true);
         //ObjectOutputStream out = new ObjectOutputStream(file);
         String h = SignInController.currentUser;
-        FileInputStream filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
-        ObjectInputStream in = new ObjectInputStream(filein);
-        Object rdcm = null;
 
-        first:
-//        while((rdcm = in.readObject()) instanceof END ==false){
-//            ((User)rdcm).gamesList.add(temp);
-//        }
-        //Game gs =(Game)in.readObject();
-        filein.close();
-        in.close();
+        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        usr.gamesList.add(currentChoice);
+        out.writeObject(usr);
+        fileOut.close();
+        out.close();
+
+
 
     }
 

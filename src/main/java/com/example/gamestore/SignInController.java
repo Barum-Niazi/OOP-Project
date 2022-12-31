@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
@@ -44,18 +45,19 @@ public class SignInController extends HelloApplication {
         //Criminal rdcm = null;
         FileInputStream filein = new FileInputStream("src\\main\\resources\\generalSignIn.txt");
         ObjectInputStream in = new ObjectInputStream(filein);
+        FileReader rea = new FileReader("src\\main\\resources\\generalSignIn.txt");
         Object rdcm = null;
 
+int i;
+        //while((rdcm = in.readObject()) instanceof END ==false)
         first:
-        while((rdcm = in.readObject()) instanceof END ==false){
+
+        while((rdcm = in.readObject()) !=null) {
             if((fieldUsername.getText().toString().equals(((User)rdcm).name)) && (fieldPassword.getText().toString().equals(((User)rdcm).password)));
             currentUser = fieldUsername.getText().toString();
 
             sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
             break first;
-            //System.out.println("Name of criminal:"+((Criminal)rdcm).name);
-            //System.out.println("Age of criminal:"+((Criminal)rdcm).age);
-            //System.out.println();
 
 
         }

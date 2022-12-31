@@ -44,13 +44,17 @@ public class DynamicLib implements Initializable {
                 file = new FileInputStream("src\\main\\resources\\"+userFile+".txt");
                 ObjectInputStream in = new ObjectInputStream(file);
             User LA=(User)in.readObject();
+            for(int i=0 ; i<LA.gamesList.size() ;i++){
+                gmLabel.setText (Game.GameLibUrls.get(LA.gamesList.get(i)));
+            }
             //gmLabel.setText(LA.gamesList(1));
                 //User u=in.readObject()
-
+file.close();
+            in.close();
         }
 
 
         //gmLabel.setText(());
 
     }
-}
+

@@ -44,6 +44,8 @@ public class Game {
 
     static int counter;
      ArrayList<Integer> gamesAdded = new ArrayList<Integer>();
+    static ArrayList<String> GameLibUrls = new ArrayList<String>();
+
     URL src = new URL();
     int id;
     String name;

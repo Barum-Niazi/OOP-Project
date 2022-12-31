@@ -331,6 +331,11 @@
                                                 <Insets left="35.0" right="30.0" top="35.0" />
                                             </VBox.margin>
                                         </FlowPane>
+                              <Label fx:id="gmLabel" prefHeight="63.0" prefWidth="378.0" text="Label" textFill="WHITE">
+                                 <font>
+                                    <Font size="47.0" />
+                                 </font>
+                              </Label>
                                     </children>
                                 </VBox>
                             </children>
