@@ -46,6 +46,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     private Label currentUser;
     public static int temp;
     public int tempStr;
+    User usr = new User(SignInController.currentUser);
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         System.out.println("test");
@@ -71,22 +72,28 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
     }
     public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
-
-       // FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+SignInController.currentUser+".txt",true);
-        //ObjectOutputStream out = new ObjectOutputStream(file);
+        
         String h = SignInController.currentUser;
-        FileInputStream filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
-        ObjectInputStream in = new ObjectInputStream(filein);
-        Object rdcm = null;
+        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\" + h + ".txt");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
 
-        first:
-        while((rdcm = in.readObject()) instanceof END ==false){
-            ((User)rdcm).gamesList.add(temp);
-        }
-        filein.close();
-        in.close();
+        out.writeObject(usr);
+        fileOut.close();
+        out.close();
+
 
     }
+
+
+
+
+//        while((rdcm = in.readObject()) instanceof END ==false){
+//            ((User)rdcm).gamesList.add(temp);
+//        }
+//        filein.close();
+//        in.close();
+//
+//    }
 
     public void handleLogout(ActionEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
