@@ -15,12 +15,17 @@ public class Game implements Serializable {
     int id;
     String name;
     double price;
-
+String price2;
     Game(String name, String description, String image1, double price){
         this.name = name;
         this.src.description = description;
         this.src.image1 = image1;
         this.price = price;
+    }
+    Game(String name,String image1, String price2){
+        this.name = name;
+        this.src.image1 = image1;
+        this.price2 = price2;
     }
     Game(){
     }
