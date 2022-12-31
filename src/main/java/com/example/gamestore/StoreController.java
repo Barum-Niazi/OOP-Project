@@ -17,10 +17,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class StoreController extends HelloApplication implements Initializable {
+public class StoreController extends HelloApplication implements Initializable{
 
 
     Stage stage;
@@ -50,12 +51,11 @@ public class StoreController extends HelloApplication implements Initializable {
     public void handleDescription(MouseEvent m) throws IOException{
         super.sceneSwitch("Description.fxml", 1280, 720, m, "Description");
     }
-    public void ImageCLick(MouseEvent e) throws IOException {
+    public void ImageCLick(MouseEvent e) throws Exception {
         VBox present = (VBox) e.getSource();
         if(present == vboxDesc) {
             Game.counter=0;
-            super.sceneSwitch("Description.fxml", 1280, 720, e, "Description");
-
+            super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
 
         }
 
@@ -65,7 +65,8 @@ public class StoreController extends HelloApplication implements Initializable {
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
 
 
-    }}
+        }
+    }
             @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 //        for(int i = 0; i < User.users.size(); i++){

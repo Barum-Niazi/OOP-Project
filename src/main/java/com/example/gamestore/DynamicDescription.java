@@ -14,7 +14,7 @@ import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class DynamicDescription extends HelloApplication implements Initializable {
+public class DynamicDescription extends HelloApplication implements Initializable{
     @FXML
     public Label libraryLabel;
     public Label cartLabel;
@@ -48,27 +48,17 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public int tempStr;
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        System.out.println("test");
-        //Game.counterList.add(8);
-        Game[] Action=new Game[20];
-       Action[Game.counter] = new Game();
-       Action[Game.counter].Initialize(Action);
-       //Action[Game.counter].Initialize(Action);
-         tempStr =Game.counter;
-        temp = tempStr;
-//        Game g = new Game();
-
-       //System.out.println("action 0" + Action[Game.counter].id);
-        dynamicTextArea.setText(Action[Game.counter].src.description);
-//        System.out.println(Action[Game.counter].src.image1);
-    //Ima = new Image(Action[0].games[Game.counter].src.image1);
-        img1.setImage(new Image(Action[Game.counter].src.image1));
-
-        price.setText("$"+(Action[Game.counter].price));
-        labelName.setText(Action[Game.counter].name);
-       Game.counter = -1;
-
-
+        try {
+            Game currentGame;
+            currentGame = Game.gameLoader(Game.counter);
+            dynamicTextArea.setText(currentGame.src.description);
+            img1.setImage(new Image(currentGame.src.image1));
+            price.setText("$" + (currentGame.price));
+            labelName.setText(currentGame.name);
+            Game.counter = -1;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
     public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
 

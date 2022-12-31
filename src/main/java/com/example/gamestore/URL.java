@@ -1,6 +1,8 @@
 package com.example.gamestore;
 
-public class URL {
+import java.io.Serializable;
+
+public class URL implements Serializable {
     String image1;
     String downloadUrl;
     String description;
