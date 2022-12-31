@@ -11,7 +11,7 @@ import javafx.scene.input.MouseEvent;
 import java.io.*;
 
 class END implements Serializable{
-
+    public static final long serialVersionUID = -617565425006163870L;
 }
 public class SignUpController extends HelloApplication implements Serializable {
 

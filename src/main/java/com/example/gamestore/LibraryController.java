@@ -5,13 +5,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -28,6 +27,14 @@ public class LibraryController extends HelloApplication implements Initializable
     @FXML
     private Label gameb2;
 
+    @FXML
+    private ImageView img1;
+
+    @FXML
+    private ImageView img2;
+
+    @FXML
+    private ImageView img3;
 
 
     public void handleStore(MouseEvent m) throws IOException {
@@ -42,6 +49,10 @@ public class LibraryController extends HelloApplication implements Initializable
     }
 ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //    @Override
+ArrayList<String> libData = new ArrayList<String>();
+    ArrayList<String> libTemp = new ArrayList<String>();
+    User TEMP;
+    @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 //        FileInputStream filein = null;
 //        String h = SignInController.currentUser;
@@ -65,8 +76,6 @@ ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //                    tempGames=((User)rdcm).gamesList;
 //                }
 //
-//
-//
 //            } catch (IOException e) {
 //                throw new RuntimeException(e);
 //            } catch (ClassNotFoundException e) {
@@ -78,5 +87,44 @@ ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //            }
 //
 //
-  }
+
+
+        try {
+            TEMP = fileTemp();
+            LibUrls lib = new LibUrls();
+            libTemp = lib.LibUrlsMethod(libData);
+            System.out.println(libTemp.get(0));
+            ImageView[] imgs = new ImageView[3];
+            imgs[0] = img1;
+            imgs[1] = img2;
+            imgs[2] = img3;
+
+            for (int i = 0; i < TEMP.gamesList.size(); i++) {
+                System.out.println("banana");
+                String u = libTemp.get(TEMP.gamesList.get(i));
+                System.out.println("apple");
+                System.out.println(u);
+                imgs[i].setImage(new Image(u));
+                continue;
+            }
+        } catch(Exception e){
+            System.out.println(e);
+        }
+    }
+
+
+      User fileTemp() throws IOException,ClassNotFoundException {
+        String user =SignInController.currentUser;
+        User temp;
+        File f = new File("src\\main\\resources\\"+user+".txt");
+          System.out.println(f.exists());
+        FileInputStream filein = new FileInputStream("src\\main\\resources\\"+user+".txt");
+        ObjectInputStream in = new ObjectInputStream(filein);
+
+        temp =(User)in.readObject();
+        filein.close();
+        in.close();
+        return temp;
+
+}
 }
