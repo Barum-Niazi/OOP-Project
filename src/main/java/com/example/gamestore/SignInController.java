@@ -23,7 +23,7 @@ public class SignInController extends HelloApplication {
     @FXML
     public Button btnIn;
 
-    public static String currentUser;
+    public static String currentUser="anas";
     public void handleSignIn(ActionEvent e) throws IOException, ClassNotFoundException {
 //        for(int i = 0; i < User.users.size(); i++){
 //            System.out.println(User.users.get(i));

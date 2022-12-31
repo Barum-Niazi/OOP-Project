@@ -78,11 +78,11 @@ public class Game {
 //       System.out.println("before price");
 //       games[0].price = 39;
 
-       games[0].src.description = "Experience GTA Online, a dynamic and ever-evolving online universe for up to 30 players, where you can rise from street-level hustler to become a kingpin of your own criminal empire.\n" +
+       games[1].src.description = "Experience GTA Online, a dynamic and ever-evolving online universe for up to 30 players, where you can rise from street-level hustler to become a kingpin of your own criminal empire.\n" +
                "Enjoy new high-performance vehicle upgrades and improvements like the Career Builder as well as all GTA Online gameplay upgrades, expansions, and content released since launch, ready to enjoy solo or with friends. Pull off daring co-operative Heists, enter adrenaline-fueled Stunt Races, compete in unique Adversary Modes, or hang out in social spaces including nightclubs, arcades, penthouse parties, car meetups, and much more.";
-       games[0].src.image1 = "src\\main\\resources\\com\\example\\gamestore\\curve\\vicecity.jpg";
-       games[0].price = 60.99;
-       games[0].name ="Grand Theft Vice City";
+       games[1].src.image1 = "src\\main\\resources\\com\\example\\gamestore\\curve\\vicecity.jpg";
+       games[1].price = 60.99;
+       games[1].name ="Grand Theft SanAndreas";
 
 
 //        Game returnto = new Game();

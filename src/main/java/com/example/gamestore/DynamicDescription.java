@@ -45,7 +45,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     @FXML
     private Label currentUser;
     public static int temp;
-    public int tempStr;
+    public int tempStr=Game.counter;
     User usr = new User(SignInController.currentUser);
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -63,7 +63,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         dynamicTextArea.setText(Action[Game.counter].src.description);
 //        System.out.println(Action[Game.counter].src.image1);
     //Ima = new Image(Action[0].games[Game.counter].src.image1);
-        img1.setImage(new Image(Action[Game.counter].src.image1));
+       // img1.setImage(new Image(Action[Game.counter].src.image1));
 
         price.setText("$"+(Action[Game.counter].price));
         labelName.setText(Action[Game.counter].name);
@@ -72,11 +72,11 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
     }
     public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
-        
-        String h = SignInController.currentUser;
-        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\" + h + ".txt");
-        ObjectOutputStream out = new ObjectOutputStream(fileOut);
 
+        String h = SignInController.currentUser;
+        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        usr.gamesList.add(tempStr);
         out.writeObject(usr);
         fileOut.close();
         out.close();
