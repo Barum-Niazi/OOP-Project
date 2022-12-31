@@ -63,7 +63,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
                <children>
-                  <Label prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
+                  <Label prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
                      </font>

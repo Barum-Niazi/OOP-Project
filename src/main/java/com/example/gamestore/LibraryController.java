@@ -41,42 +41,42 @@ public class LibraryController extends HelloApplication implements Initializable
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 ArrayList<Integer> tempGames = new ArrayList<Integer>();
-    @Override
+//    @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        FileInputStream filein = null;
-        String h = SignInController.currentUser;
-        try {
-            filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        ObjectInputStream in;
-        try {
-            in = new ObjectInputStream(filein);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        Object rdcm = null;
-
-
-            try {
-                while (((rdcm = in.readObject()) instanceof END == false)){
-
-                    tempGames=((User)rdcm).gamesList;
-                }
-
-
-
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (ClassNotFoundException e) {
-                throw new RuntimeException(e);
-            }
-            for(int i=0;i<tempGames.size();i++) {
-                gameb1.setText(String.valueOf(tempGames.get(i)));
-
-            }
-
-
-    }
+//        FileInputStream filein = null;
+//        String h = SignInController.currentUser;
+//        try {
+//            filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
+//        ObjectInputStream in;
+//        try {
+//            in = new ObjectInputStream(filein);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//        Object rdcm = null;
+//
+//
+//            try {
+//                while (((rdcm = in.readObject()) instanceof END == false)){
+//
+//                    tempGames=((User)rdcm).gamesList;
+//                }
+//
+//
+//
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            } catch (ClassNotFoundException e) {
+//                throw new RuntimeException(e);
+//            }
+//            for(int i=0;i<tempGames.size();i++) {
+//                gameb1.setText(String.valueOf(tempGames.get(i)));
+//
+//            }
+//
+//
+  }
 }
