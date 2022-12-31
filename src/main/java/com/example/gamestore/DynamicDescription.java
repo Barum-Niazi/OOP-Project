@@ -46,29 +46,26 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     private Label currentUser;
     public static int temp;
     public int tempStr=Game.counter;
-    User usr = new User(SignInController.currentUser);
+    public double gamePrice;
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         try {
-            Game currentGame;
+            Game currentGame = new Game();
             currentGame = Game.gameLoader(Game.counter);
             dynamicTextArea.setText(currentGame.src.description);
             img1.setImage(new Image(currentGame.src.image1));
             price.setText("$" + (currentGame.price));
             labelName.setText(currentGame.name);
-            Game.counter = -1;
+            gamePrice = currentGame.price;
         }catch (Exception e){
             e.printStackTrace();
         }
        //Action[Game.counter].Initialize(Action);
         tempStr = Game.counter;
         temp = tempStr;
-       Game.counter = -1;
-
-
     }
     public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
-
+        User usr = new User(SignInController.currentUser);
         String h = SignInController.currentUser;
         FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);

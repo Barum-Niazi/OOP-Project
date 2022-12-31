@@ -1,6 +1,7 @@
 package com.example.gamestore;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -9,6 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import java.io.*;
 import java.net.URL;
@@ -36,6 +38,8 @@ public class LibraryController extends HelloApplication implements Initializable
     @FXML
     private ImageView img3;
 
+    @FXML
+    private VBox vbox4;
 
     public void handleStore(MouseEvent m) throws IOException {
         super.sceneSwitch("STORE.fxml", 1280, 720, m, "Store");
@@ -47,6 +51,10 @@ public class LibraryController extends HelloApplication implements Initializable
     public void handleLogout(ActionEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
+
+    public void handleLaunch(MouseEvent m) throws Exception{
+        Runtime.getRuntime().exec("C:\\Program Files (x86)\\Labcenter Electronics\\Proteus 8 Professional\\BIN\\PDS.EXE");
+    }
 ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //    @Override
 ArrayList<String> libData = new ArrayList<String>();
@@ -54,40 +62,6 @@ ArrayList<String> libData = new ArrayList<String>();
     User TEMP;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        FileInputStream filein = null;
-//        String h = SignInController.currentUser;
-//        try {
-//            filein = new FileInputStream("src\\main\\resources\\"+h+".txt");
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-//        ObjectInputStream in;
-//        try {
-//            in = new ObjectInputStream(filein);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        Object rdcm = null;
-//
-//
-//            try {
-//                while (((rdcm = in.readObject()) instanceof END == false)){
-//
-//                    tempGames=((User)rdcm).gamesList;
-//                }
-//
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            } catch (ClassNotFoundException e) {
-//                throw new RuntimeException(e);
-//            }
-//            for(int i=0;i<tempGames.size();i++) {
-//                gameb1.setText(String.valueOf(tempGames.get(i)));
-//
-//            }
-//
-//
-
 
         try {
             TEMP = fileTemp();

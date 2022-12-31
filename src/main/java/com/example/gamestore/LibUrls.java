@@ -8,8 +8,8 @@ public class LibUrls {
 
     ArrayList<String> LibUrlsMethod(ArrayList<String> temp) {
 
-        temp.add("C:\\Users\\Lenovo\\Documents\\GitHub\\OOP-Project\\src\\main\\resources\\com\\example\\gamestore\\curve\\vicecity.jpg");
-        temp.add("C:\\Users\\Lenovo\\Documents\\GitHub\\OOP-Project\\src\\main\\resources\\com\\example\\gamestore\\curve\\sanAndreas.jpg");
+        temp.add("C:\\Users\\user\\Desktop\\ij\\gamestore\\src\\main\\resources\\com\\example\\gamestore\\Games\\GTAVC.jpg");
+        temp.add("C:\\Users\\user\\Desktop\\ij\\gamestore\\src\\main\\resources\\com\\example\\gamestore\\Games\\Stronghold.jpg");
     return temp;
     }
 

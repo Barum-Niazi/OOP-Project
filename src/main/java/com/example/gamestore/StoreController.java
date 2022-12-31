@@ -42,8 +42,12 @@ public class StoreController extends HelloApplication implements Initializable{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
-    public void handleLibrary(MouseEvent m) throws IOException{
-        sceneSwitch("Library.fxml", 1280, 720, m, "Library");
+    public void handleLibrary(MouseEvent m) throws IOException {
+        try {
+            sceneSwitch("Library.fxml", 1280, 720, m, "Library");
+        } catch (Exception e){
+        System.out.println("string");
+        }
     }
     public void handleCart(MouseEvent e) throws IOException{
         super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
