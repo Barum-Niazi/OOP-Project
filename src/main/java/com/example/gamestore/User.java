@@ -10,6 +10,7 @@ public class User implements Serializable {
 
     public ArrayList<Integer> gamesList = new ArrayList<Integer>();
 
+    public static final long serialVersionUID = -617565425006163870L;
     public double wallet;
     public User(String name, String password, String email){
         this.name = name;
