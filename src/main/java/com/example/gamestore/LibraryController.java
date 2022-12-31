@@ -53,7 +53,7 @@ public class LibraryController extends HelloApplication implements Initializable
     }
 
     public void handleLaunch(MouseEvent m) throws Exception{
-        Runtime.getRuntime().exec("C:\\Program Files (x86)\\Labcenter Electronics\\Proteus 8 Professional\\BIN\\PDS.EXE");
+        Runtime.getRuntime().exec("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
     }
 ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //    @Override

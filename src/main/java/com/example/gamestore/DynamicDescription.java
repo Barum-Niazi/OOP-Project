@@ -57,6 +57,9 @@ public class DynamicDescription extends HelloApplication implements Initializabl
             price.setText("$" + (currentGame.price));
             labelName.setText(currentGame.name);
             gamePrice = currentGame.price;
+            img2.setImage(new Image(currentGame.src.gamePlayImg1));
+            img3.setImage(new Image(currentGame.src.gamePlayImg2));
+            img4.setImage(new Image(currentGame.src.gamePlayImg3));
         }catch (Exception e){
             e.printStackTrace();
         }

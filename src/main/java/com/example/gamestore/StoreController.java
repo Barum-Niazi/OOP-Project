@@ -59,17 +59,12 @@ public class StoreController extends HelloApplication implements Initializable{
         VBox present = (VBox) e.getSource();
         if(present == vboxDesc) {
             Game.counter=0;
-            super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
-
         }
-
-    //VBox present = (VBox) e.getSource();
         if(present == game1) {
             Game.counter=1;
-        super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
-
-
         }
+
+        super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
     }
             @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
