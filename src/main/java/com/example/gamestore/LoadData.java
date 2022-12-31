@@ -44,8 +44,11 @@ public class LoadData implements Serializable {
                 "players for limited farmland and resources.\n" +
                 "\n" +
                 "The game adds new AI opponents and several new Arabian units purchasable from a mercenary post.",
-                "file:Games\\Stronghold.jpg"
+                "file:Gamepics\\Stronghold.jpg"
                 , 10.99);
+        game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
+                "file:Gamepics\\Strongholdg2.jpg",
+                "file:Gamepics\\Strongholdg3.jpg");
 
        gamesData[0] = game1;
        gamesData[1] = game2;
