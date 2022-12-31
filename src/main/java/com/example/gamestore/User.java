@@ -16,6 +16,9 @@ public class User implements Serializable {
         this.password = password;
         this.email = email;
     }
+    public User(String name){
+        this.name = name;
+    };
 
     static ArrayList<User> users = new ArrayList<>();
 }

@@ -252,7 +252,7 @@
                               </Label>
                               <VBox layoutX="14.0" layoutY="14.0" maxHeight="1000.0" prefHeight="263.0" prefWidth="401.0">
                                  <children>
-                                    <Label prefHeight="75.0" prefWidth="315.0" text="Forza Horizon 4" textFill="#b5a5a5">
+                                    <Label fx:id="labelName" prefHeight="75.0" prefWidth="315.0" textFill="#b5a5a5">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="24.0" />
                                        </font>

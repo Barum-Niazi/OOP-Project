@@ -49,7 +49,7 @@ public class SignInController extends HelloApplication {
         first:
         while((rdcm = in.readObject()) instanceof END ==false){
             if((fieldUsername.getText().toString().equals(((User)rdcm).name)) && (fieldPassword.getText().toString().equals(((User)rdcm).password)));
-            currentUser =fieldUsername.getText().toString();
+            currentUser = fieldUsername.getText().toString();
 
             sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
             break first;
