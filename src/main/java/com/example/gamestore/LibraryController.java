@@ -33,14 +33,61 @@ public class LibraryController extends HelloApplication implements Initializable
     private ImageView img1;
 
     @FXML
+    private ImageView img10;
+
+    @FXML
     private ImageView img2;
 
     @FXML
     private ImageView img3;
 
     @FXML
+    private ImageView img4;
+
+    @FXML
+    private ImageView img5;
+
+    @FXML
+    private ImageView img6;
+
+    @FXML
+    private ImageView img7;
+
+    @FXML
+    private ImageView img8;
+
+    @FXML
+    private ImageView img9;
+
+    @FXML
+    private VBox vbox1;
+
+    @FXML
+    private VBox vbox10;
+
+    @FXML
+    private VBox vbox2;
+
+    @FXML
+    private VBox vbox3;
+
+    @FXML
     private VBox vbox4;
 
+    @FXML
+    private VBox vbox5;
+
+    @FXML
+    private VBox vbox6;
+
+    @FXML
+    private VBox vbox7;
+
+    @FXML
+    private VBox vbox8;
+
+    @FXML
+    private VBox vbox9;
     public void handleStore(MouseEvent m) throws IOException {
         super.sceneSwitch("STORE.fxml", 1280, 720, m, "Store");
     }
@@ -65,13 +112,37 @@ ArrayList<String> libData = new ArrayList<String>();
 
         try {
             TEMP = fileTemp();
+            for(int i=0;i <TEMP.gamesList .size();i++){
+                System.out.println("Game bought "+TEMP.gamesList.get(i));
+            }
             LibUrls lib = new LibUrls();
             libTemp = lib.LibUrlsMethod(libData);
             System.out.println(libTemp.get(0));
-            ImageView[] imgs = new ImageView[3];
+            ImageView[] imgs = new ImageView[10];
             imgs[0] = img1;
             imgs[1] = img2;
             imgs[2] = img3;
+            imgs[3] = img4;
+            imgs[4] = img5;
+            imgs[5] = img6;
+            imgs[6] = img7;
+            imgs[7] = img8;
+            imgs[8] = img9;
+            imgs[9]= img10;
+
+            VBox[] vboxArray = new VBox[10];
+            vboxArray[0]=vbox1;
+            vboxArray[1]=vbox2;
+            vboxArray[2]=vbox3;
+            vboxArray[3]=vbox4;
+            vboxArray[4]=vbox5;
+            vboxArray[5]=vbox6;
+            vboxArray[6]=vbox7;
+            vboxArray[7]=vbox8;
+            vboxArray[8]=vbox9;
+            vboxArray[9]=vbox10;
+
+        int visibilityCounter = 0;
 
             for (int i = 0; i < TEMP.gamesList.size(); i++) {
                 System.out.println("banana");
@@ -79,7 +150,13 @@ ArrayList<String> libData = new ArrayList<String>();
                 System.out.println("apple");
                 System.out.println(u);
                 imgs[i].setImage(new Image(u));
-                continue;
+                visibilityCounter++;
+            }
+
+            for(int i =visibilityCounter ;i<vboxArray.length ;i++){
+                imgs[i].setVisible(false);
+                vboxArray[i].setVisible(false);
+
             }
         } catch(Exception e){
             System.out.println(e);
@@ -96,6 +173,7 @@ ArrayList<String> libData = new ArrayList<String>();
         ObjectInputStream in = new ObjectInputStream(filein);
 
         temp =(User)in.readObject();
+
         filein.close();
         in.close();
         return temp;
