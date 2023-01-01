@@ -102,10 +102,11 @@ public class LibraryController extends HelloApplication implements Initializable
     public void handleLaunch(MouseEvent m) throws Exception{
 //        Runtime.getRuntime().exec("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
     }
-ArrayList<Integer> tempGames = new ArrayList<Integer>();
+    ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //    @Override
-ArrayList<String> libData = new ArrayList<String>();
+    ArrayList<String> libData = new ArrayList<String>();
     ArrayList<String> libTemp = new ArrayList<String>();
+//    ArrayList<String>
     User TEMP;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

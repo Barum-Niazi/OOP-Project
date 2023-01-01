@@ -17,6 +17,13 @@ public class LibUrls {
 
         return downloadUrls;
     }
+
+    public static ArrayList<String> exePaths(ArrayList<String> exePaths){
+        exePaths.add("cmd /c C:\\Program Files (x86)\\Labcenter Electronics\\Proteus 8 Professional\\BIN\\PDS.EXE");
+        exePaths.add("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
+
+        return exePaths;
+    }
 }
 
 

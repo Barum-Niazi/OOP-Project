@@ -22,7 +22,7 @@ public class LoadData implements Serializable {
                 " Composed of two main islands and several smaller areas, the world is much larger in area than \n" +
                 "earlier entries in the series. The islands are unlocked for the player as the story progresses.",
                 "file:Gamepics\\GTAVC.jpg",
-                15.59, "http://59.103.17.13/ViceCity.zip");
+                15.59, "http://39.62.7.8/ViceCity.zip");
         game1.setGamePlayImages("file:Gamepics\\GTAVCg1.jpg",
                 "file:Gamepics\\GTAVCg2.jpg",
                 "file:Gamepics\\GTAVCg3.jpg");
@@ -45,7 +45,7 @@ public class LoadData implements Serializable {
                 "\n" +
                 "The game adds new AI opponents and several new Arabian units purchasable from a mercenary post.",
                 "file:Gamepics\\Stronghold.jpg"
-                , 10.99, "http://59.103.17.13/Crusader.zip");
+                , 10.99, "http://39.62.7.8/Crusader.zip");
         game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
                 "file:Gamepics\\Strongholdg2.jpg",
                 "file:Gamepics\\Strongholdg3.jpg");
