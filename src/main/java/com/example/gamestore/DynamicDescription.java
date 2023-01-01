@@ -47,6 +47,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public static int temp;
     public int tempStr=Game.counter;
     public double gamePrice;
+
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         try {
@@ -68,11 +69,20 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         temp = tempStr;
     }
     public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
-        User usr = new User(SignInController.currentUser);
+
+
+       //User usr = new User(SignInController.currentUser);
+        User usr =fileDataFetchGames();
         String h = SignInController.currentUser;
+        for(int i =0;i<usr.gamesList.size();i++){
+            if(tempStr == usr.gamesList.get(i)){
+                System.out.println("Game is added already");
+                return;
+            }
+        }
+        usr.gamesList.add(tempStr);
         FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
-        usr.gamesList.add(tempStr);
         out.writeObject(usr);
         fileOut.close();
         out.close();
@@ -80,7 +90,21 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
     }
 
+    User fileDataFetchGames() throws IOException,ClassNotFoundException {
+        String user = SignInController.currentUser;
+        User temp;
+        File f = new File("src\\main\\resources\\"+user+".txt");
+        System.out.println(f.exists());
+        FileInputStream filein = new FileInputStream("src\\main\\resources\\"+user+".txt");
+        ObjectInputStream in = new ObjectInputStream(filein);
 
+        temp = (User) in.readObject();
+
+        filein.close();
+        in.close();
+        return temp;
+
+    }
 
 
 //        while((rdcm = in.readObject()) instanceof END ==false){
