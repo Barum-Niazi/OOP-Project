@@ -15,13 +15,19 @@ public class Game implements Serializable {
     int id;
     String name;
     double price;
-
+String adminPrice;
     Game(String name, String description, String image1, double price, String downloadUrl){
         this.name = name;
         this.src.description = description;
         this.src.image1 = image1;
         this.price = price;
         this.src.downloadUrl = downloadUrl; // http://59.103.17.13/Crusader.zip
+
+    }
+    Game(String name, String image1, String price2){
+        this.name = name;
+        this.src.image1 = image1;
+        this.adminPrice = price2;
     }
     Game(){
     }
@@ -43,7 +49,6 @@ public class Game implements Serializable {
             System.out.println(gamesRead[0].name);
             System.out.println(gamesRead[1].name);
             objectInputStream.close();
-    //           return gamesData[counter];
         }catch (Exception e){
             e.printStackTrace();
         }

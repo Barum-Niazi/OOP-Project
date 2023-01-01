@@ -20,28 +20,19 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public Label cartLabel;
     public Label storeLabel;
     public Button btnLogout;
-    public Button addCartbtn;
-
     public Label labelName;
     @FXML
     public TextArea dynamicTextArea;
-
     @FXML
     public ImageView img1;
-
     @FXML
     public ImageView img2;
-
     @FXML
     public ImageView img3;
-
     @FXML
     public ImageView img4;
     @FXML
     private Label price;
-
-    @FXML
-    private Button downloadbtn;
     @FXML
     private Label currentUser;
     public static int temp;
@@ -103,9 +94,6 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     }
     public void handleCart(MouseEvent m) throws IOException{
         super.sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
-    }
-    public void handleAddCart(ActionEvent e) throws IOException{
-        super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
     }
 }
 
