@@ -51,7 +51,7 @@ public class SignInController extends HelloApplication {
             if((fieldUsername.getText().toString().equals(((User)rdcm).name)) && (fieldPassword.getText().toString().equals(((User)rdcm).password)));
             currentUser = fieldUsername.getText().toString();
 
-            sceneSwitch("Admin.fxml", 1280, 720, e, "Store");
+            sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
             break first;
             //System.out.println("Name of criminal:"+((Criminal)rdcm).name);
             //System.out.println("Age of criminal:"+((Criminal)rdcm).age);
