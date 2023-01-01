@@ -59,7 +59,7 @@ public class admin {
         Game o;
         o = (Game) out.readObject();
         dynImage = new ImageView(o.src.image1);
-        dynprice.setText(o.price2);
+        dynprice.setText(o.adminPrice);
         namedyn.setText(o.name);
         file.close();
         out.close();
