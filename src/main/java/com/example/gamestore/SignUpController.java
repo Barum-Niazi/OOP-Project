@@ -37,9 +37,9 @@ public class SignUpController extends HelloApplication implements Serializable {
             fileName = fieldUsername.getText();
             File userFile = new File(fileName);
             //File generalFile = new File();
-            FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+userFile+".txt",true);
+            FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+userFile+".txt");
             ObjectOutputStream out = new ObjectOutputStream(file);
-            FileOutputStream fileGEN = new FileOutputStream("src\\main\\resources\\generalSignIn.txt",true);
+            FileOutputStream fileGEN = new FileOutputStream("src\\main\\resources\\generalSignIn2.txt");
             ObjectOutputStream outGEN = new ObjectOutputStream(fileGEN);
             out.writeObject(newUser);
             outGEN.writeObject(newUser);
@@ -47,8 +47,6 @@ public class SignUpController extends HelloApplication implements Serializable {
             outGEN.close();
             out.close();
             file.close();
-
-
 
             super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
         }

@@ -106,7 +106,7 @@ public class LibraryController extends HelloApplication implements Initializable
 //    @Override
     ArrayList<String> libData = new ArrayList<String>();
     ArrayList<String> libTemp = new ArrayList<String>();
-//    ArrayList<String>
+    ArrayList<String> exePaths = new ArrayList<>();
     User TEMP;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -118,6 +118,7 @@ public class LibraryController extends HelloApplication implements Initializable
             }
             LibUrls lib = new LibUrls();
             libTemp = lib.LibUrlsMethod(libData);
+            exePaths = LibUrls.exePaths(exePaths);
             System.out.println(libTemp.get(0));
             ImageView[] imgs = new ImageView[10];
             imgs[0] = img1;
@@ -148,9 +149,21 @@ public class LibraryController extends HelloApplication implements Initializable
             for (int i = 0; i < TEMP.gamesList.size(); i++) {
                 System.out.println("banana");
                 String u = libTemp.get(TEMP.gamesList.get(i));
+                String gamePath = exePaths.get(TEMP.gamesList.get(i));
                 System.out.println("apple");
                 System.out.println(u);
                 imgs[i].setImage(new Image(u));
+                imgs[i].setOnMouseClicked(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent mouseEvent) {
+                        System.out.println(gamePath);
+                        try {
+                            Runtime.getRuntime().exec(gamePath);
+                        }catch (Exception exception){
+                            exception.printStackTrace();
+                        }
+                    }
+                });
                 visibilityCounter++;
             }
 
