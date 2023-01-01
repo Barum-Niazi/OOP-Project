@@ -1,17 +1,8 @@
 package com.example.gamestore;
 
-import java.net.URI;
-import java.net.URL;
 import java.util.ArrayList;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URLConnection;
 
 public class LibUrls {
-
-    ArrayList<String> libUrls;
 
     ArrayList<String> LibUrlsMethod(ArrayList<String> temp) {
 
