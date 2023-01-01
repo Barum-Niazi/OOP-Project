@@ -82,10 +82,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         out.writeObject(usr);
         fileOut.close();
         out.close();
-
-
     }
-
     User fileDataFetchGames() throws IOException,ClassNotFoundException {
         String user = SignInController.currentUser;
         User temp;
@@ -99,7 +96,6 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         filein.close();
         in.close();
         return temp;
-
     }
 
 
