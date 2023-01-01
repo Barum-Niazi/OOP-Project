@@ -18,6 +18,7 @@ public class User implements Serializable {
         this.email = email;
     }
 public User(String name){
+
         this.name =name;
 }
     static ArrayList<User> users = new ArrayList<>();

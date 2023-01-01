@@ -30,7 +30,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
     public void sceneSwitch(String sceneName, int x, int y, MouseEvent e, String title) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -39,7 +38,9 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
+    public void downloadGame(String downloadUrl){
+        getHostServices().showDocument(downloadUrl);
+    }
     public static void main(String[] args) {
         launch();
     }

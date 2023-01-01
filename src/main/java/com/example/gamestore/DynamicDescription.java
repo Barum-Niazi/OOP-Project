@@ -12,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.*;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class DynamicDescription extends HelloApplication implements Initializable{
@@ -59,9 +60,13 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         tempStr = Game.counter;
         temp = tempStr;
     }
-    public void addCurrentGame(ActionEvent e) throws IOException, ClassNotFoundException {
+    public void addCurrentGame(ActionEvent e) throws Exception{
 
+        ArrayList<String> downloadUrl = new ArrayList<>();
+        downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
 
+        HelloApplication forDownload = new HelloApplication();
+        forDownload.downloadGame(downloadUrl.get(Game.counter));
        //User usr = new User(SignInController.currentUser);
         User usr =fileDataFetchGames();
         String h = SignInController.currentUser;
@@ -77,10 +82,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         out.writeObject(usr);
         fileOut.close();
         out.close();
-
-
     }
-
     User fileDataFetchGames() throws IOException,ClassNotFoundException {
         String user = SignInController.currentUser;
         User temp;
@@ -94,7 +96,6 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         filein.close();
         in.close();
         return temp;
-
     }
 
 
