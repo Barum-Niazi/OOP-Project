@@ -16,11 +16,12 @@ public class Game implements Serializable {
     String name;
     double price;
 
-    Game(String name, String description, String image1, double price){
+    Game(String name, String description, String image1, double price, String downloadUrl){
         this.name = name;
         this.src.description = description;
         this.src.image1 = image1;
         this.price = price;
+        this.src.downloadUrl = downloadUrl; // http://59.103.17.13/Crusader.zip
     }
     Game(){
     }
