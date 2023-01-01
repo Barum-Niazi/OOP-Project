@@ -130,7 +130,19 @@ ArrayList<String> libData = new ArrayList<String>();
             imgs[8] = img9;
             imgs[9]= img10;
 
+            VBox[] vboxArray = new VBox[10];
+            vboxArray[0]=vbox1;
+            vboxArray[1]=vbox2;
+            vboxArray[2]=vbox3;
+            vboxArray[3]=vbox4;
+            vboxArray[4]=vbox5;
+            vboxArray[5]=vbox6;
+            vboxArray[6]=vbox7;
+            vboxArray[7]=vbox8;
+            vboxArray[8]=vbox9;
+            vboxArray[9]=vbox10;
 
+        int visibilityCounter = 0;
 
             for (int i = 0; i < TEMP.gamesList.size(); i++) {
                 System.out.println("banana");
@@ -138,7 +150,13 @@ ArrayList<String> libData = new ArrayList<String>();
                 System.out.println("apple");
                 System.out.println(u);
                 imgs[i].setImage(new Image(u));
-                continue;
+                visibilityCounter++;
+            }
+
+            for(int i =visibilityCounter ;i<vboxArray.length ;i++){
+                imgs[i].setVisible(false);
+                vboxArray[i].setVisible(false);
+
             }
         } catch(Exception e){
             System.out.println(e);
