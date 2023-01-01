@@ -100,7 +100,7 @@ public class LibraryController extends HelloApplication implements Initializable
     }
 
     public void handleLaunch(MouseEvent m) throws Exception{
-        Runtime.getRuntime().exec("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
+//        Runtime.getRuntime().exec("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
     }
 ArrayList<Integer> tempGames = new ArrayList<Integer>();
 //    @Override
@@ -112,7 +112,7 @@ ArrayList<String> libData = new ArrayList<String>();
 
         try {
             TEMP = fileTemp();
-            for(int i=0;i <TEMP.gamesList .size();i++){
+            for(int i=0;i <TEMP.gamesList.size();i++){
                 System.out.println("Game bought "+TEMP.gamesList.get(i));
             }
             LibUrls lib = new LibUrls();
@@ -164,11 +164,11 @@ ArrayList<String> libData = new ArrayList<String>();
     }
 
 
-      User fileTemp() throws IOException,ClassNotFoundException {
+    User fileTemp() throws IOException,ClassNotFoundException {
         String user =SignInController.currentUser;
         User temp;
         File f = new File("src\\main\\resources\\"+user+".txt");
-          System.out.println(f.exists());
+        System.out.println(f.exists());
         FileInputStream filein = new FileInputStream("src\\main\\resources\\"+user+".txt");
         ObjectInputStream in = new ObjectInputStream(filein);
 
@@ -177,6 +177,7 @@ ArrayList<String> libData = new ArrayList<String>();
         filein.close();
         in.close();
         return temp;
+    }
 
-}
+
 }
