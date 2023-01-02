@@ -39,12 +39,12 @@ public class SignUpController extends HelloApplication implements Serializable {
             //File generalFile = new File();
             FileOutputStream file = new FileOutputStream("src\\main\\resources\\"+userFile+".txt");
             ObjectOutputStream out = new ObjectOutputStream(file);
-            FileOutputStream fileGEN = new FileOutputStream("src\\main\\resources\\generalSignIn2.txt");
-            ObjectOutputStream outGEN = new ObjectOutputStream(fileGEN);
+//            FileOutputStream fileGEN = new FileOutputStream("src\\main\\resources\\generalSignIn2.txt", true);
+//            ObjectOutputStream outGEN = new ObjectOutputStream(fileGEN);
             out.writeObject(newUser);
-            outGEN.writeObject(newUser);
-            fileGEN.close();
-            outGEN.close();
+//            outGEN.writeObject(newUser);
+//            fileGEN.close();
+//            outGEN.close();
             out.close();
             file.close();
 

@@ -40,19 +40,31 @@ public class SignInController extends HelloApplication {
 //            }
 //        }
         //Criminal rdcm = null;
-        FileInputStream filein = new FileInputStream("src\\main\\resources\\generalSignIn2.txt");
-        ObjectInputStream in = new ObjectInputStream(filein);
-        User user[] = new User[2];
-        FileReader fileReader = new FileReader("src\\main\\resources\\generalSignIn2.txt");
-        System.out.println("eeeee");
-        user[0] = (User) in.readObject();
-        System.out.println("banana");
-        super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
-        user[1] = (User) in.readObject();
-        System.out.println(user[0].name);
-        System.out.println(user[1].name);
-        filein.close();
-        in.close();
+        String userFile = fieldUsername.getText();
+        File file = new File("src\\main\\resources\\"+userFile+".txt");
+        if (file.exists()){
+            FileInputStream filein = new FileInputStream("src\\main\\resources\\" + userFile + ".txt");
+            ObjectInputStream in = new ObjectInputStream(filein);
+            User user = new User();
+            user = (User) in.readObject();
+            if ((fieldUsername.getText().toString().equalsIgnoreCase(user.name)) &&
+                    fieldPassword.getText().toString().equalsIgnoreCase(user.password)) {
+                currentUser = fieldUsername.getText();
+                super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
+            }
+            if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
+                fieldUsername.setText("Please Enter your credentials");
+            } else {
+                fieldUsername.setText("Wrong Username or Password");
+            }
+        } else{
+            System.out.println("User does not exist");
+        }
+//        filein.close();
+//        in.close();
+    }
+
+
 //        while(fileReader.read() != -1){
 //                rdcm = (User)in.readObject();
 //                fieldUsername.setText("lol");
@@ -68,11 +80,11 @@ public class SignInController extends HelloApplication {
 //                }
 //            //System.out.println("Name of criminal:"+((Criminal)rdcm).name);
 //            //System.out.println("Age of criminal:"+((Criminal)rdcm).age);
-//            //System.out.println();
+//             //System.out.println();
 //        }
 
 
-    }
+
     public void handleSignup(MouseEvent m) throws IOException{
         super.sceneSwitch("Sign up.fxml", 718, 476, m, "Sign up");
     }
