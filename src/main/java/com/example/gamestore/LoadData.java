@@ -7,6 +7,7 @@ import java.io.Serializable;
 public class LoadData implements Serializable {
 
     static final String fileName = "Games";
+
     public static void loadData() throws Exception{
         Game[] gamesData = new Game[10];
         Game game1 = new Game("Grand Theft Auto: Vice City", "Grand Theft Auto: Vice City is an action-adventure game played from a third-person perspective.\n" +
@@ -50,11 +51,20 @@ public class LoadData implements Serializable {
                 "file:Gamepics\\Strongholdg2.jpg",
                 "file:Gamepics\\Strongholdg3.jpg");
 
+        Game game3 = new Game("Resident Evil 2", "Resident Evil 2, also known as BIOHAZARD RE:2 (バイオハザード RE:2?) in Japan, is a Survival Horror\n" +
+                "game developed by Capcom's R&D Division 1 studio. The game is a remake of 1998's Resident Evil 2,\n" +
+                "\n" +
+                "described by Capcom as a \"reimagining\" and first announced on 12 August 2015 by\n" +
+                "Yoshiaki Hirabayashi and released wordwide on 25 January 2019 for the PlayStation, Xbox One and \n" +
+                "Windows operating systems.[2]\n" +
+                "\n", "file:Gamepics\\ResidentEvil.jpg");
+
        gamesData[0] = game1;
        gamesData[1] = game2;
+       gamesData[2] = game3;
        FileOutputStream fileOutputStream = new FileOutputStream(fileName);
        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-       for(int i = 0; i < 2; i++) {
+       for(int i = 0; i < gamesData.length; i++) {
            objectOutputStream.writeObject(gamesData[i]);
        }
        objectOutputStream.close();
