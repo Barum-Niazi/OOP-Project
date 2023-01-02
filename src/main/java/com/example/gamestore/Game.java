@@ -16,25 +16,26 @@ public class Game implements Serializable {
     String name;
     double price;
 String adminPrice;
-    Game(String name, String description, String image1, double price, String downloadUrl){
+    Game(String name, String description, String descImage, double price, String downloadUrl){
         this.name = name;
         this.src.description = description;
-        this.src.image1 = image1;
+        this.src.descImage = descImage;
         this.price = price;
         this.src.downloadUrl = downloadUrl; // http://59.103.17.13/Crusader.zip
 
     }
     Game(String name, String image1, String price2){
         this.name = name;
-        this.src.image1 = image1;
+        this.src.descImage = image1;
         this.adminPrice = price2;
     }
     Game(){
     }
-    public void setGamePlayImages(String img1, String img2, String img3){
+    public void setGamePlayImages(String img1, String img2, String img3, String libImage){
         this.src.gamePlayImg1 = img1;
         this.src.gamePlayImg2 = img2;
         this.src.gamePlayImg3 = img3;
+        this.src.libraryImg = libImage;
     }
    public static Game gameLoader(int counter) throws Exception{
         LoadData.loadData();

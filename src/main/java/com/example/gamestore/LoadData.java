@@ -26,7 +26,7 @@ public class LoadData implements Serializable {
                 15.59, "http://39.62.7.8/ViceCity.zip");
         game1.setGamePlayImages("file:Gamepics\\GTAVCg1.jpg",
                 "file:Gamepics\\GTAVCg2.jpg",
-                "file:Gamepics\\GTAVCg3.jpg");
+                "file:Gamepics\\GTAVCg3.jpg", "file:Gamepics\\GTAVC.jpg");
 
         Game game2 = new Game("Stronghold Crusader", "Stronghold: Crusader is the successor to Firefly Studios's 2001 real-time strategy video game Stronghold.\n" +
                 "\n" +
@@ -49,7 +49,7 @@ public class LoadData implements Serializable {
                 , 10.99, "http://39.62.7.8/Crusader.zip");
         game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
                 "file:Gamepics\\Strongholdg2.jpg",
-                "file:Gamepics\\Strongholdg3.jpg");
+                "file:Gamepics\\Strongholdg3.jpg","file:Gamepics\\Stronghold.jpg" );
 
         Game game3 = new Game("Resident Evil 2", "Resident Evil 2, also known as BIOHAZARD RE:2 (バイオハザード RE:2?) in Japan, is a Survival Horror\n" +
                 "game developed by Capcom's R&D Division 1 studio. The game is a remake of 1998's Resident Evil 2,\n" +

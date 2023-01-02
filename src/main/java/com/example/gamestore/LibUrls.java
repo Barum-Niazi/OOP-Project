@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class LibUrls {
 
-    ArrayList<String> LibUrlsMethod(ArrayList<String> temp) {
+    ArrayList<String> LibUrlsMethod(ArrayList<String> temp) throws Exception {
 
-        temp.add("file:Gamepics\\GTAVC.jpg");
-        temp.add("file:Gamepics\\Stronghold.jpg");
+        temp.add(Game.gameLoader(0).src.descImage);
+        temp.add(Game.gameLoader(1).src.descImage);
     return temp;
     }
 
