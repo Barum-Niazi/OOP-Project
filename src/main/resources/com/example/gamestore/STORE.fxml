@@ -522,22 +522,22 @@
                                                 </HBox>
                                                 <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                                    <children>
-                                                      <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="87.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                                            <Image url="@../../../../../../../../../Desktop/Saxy%20pics/ResidentEvil.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox3" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty :" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Resident" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label text="Modern Warfare" textFill="WHITE">
+                                                            <Label text="Evil 2" textFill="WHITE">
                                                                <VBox.margin>
                                                                   <Insets />
                                                                </VBox.margin>
@@ -570,7 +570,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox4" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty:" textFill="WHITE">
                                                                <font>
@@ -610,7 +610,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox5" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="World of" textFill="WHITE">
                                                                <font>

@@ -36,7 +36,7 @@ public class StoreController extends HelloApplication implements Initializable{
     @FXML
     public Label labelName;
     @FXML
-    public VBox game1;
+    public VBox game1, vBox3, vBox4, vBox5;
 
     public void handleLogout(ActionEvent e) throws IOException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
@@ -62,6 +62,15 @@ public class StoreController extends HelloApplication implements Initializable{
         }
         if(present == game1) {
             Game.counter=1;
+        }
+        if(present == vBox3){
+            Game.counter=2;
+        }
+        if(present == vBox4){
+            Game.counter=3;
+        }
+        if(present == vBox5){
+            Game.counter=4;
         }
 
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");

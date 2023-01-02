@@ -57,7 +57,7 @@ public class LoadData implements Serializable {
                 "described by Capcom as a \"reimagining\" and first announced on 12 August 2015 by\n" +
                 "Yoshiaki Hirabayashi and released wordwide on 25 January 2019 for the PlayStation, Xbox One and \n" +
                 "Windows operating systems.[2]\n" +
-                "\n", "file:Gamepics\\ResidentEvil.jpg");
+                "\n", "file:Gamepics\\ResidentEvil2.jpg", 10.99, "lolnourl");
 
        gamesData[0] = game1;
        gamesData[1] = game2;
