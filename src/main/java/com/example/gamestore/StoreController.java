@@ -36,7 +36,7 @@ public class StoreController extends HelloApplication implements Initializable{
     @FXML
     public VBox  vBox1 ,vBox2, vBox3, vBox4, vBox5, vBox6, vBox7, vBox8, vBox9, vBox10;
 
-    public void handleLogout(ActionEvent e) throws IOException{
+    public void handleLogout(ActionEvent e) throws IOException, InterruptedException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 

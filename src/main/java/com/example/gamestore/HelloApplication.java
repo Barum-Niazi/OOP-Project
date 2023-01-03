@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e, String title) throws IOException {
+    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e, String title) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), x, y);

@@ -34,6 +34,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public ImageView img4;
     @FXML
     private Label price;
+    public Label labelExist;
     @FXML
     private Label currentUser;
     public static int temp;
@@ -41,7 +42,8 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public double gamePrice;
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        currentUser.setText(SignInController.currentUser);
+        labelExist.setVisible(false);
         try {
             Game currentGame = new Game();
             currentGame = Game.gameLoader(Game.counter);
@@ -73,7 +75,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         String h = SignInController.currentUser;
         for(int i =0;i<usr.gamesList.size();i++){
             if(tempStr == usr.gamesList.get(i)){
-                System.out.println("Game is added already");
+                labelExist.setVisible(true);
                 return;
             }
         }
@@ -108,7 +110,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 //
 //    }
 
-    public void handleLogout(ActionEvent e) throws IOException {
+    public void handleLogout(ActionEvent e) throws Exception {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 

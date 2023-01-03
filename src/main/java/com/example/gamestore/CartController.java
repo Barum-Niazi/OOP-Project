@@ -22,7 +22,7 @@ public class CartController extends HelloApplication{
     public void handleStore(MouseEvent m) throws IOException{
         super.sceneSwitch("STORE.fxml", 1280, 720, m, "Store");
     }
-    public void handleContinue(ActionEvent e) throws IOException{
+    public void handleContinue(ActionEvent e) throws Exception{
         super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
     }
 }

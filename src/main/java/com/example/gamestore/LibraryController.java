@@ -95,7 +95,7 @@ public class LibraryController extends HelloApplication implements Initializable
         super.sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
     }
 
-    public void handleLogout(ActionEvent e) throws IOException {
+    public void handleLogout(ActionEvent e) throws Exception {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
