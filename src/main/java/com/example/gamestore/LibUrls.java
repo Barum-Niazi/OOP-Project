@@ -8,13 +8,24 @@ public class LibUrls {
 
         temp.add(Game.gameLoader(0).src.descImage);
         temp.add(Game.gameLoader(1).src.descImage);
+        temp.add(Game.gameLoader(2).src.descImage);
+        temp.add(Game.gameLoader(3).src.descImage);
+        temp.add(Game.gameLoader(4).src.descImage);
+        temp.add(Game.gameLoader(5).src.descImage);
+        temp.add(Game.gameLoader(6).src.descImage);
+        temp.add(Game.gameLoader(7).src.descImage);
     return temp;
     }
 
     public static ArrayList<String> downloadUrlsMethod(ArrayList<String> downloadUrls) throws Exception{
         downloadUrls.add(Game.gameLoader(0).src.downloadUrl);
         downloadUrls.add(Game.gameLoader(1).src.downloadUrl);
-
+        downloadUrls.add(Game.gameLoader(2).src.downloadUrl);
+        downloadUrls.add(Game.gameLoader(3).src.downloadUrl);
+        downloadUrls.add(Game.gameLoader(4).src.downloadUrl);
+        downloadUrls.add(Game.gameLoader(5).src.downloadUrl);
+        downloadUrls.add(Game.gameLoader(6).src.downloadUrl);
+        downloadUrls.add(Game.gameLoader(7).src.downloadUrl);
         return downloadUrls;
     }
 
