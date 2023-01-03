@@ -7,6 +7,7 @@ import java.io.Serializable;
 public class LoadData implements Serializable {
 
     static final String fileName = "Games";
+    static String serverAddress = "http://39.62.7.8/";
 
     public static void loadData() throws Exception{
         Game[] gamesData = new Game[10];
@@ -24,7 +25,7 @@ public class LoadData implements Serializable {
                 " Composed of two main islands and several smaller areas, the world is much larger in area than \n" +
                 "earlier entries in the series. The islands are unlocked for the player as the story progresses.",
                 "file:Gamepics\\GTAVC.jpg",
-                15.59, "http://39.62.7.8/ViceCity.zip");
+                15.59,serverAddress + "ViceCity.zip");
 
         game1.setGamePlayImages("file:Gamepics\\GTAVC1.jpg",
                 "file:Gamepics\\GTAVC2.jpg",
@@ -49,7 +50,7 @@ public class LoadData implements Serializable {
                 "\n" +
                 "The game adds new AI opponents and several new Arabian units purchasable from a mercenary post.",
                 "file:Gamepics\\Stronghold.jpg",
-                10.99, "http://39.62.7.8/Crusader.zip");
+                10.99, serverAddress + "Crusader.zip");
 
         game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
                 "file:Gamepics\\Strongholdg2.jpg",
@@ -75,8 +76,9 @@ public class LoadData implements Serializable {
                 "After each game, the player receives a ranking based on the total time taken to complete the scenario, \n" +
                 "and on the number of saves and special healing items. Depending on the player's accomplishments,\n" +
                 "bonus weapons and costumes may be unlocked as a reward.","file:Gamepics\\residentEvil.png",
-                34.19, "lolnourl");
+                34.19, serverAddress +"ResidentEvil");
 
+        System.out.println(game3.src.downloadUrl);
         game3.setGamePlayImages("file:Gamepics\\residentEvil1.png",
                 "file:Gamepics\\residentEvil2.png",
                 "file:Gamepics\\residentEvil3.png","file:Gamepics\\Stronghold.jpg" );
@@ -101,7 +103,7 @@ public class LoadData implements Serializable {
                 "presence or can actively search for them.Enemy artificial intelligence (AI) will respond to sound \n" +
                 "and can be distracted using sound to lure guards away from their positions. If the player remains \n" +
                 "concealed from guards, their alertness will drop to \"aware\", but it will not return to normal.",
-                "file:Gamepics\\dishonored.png", 22.65, "URL");
+                "file:Gamepics\\dishonored.png", 22.65, serverAddress + "Dishonored");
 
         game4.setGamePlayImages("file:Gamepics\\dishonored1.png",
                 "file:Gamepics\\dishonored2.png",
