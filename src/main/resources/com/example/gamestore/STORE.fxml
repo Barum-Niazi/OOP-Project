@@ -181,7 +181,7 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194208.png" />
+                                                            <Image url="@Games/hitman.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -189,12 +189,12 @@
                                                       </ImageView>
                                                       <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Red Dead" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Hitman: " textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="13.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Redemption 2" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Abosolution" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
@@ -204,9 +204,9 @@
                                                                   <Insets />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$14.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$22.25 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -229,7 +229,7 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194011.png" />
+                                                            <Image url="@Games/acRoguep.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -237,12 +237,12 @@
                                                       </ImageView>
                                                       <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Grand Theft" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Assassin's " textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Auto V" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Creed 3" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
@@ -252,9 +252,9 @@
                                                                   <Insets />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$24.25 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -274,7 +274,7 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                                            <Image url="@Games/prototype.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -282,17 +282,12 @@
                                                       </ImageView>
                                                       <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="The hunter :" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Prototype 2" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Call of wild" textFill="WHITE">
-                                                               <font>
-                                                                  <Font name="Franklin Gothic Demi" size="14.0" />
-                                                               </font>
-                                                            </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$4.45 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$21.00 USD" textFill="WHITE">
                                                                <padding>
                                                                   <Insets top="20.0" />
                                                                </padding>

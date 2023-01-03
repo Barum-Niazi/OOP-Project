@@ -109,7 +109,7 @@ public class LoadData implements Serializable {
                 "file:Gamepics\\dishonored2.png",
                 "file:Gamepics\\dishonored3.png","file:Gamepics\\Stronghold.jpg" );
 
-        Game game5 = new Game("Ac Rogue", "Assassin's Creed Rogue is an action-adventure, stealth game set in an open world environment and \n" +
+        Game game5 = new Game("Assassin's Creed Rogue", "Assassin's Creed Rogue is an action-adventure, stealth game set in an open world environment and \n" +
                 "played from a third-person perspective. The game features three main areas: the western North \n" +
                 "Atlantic, the fictional River Valley, and New York City. The Morrigan, the ship that protagonist Shay \n" +
                 "Cormac captains, has a shallower draft than Edward Kenway's Jackdaw, allowing for river travel, \n" +
@@ -131,11 +131,11 @@ public class LoadData implements Serializable {
                 "be collected regularly.",
                 "file:Gamepics\\acRogue.png", 13.65, "URL");
 
-        game5.setGamePlayImages("file:Gamepics\\acRogue1.png",
-                "file:Gamepics\\acRogue2.png",
-                "file:Gamepics\\acRogue3.png","file:Gamepics\\Stronghold.jpg" );
+        game5.setGamePlayImages("file:Gamepics\\acRogue1.jpeg",
+                "file:Gamepics\\acRogue2.jpeg",
+                "file:Gamepics\\acRogue3.jpeg","file:Gamepics\\Stronghold.jpeg" );
 
-        Game game6 = new Game("Ac Rogue 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
+        Game game6 = new Game("Assassin's Creed 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
                 "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
                 "fog, and rain. The seasons can also change i.e., Summer and Winter, which not only affect visuals but \n" +
                 "also gameplay, as the player will find that they run slower in deep snow. Snowfall can reduce visibility \n" +
@@ -160,6 +160,58 @@ public class LoadData implements Serializable {
                 "file:Gamepics\\acRoguep2.png",
                 "file:Gamepics\\acRoguep3.png","file:Gamepics\\Stronghold.jpg" );
 
+        Game game7 = new Game("Hitman: Absolution",
+                "Hitman Absolution is a stealth game in which the player assumes the role of a hitman named Agent 47.\n" +
+                "Presented from a third-person perspective, the gameplay centers around completing set objectives \n" +
+                "within a series of levels. Objectives can range from simply reaching the end of the level, to \n" +
+                "eliminating specific individuals. The players choose how to complete each level, taking branching \n" +
+                "paths to get to a target or location. Players may use pistols, bottles or bricks, assault rifles, shotguns,\n" +
+                "fiber-wire, or steel pipe against enemies.\n" +
+                "\n" +
+                "Agent 47 also has the 'Instinct' ability that lets the player monitor enemies more easily. There are also \n" +
+                "environmental ways to kill or distract individuals; players can use poison to spike coffee, pull switches \n" +
+                "to make a disco ball fall and break, cause a massive explosion at a gas station, pull a switch to cause \n" +
+                "scaffolding to fall down, cause fires, or set off fireworks. Players complete chapters in order to progress \n" +
+                "through the story.\n" +
+                "\n" +
+                "The game introduces an online option to the series, 'Contracts', where players can create their own \n" +
+                "missions for other players to complete. Players choose one of the areas from the game's story \n" +
+                "missions and decide which non-player characters (NPCs) are required to be eliminated, what weapon \n" +
+                "must be used to eliminate each target, what disguise is required, whether the body must be hidden or \n" +
+                "not and if the player is allowed to be spotted by the AI.",
+                "file:Gamepics\\hitman.png", 22.25, "URL");
+
+        game7.setGamePlayImages("file:Gamepics\\hitman1.png",
+                "file:Gamepics\\hitman2.png",
+                "file:Gamepics\\hitman3.png","file:Gamepics\\Stronghold.jpg" );
+
+
+        Game game8 = new Game("Prototype 2", "Prototype 2 is a 2012 open world action-adventure video game. The game features a new protagonist, \n" +
+                "James Heller, as he goes on a quest to destroy the Blacklight virus. The story is one of revenge, as \n" +
+                "Heller wants to kill Alex Mercer, the protagonist of the original Prototype, after his family was killed in \n" +
+                "the outbreak of the Blacklight virus. James Heller can shapeshift and assume other people's identities \n" +
+                "and memories by consuming them.\n" +
+                "\n" +
+                "Heller will be able to use weapons in the game, such as ripping the Gatling cannon off a tank and using \n" +
+                "it against enemies. Heller can also sneak up on unsuspecting human enemies, inject them with the \n" +
+                "Blacklight virus turning them into \"BioBomb\" to blow up spectacularly. Heller also has superhuman \n" +
+                "strength and agility, near-invulnerability to harm, near-flight leaping and gliding, infinite stamina, \n" +
+                "increased speed, and has a sonar sense. The sonar includes a new pulse ability that highlights the key \n" +
+                "features of an environment to make it easier for the player to find someone, instead of looking in a\n" +
+                " large crowd for a person with an icon above their head. Radical has stated that the powers will be \n" +
+                "more meaningful, appearing as mutations and upgrades that let players decide how they want to\n" +
+                " play as Heller.\n" +
+                "\n" +
+                "There are many more ways to kill enemies, ranging from throwing a car at a group of Blackwatch \n" +
+                "soldiers, hacking off a mutant's head or using powers. Consuming has not changed since the original \n" +
+                "Prototype, with the exception of some enemies, which are consumed upon grabbing them.",
+                "file:Gamepics\\prototype.png", 21.00, "URL");
+
+        game8.setGamePlayImages("file:Gamepics\\prototype1.png",
+                "file:Gamepics\\prototype2.png",
+                "file:Gamepics\\prototype3.png","file:Gamepics\\Stronghold.jpg" );
+
+
 
         gamesData[0] = game1;
        gamesData[1] = game2;
@@ -167,6 +219,8 @@ public class LoadData implements Serializable {
        gamesData[3] = game4;
        gamesData[4] = game5;
        gamesData[5] = game6;
+       gamesData[6] = game7;
+       gamesData[7] = game8;
 
 
        FileOutputStream fileOutputStream = new FileOutputStream(fileName);
