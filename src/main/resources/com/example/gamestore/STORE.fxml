@@ -117,20 +117,6 @@
                   </Label>
                </children>
             </HBox>
-            <HBox fx:id="cart" alignment="CENTER" layoutX="15.0" layoutY="106.0" onMouseClicked="#handleCart" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
-               <children>
-                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
-                     <image>
-                        <Image url="@pics/cart.png" />
-                     </image>
-                  </ImageView>
-                  <Label onMouseClicked="#handleCart" text="CART" textFill="#b5a5a5">
-                     <font>
-                        <Font name="Arial Black" size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
             <Separator opacity="0.18" prefWidth="200.0">
                <opaqueInsets>
                   <Insets />
@@ -142,7 +128,7 @@
                   <Insets left="5.0" right="5.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #116b6a;" text="Log out">
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #116b6a; -fx-background-radius: 8px;" text="Log out">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" />
                </VBox.margin>
@@ -171,12 +157,12 @@
                      <children>
                         <VBox prefHeight="1400.0" prefWidth="1175.0" spacing="10.0" style="-fx-background-color: #27282d;">
                            <children>
-                              <Label prefHeight="24.0" prefWidth="269.0" text="FEATURED AND RECOMMENDED" textFill="#b5a5a5">
+                              <Label prefHeight="24.0" prefWidth="269.0" text="UPCOMING" textFill="#b5a5a5">
                                  <VBox.margin>
                                     <Insets left="20.0" top="20.0" />
                                  </VBox.margin>
                                  <font>
-                                    <Font name="Bodoni MT Bold" size="16.0" />
+                                    <Font name="Bodoni MT Bold" size="18.0" />
                                  </font>
                               </Label>
                               <ScrollPane prefHeight="165.0" prefWidth="1116.0">
@@ -410,9 +396,9 @@
                                     <Insets left="20.0" right="20.0" />
                                  </VBox.margin>
                               </ScrollPane>
-                              <Label prefHeight="24.0" prefWidth="238.0" text="SPECIAL OFFERS" textFill="#b5a5a5">
+                              <Label prefHeight="24.0" prefWidth="238.0" text="RECOMMENDED" textFill="#b5a5a5">
                                  <font>
-                                    <Font name="Bodoni MT Bold" size="16.0" />
+                                    <Font name="Bodoni MT Bold" size="18.0" />
                                  </font>
                                  <VBox.margin>
                                     <Insets left="20.0" top="10.0" />
@@ -452,12 +438,11 @@
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label text="Now available " textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
+                                                            <Label alignment="CENTER_RIGHT" text="\$15.59 USD" textFill="WHITE">
+                                                               <padding>
+                                                                  <Insets top="10.0" />
+                                                               </padding>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="70.0" text="\$14.99 USD" textFill="WHITE" />
                                                          </children>
                                                          <padding>
                                                             <Insets left="5.0" />
@@ -493,14 +478,9 @@
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label style="-fx-background-color: #27282d; -fx-background-radius: 5px;" text="Top seller" textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
-                                                            </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$10.99 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -538,9 +518,9 @@
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$34.19 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="15.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -576,12 +556,12 @@
                                                                   <Insets top="5.0" />
                                                                </padding>
                                                             </Label>
-                                                            <Label textFill="WHITE">
+                                                            <Label text="Now available " textFill="WHITE">
                                                                <VBox.margin>
-                                                                  <Insets />
+                                                                  <Insets top="5.0" />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$23.45 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$22.65 USD" textFill="WHITE">
                                                                <padding>
                                                                   <Insets top="15.0" />
                                                                </padding>
@@ -603,7 +583,7 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194552.png" />
+                                                            <Image url="@Games/acRouge.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -611,19 +591,19 @@
                                                       </ImageView>
                                                       <VBox fx:id="vBox5" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="World of" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Assassin's" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label text="Tanks Blitz" textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Creed Rogue" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Franklin Gothic Demi" size="16.0" />
+                                                               </font>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="Free to play" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$13.65" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="15.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>

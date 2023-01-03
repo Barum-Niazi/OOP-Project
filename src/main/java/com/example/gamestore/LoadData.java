@@ -107,12 +107,64 @@ public class LoadData implements Serializable {
                 "file:Gamepics\\dishonored2.png",
                 "file:Gamepics\\dishonored3.png","file:Gamepics\\Stronghold.jpg" );
 
+        Game game5 = new Game("Ac Rogue", "Assassin's Creed Rogue is an action-adventure, stealth game set in an open world environment and \n" +
+                "played from a third-person perspective. The game features three main areas: the western North \n" +
+                "Atlantic, the fictional River Valley, and New York City. The Morrigan, the ship that protagonist Shay \n" +
+                "Cormac captains, has a shallower draft than Edward Kenway's Jackdaw, allowing for river travel, \n" +
+                "and can be equipped with several new weapons, including Puckle guns, oil slicks which can be \n" +
+                "ignited, and an icebreaker. Additionally, enemy ships can board the Morrigan, and certain icebergs \n" +
+                "can be destroyed to create waves that damage smaller ships.\n" +
+                "\n" +
+                "For combat, the game introduces an air rifle, similar to the blowpipe from Black Flag, which allows \n" +
+                "the player to silently take out enemies at a distance. Poison gas can now be used as an \n" +
+                "environmental weapon, and Shay has a mask that can mitigate its effects. When being stalked by \n" +
+                "an enemy, Shay's Eagle Vision changes to reflect this. \n" +
+                "\n" +
+                "The player can upgrade Shay's equipment through a crafting system, which requires animal pelts \n" +
+                "gained from hunting or fishing. In-game collectibles, such as Templar treasures, Native pillars, and \n" +
+                "Viking sword fragments, also provide Shay with new outfits and equipment upon finding them. \n" +
+                "The Morrigan can also be upgraded. Side missions and activities return, with a number of them \n" +
+                "based on those of the previous games. Another returning feature from earlier installments is the \n" +
+                "ability to renovate buildings, which then generate income that is deposited in the bank and must \n" +
+                "be collected regularly.",
+                "file:Gamepics\\acRogue.png", 13.65, "URL");
+
+        game5.setGamePlayImages("file:Gamepics\\acRogue1.png",
+                "file:Gamepics\\acRogue2.png",
+                "file:Gamepics\\acRogue3.png","file:Gamepics\\Stronghold.jpg" );
+
+        Game game6 = new Game("Ac Rogue 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
+                "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
+                "fog, and rain. The seasons can also change i.e., Summer and Winter, which not only affect visuals but \n" +
+                "also gameplay, as the player will find that they run slower in deep snow. Snowfall can reduce visibility \n" +
+                "for the player and enemies, aiding stealth. The game also features a wide variety of animals, both \n" +
+                "domestic and wild. \n" +
+                "\n" +
+                "A revamped version of the recruitment system introduced in Assassin's Creed: Brotherhood returns as \n" +
+                "players can enlist citizens to the Assassins' cause by completing optional \"Liberation\" missions. Unlike \n" +
+                "previous games, the player is limited to only six Assassin recruits, but these recruits are each given \n" +
+                "distinct personalities and backstories, and have a much larger skill set, allowing them to start riots, \n" +
+                "provide a cover escort, and set up an ambush, among others.\n" +
+                "\n" +
+                "The Remastered version of the game features more revamped mechanics. Players can now whistle \n" +
+                "from anywhere while hidden, whereas the original version only allowed whistling from corners. \n" +
+                "Double assassinations have been improved so as not to require entering high-profile mode to do \n" +
+                "so. Free-aiming with ranged weapons was also made possible, allowing Connor more control over \n" +
+                "his bow and pistols. The mini-map and the UI were upgraded with better-looking and easier-to-\n" +
+                "recognize icons for ease of accessibility, figuring out where enemies will point next.",
+                "file:Gamepics\\acRoguep.png", 24.25, "URL");
+
+        game6.setGamePlayImages("file:Gamepics\\acRoguep1.png",
+                "file:Gamepics\\acRoguep2.png",
+                "file:Gamepics\\acRoguep3.png","file:Gamepics\\Stronghold.jpg" );
 
 
-       gamesData[0] = game1;
+        gamesData[0] = game1;
        gamesData[1] = game2;
        gamesData[2] = game3;
        gamesData[3] = game4;
+       gamesData[4] = game5;
+       gamesData[5] = game6;
 
 
        FileOutputStream fileOutputStream = new FileOutputStream(fileName);
