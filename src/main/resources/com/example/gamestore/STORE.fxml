@@ -434,7 +434,7 @@
                                                    <children>
                                                       <ImageView fitHeight="78.0" fitWidth="155.0" onMouseClicked="#ImageCLick" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Games/GTAVC.jpg" />
+                                                            <Image url="@Games/gtavc.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="8.0" />
@@ -457,11 +457,7 @@
                                                                   <Insets />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="61.0" text="\$14.99 USD" textFill="WHITE">
-                                                               <padding>
-                                                                  <Insets top="15.0" />
-                                                               </padding>
-                                                            </Label>
+                                                            <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="70.0" text="\$14.99 USD" textFill="WHITE" />
                                                          </children>
                                                          <padding>
                                                             <Insets left="5.0" />
@@ -524,7 +520,7 @@
                                                    <children>
                                                       <ImageView fitHeight="87.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@../../../../../../../../../Desktop/Saxy%20pics/ResidentEvil.png" />
+                                                            <Image url="@Games/residentevil.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -537,14 +533,14 @@
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label text="Evil 2" textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Evil 2" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Franklin Gothic Demi" size="16.0" />
+                                                               </font>
                                                             </Label>
                                                             <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="15.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -564,7 +560,7 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20184152.png" />
+                                                            <Image url="@Games/dishonored.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
@@ -572,19 +568,22 @@
                                                       </ImageView>
                                                       <VBox fx:id="vBox4" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty:" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Dishonored" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
+                                                               <padding>
+                                                                  <Insets top="5.0" />
+                                                               </padding>
                                                             </Label>
-                                                            <Label text="Modern Warfare" textFill="WHITE">
+                                                            <Label textFill="WHITE">
                                                                <VBox.margin>
                                                                   <Insets />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$23.45 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="15.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>

@@ -26,9 +26,9 @@ public class LoadData implements Serializable {
                 "file:Gamepics\\GTAVC.jpg",
                 15.59, "http://39.62.7.8/ViceCity.zip");
 
-        game1.setGamePlayImages("file:Gamepics\\GTAVCg1.jpg",
-                "file:Gamepics\\GTAVCg2.jpg",
-                "file:Gamepics\\GTAVCg3.jpg", "file:Gamepics\\GTAVC.jpg");
+        game1.setGamePlayImages("file:Gamepics\\GTAVC1.jpg",
+                "file:Gamepics\\GTAVC2.jpg",
+                "file:Gamepics\\GTAVC3.jpg", "file:Gamepics\\GTAVC.jpg");
 
         Game game2 = new Game("Stronghold Crusader",
                 "Stronghold: Crusader is the successor to Firefly Studios's 2001 real-time strategy video game Stronghold.\n" +
@@ -78,7 +78,7 @@ public class LoadData implements Serializable {
                 34.19, "lolnourl");
 
         game3.setGamePlayImages("file:Gamepics\\residentEvil1.jpg",
-                "file:Gamepics\residentEvil2.jpg",
+                "file:Gamepics\\residentEvil2.jpg",
                 "file:Gamepics\\residentEvil3.jpg","file:Gamepics\\Stronghold.jpg" );
 
         Game game4 = new Game("Dishonored", "Dishonored is an action-adventure game played from a first-person perspective with an emphasis \n" +
