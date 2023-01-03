@@ -43,7 +43,7 @@ String adminPrice;
         try {
             FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            for(int i = 0; i < 2; i++){
+            for(int i = 0; i <= counter; i++){
                 Object game = (Game) objectInputStream.readObject();
                 gamesRead[i] = (Game) game;
             }

@@ -74,12 +74,12 @@ public class LoadData implements Serializable {
                 "\n" +
                 "After each game, the player receives a ranking based on the total time taken to complete the scenario, \n" +
                 "and on the number of saves and special healing items. Depending on the player's accomplishments,\n" +
-                "bonus weapons and costumes may be unlocked as a reward.","file:Gamepics\\residentEvil.jpg",
+                "bonus weapons and costumes may be unlocked as a reward.","file:Gamepics\\residentEvil.png",
                 34.19, "lolnourl");
 
-        game3.setGamePlayImages("file:Gamepics\\residentEvil1.jpg",
-                "file:Gamepics\\residentEvil2.jpg",
-                "file:Gamepics\\residentEvil3.jpg","file:Gamepics\\Stronghold.jpg" );
+        game3.setGamePlayImages("file:Gamepics\\residentEvil1.png",
+                "file:Gamepics\\residentEvil2.png",
+                "file:Gamepics\\residentEvil3.png","file:Gamepics\\Stronghold.jpg" );
 
         Game game4 = new Game("Dishonored", "Dishonored is an action-adventure game played from a first-person perspective with an emphasis \n" +
                 "on stealth action and the use of gadgets and the environment to eliminate opposing forces.\n" +
@@ -101,11 +101,11 @@ public class LoadData implements Serializable {
                 "presence or can actively search for them.Enemy artificial intelligence (AI) will respond to sound \n" +
                 "and can be distracted using sound to lure guards away from their positions. If the player remains \n" +
                 "concealed from guards, their alertness will drop to \"aware\", but it will not return to normal.",
-                "file:Gamepics\\dishonored.jpg", 22.65, "URL");
+                "file:Gamepics\\dishonored.png", 22.65, "URL");
 
-        game4.setGamePlayImages("file:Gamepics\\dishonored1.jpg",
-                "file:Gamepics\\dishonored2.jpg",
-                "file:Gamepics\\dishonored3.jpg","file:Gamepics\\Stronghold.jpg" );
+        game4.setGamePlayImages("file:Gamepics\\dishonored1.png",
+                "file:Gamepics\\dishonored2.png",
+                "file:Gamepics\\dishonored3.png","file:Gamepics\\Stronghold.jpg" );
 
 
 
