@@ -52,7 +52,7 @@
             <Pane prefHeight="57.0" prefWidth="692.0" />
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="353.0" spacing="7.0">
                <children>
-                  <TextField opacity="0.11" prefHeight="25.0" prefWidth="200.0" promptText="Search" style="-fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" />
+                  <TextField fx:id="searchBar" onAction="#handleClickEvent" opacity="0.11" prefHeight="25.0" prefWidth="200.0" promptText="Search" style="-fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" />
                   <ImageView fitHeight="19.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@pics/Search-Icon-PNG.png" />

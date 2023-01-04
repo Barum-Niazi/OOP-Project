@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -25,6 +26,21 @@ public class StoreController extends HelloApplication implements Initializable{
 
 
     Stage stage;
+    @FXML
+    private TextField searchBar;
+    @FXML
+    private Button enter;
+
+    public void handleClickEvent(ActionEvent e) throws Exception{
+        Game.searchGame=searchBar.getText();
+        sceneSwitch("SearchDynamic.fxml", 1280, 720, e, "SearchLibrary");
+
+    }
+
+
+
+
+
     @FXML
     public HBox library;
     @FXML
