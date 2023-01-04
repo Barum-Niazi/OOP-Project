@@ -18,6 +18,8 @@ public class Game implements Serializable {
     int id;
     String name;
     double price;
+
+    static String searchGame;
 String adminPrice;
     Game(String name, String description, String descImage, double price, String downloadUrl){
         this.name = name;
@@ -56,9 +58,8 @@ String adminPrice;
         }
         return gamesRead[counter];
    }
-<<<<<<< Updated upstream
-}
-=======
+
+
 
     public static Game gameLoader(String gameName) throws Exception{
         LoadData.loadData();
@@ -135,13 +136,13 @@ String adminPrice;
         }
 
 
-        fileInputStream.close();
-        objectInputStream.close();
-        System.out.println("huz");
+            fileInputStream.close();
+            objectInputStream.close();
+            System.out.println("huz");
 
-        return searchGameObj;
-    }}
+            return searchGameObj;
+         }
+    }
 
 
 
->>>>>>> Stashed changes
