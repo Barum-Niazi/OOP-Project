@@ -80,7 +80,8 @@ public class StoreController extends HelloApplication implements Initializable{
 //                break;
 //            }
         labelName.setText(SignInController.currentUser);
-        labelWallet.setText("$" + SignInController.userWallet);
+        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
+
     }
 
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{

@@ -5,10 +5,12 @@ import javafx.beans.property.StringProperty;
 
 import java.io.*;
 import java.lang.reflect.Array;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Game implements Serializable {
     public static final long serialVersionUID = 6971099465370920165L;
+    public static final DecimalFormat df = new DecimalFormat("0.00");
     static int counter;
     ArrayList<Integer> gamesAdded = new ArrayList<Integer>();
     URL src = new URL();

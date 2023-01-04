@@ -14,6 +14,7 @@ import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.text.DecimalFormat;
 
 public class DynamicDescription extends HelloApplication implements Initializable{
     @FXML
@@ -40,10 +41,11 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public int tempStr=Game.counter;
     public double gamePrice;
 
+
     Game currentGame = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
         labelName.setText(SignInController.currentUser);
-        labelWallet.setText("$" + SignInController.userWallet);
+        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
         labelExist.setVisible(false);
         dynamicTextArea.setEditable(false);
         try {
@@ -77,8 +79,10 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
             HelloApplication forDownload = new HelloApplication();
             forDownload.downloadGame(downloadUrl.get(Game.counter));
+            File f = new File("C:\\Copter\\" + SignInController.currentUser);
+            if(!f.exists())
+                f.mkdir();
             //User usr = new User(SignInController.currentUser);
-
             String h = SignInController.currentUser;
             for (int i = 0; i < usr.gamesList.size(); i++) {
                 if (tempStr == usr.gamesList.get(i)) {
