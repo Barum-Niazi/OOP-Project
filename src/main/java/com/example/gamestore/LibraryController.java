@@ -92,7 +92,7 @@ public class LibraryController extends HelloApplication implements Initializable
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         labelName.setText(SignInController.currentUser);
-        labelWallet.setText("$" + SignInController.userWallet);
+        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
         try {
             TEMP = fileTemp();
             for(int i=0;i <TEMP.gamesList.size();i++){
