@@ -32,7 +32,7 @@ public class StoreController extends HelloApplication implements Initializable{
     @FXML
     public Button btnLogout;
     @FXML
-    public Label labelName;
+    public Label labelName, labelWallet;
     @FXML
     public VBox  vBox1 ,vBox2, vBox3, vBox4, vBox5, vBox6, vBox7, vBox8, vBox9, vBox10;
 
@@ -80,7 +80,7 @@ public class StoreController extends HelloApplication implements Initializable{
 //                break;
 //            }
         labelName.setText(SignInController.currentUser);
-
+        labelWallet.setText("$" + SignInController.userWallet);
     }
 
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{

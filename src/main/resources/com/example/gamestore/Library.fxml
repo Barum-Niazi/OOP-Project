@@ -62,7 +62,12 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
                <children>
-                  <Label prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
+                  <Label fx:id="labelWallet" alignment="CENTER" prefHeight="17.0" prefWidth="79.0" textFill="#116b6a">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelName" prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
                      </font>

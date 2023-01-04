@@ -27,65 +27,45 @@ public class LibraryController extends HelloApplication implements Initializable
     private Label gameb1;
 
     @FXML
-    private Label gameb2;
-
+    private Label labelName, labelWallet;
     @FXML
     private ImageView img1;
-
     @FXML
     private ImageView img10;
-
     @FXML
     private ImageView img2;
-
     @FXML
     private ImageView img3;
-
     @FXML
     private ImageView img4;
-
     @FXML
     private ImageView img5;
-
     @FXML
     private ImageView img6;
-
     @FXML
     private ImageView img7;
-
     @FXML
     private ImageView img8;
-
     @FXML
     private ImageView img9;
-
     @FXML
     private VBox vbox1;
-
     @FXML
     private VBox vbox10;
-
     @FXML
     private VBox vbox2;
-
     @FXML
     private VBox vbox3;
-
     @FXML
     private VBox vbox4;
-
     @FXML
     private VBox vbox5;
-
     @FXML
     private VBox vbox6;
-
     @FXML
     private VBox vbox7;
-
     @FXML
     private VBox vbox8;
-
     @FXML
     private VBox vbox9;
     public void handleStore(MouseEvent m) throws IOException {
@@ -111,6 +91,8 @@ public class LibraryController extends HelloApplication implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        labelName.setText(SignInController.currentUser);
+        labelWallet.setText("$" + SignInController.userWallet);
         try {
             TEMP = fileTemp();
             for(int i=0;i <TEMP.gamesList.size();i++){

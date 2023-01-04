@@ -17,8 +17,7 @@ import java.util.ResourceBundle;
 
 public class DynamicDescription extends HelloApplication implements Initializable{
     @FXML
-    public Label libraryLabel;
-    public Label cartLabel;
+    public Label libraryLabel, labelWallet;
     public Label storeLabel;
     public Button btnLogout;
     public Label labelName;
@@ -41,12 +40,13 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public int tempStr=Game.counter;
     public double gamePrice;
 
+    Game currentGame = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        currentUser.setText(SignInController.currentUser);
+        labelName.setText(SignInController.currentUser);
+        labelWallet.setText("$" + SignInController.userWallet);
         labelExist.setVisible(false);
         dynamicTextArea.setEditable(false);
         try {
-            Game currentGame = new Game();
             currentGame = Game.gameLoader(Game.counter);
             System.out.println(currentGame.name);
             dynamicTextArea.setText(currentGame.src.description);
@@ -66,26 +66,35 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     }
     public void addCurrentGame(ActionEvent e) throws Exception{
 
-        ArrayList<String> downloadUrl = new ArrayList<>();
-        downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
-
-        HelloApplication forDownload = new HelloApplication();
-        forDownload.downloadGame(downloadUrl.get(Game.counter));
-       //User usr = new User(SignInController.currentUser);
         User usr = fileDataFetchGames();
-        String h = SignInController.currentUser;
-        for(int i =0;i<usr.gamesList.size();i++){
-            if(tempStr == usr.gamesList.get(i)){
-                labelExist.setVisible(true);
-                return;
+        usr.wallet = SignInController.userWallet;
+        if(usr.wallet < currentGame.price){
+            labelExist.setVisible(true);
+            labelExist.setText("You do not have enough funds!");
+        } else {
+            ArrayList<String> downloadUrl = new ArrayList<>();
+            downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
+
+            HelloApplication forDownload = new HelloApplication();
+            forDownload.downloadGame(downloadUrl.get(Game.counter));
+            //User usr = new User(SignInController.currentUser);
+
+            String h = SignInController.currentUser;
+            for (int i = 0; i < usr.gamesList.size(); i++) {
+                if (tempStr == usr.gamesList.get(i)) {
+                    labelExist.setVisible(true);
+                    return;
+                }
             }
+            usr.gamesList.add(tempStr); // tempStr is game.counter
+            usr.wallet = usr.wallet - currentGame.price;
+            SignInController.userWallet = usr.wallet;
+            FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\" + h + ".txt");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(usr);
+            fileOut.close();
+            out.close();
         }
-        usr.gamesList.add(tempStr); // tempStr is game.counter
-        FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
-        ObjectOutputStream out = new ObjectOutputStream(fileOut);
-        out.writeObject(usr);
-        fileOut.close();
-        out.close();
     }
     User fileDataFetchGames() throws IOException,ClassNotFoundException {
         String user = SignInController.currentUser;
