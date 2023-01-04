@@ -47,8 +47,6 @@ String adminPrice;
                 Object game = (Game) objectInputStream.readObject();
                 gamesRead[i] = (Game) game;
             }
-            System.out.println(gamesRead[0].name);
-            System.out.println(gamesRead[1].name);
             objectInputStream.close();
         }catch (Exception e){
             e.printStackTrace();

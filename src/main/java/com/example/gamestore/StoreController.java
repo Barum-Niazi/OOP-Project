@@ -32,11 +32,9 @@ public class StoreController extends HelloApplication implements Initializable{
     @FXML
     public Button btnLogout;
     @FXML
-    public VBox vboxDesc;
-    @FXML
     public Label labelName;
     @FXML
-    public VBox game1, vBox3, vBox4, vBox5;
+    public VBox  vBox1 ,vBox2, vBox3, vBox4, vBox5, vBox6, vBox7, vBox8, vBox9, vBox10;
 
     public void handleLogout(ActionEvent e) throws IOException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
@@ -49,29 +47,28 @@ public class StoreController extends HelloApplication implements Initializable{
         System.out.println("string");
         }
     }
-    public void handleCart(MouseEvent e) throws IOException{
-        super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
-    }
-    public void handleDescription(MouseEvent m) throws IOException{
-        super.sceneSwitch("Description.fxml", 1280, 720, m, "Description");
-    }
-    public void ImageCLick(MouseEvent e) throws Exception {
+    public void handleClick(MouseEvent e) throws Exception {
         VBox present = (VBox) e.getSource();
-        if(present == vboxDesc) {
+        if(present == vBox1)
             Game.counter=0;
-        }
-        if(present == game1) {
+        if(present == vBox2)
             Game.counter=1;
-        }
-        if(present == vBox3){
+        if(present == vBox3)
             Game.counter=2;
-        }
-        if(present == vBox4){
+        if(present == vBox4)
             Game.counter=3;
-        }
-        if(present == vBox5){
+        if(present == vBox5)
             Game.counter=4;
-        }
+        if(present == vBox6)
+            Game.counter=5;
+        if(present == vBox7)
+            Game.counter=6;
+        if(present == vBox8)
+            Game.counter=7;
+        if(present == vBox9)
+            Game.counter=8;
+        if(present == vBox10)
+            Game.counter=9;
 
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
     }

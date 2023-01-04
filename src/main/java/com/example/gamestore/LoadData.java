@@ -78,7 +78,6 @@ public class LoadData implements Serializable {
                 "bonus weapons and costumes may be unlocked as a reward.","file:Gamepics\\residentEvil.png",
                 34.19, serverAddress +"ResidentEvil");
 
-        System.out.println(game3.src.downloadUrl);
         game3.setGamePlayImages("file:Gamepics\\residentEvil1.png",
                 "file:Gamepics\\residentEvil2.png",
                 "file:Gamepics\\residentEvil3.png","file:Gamepics\\Stronghold.jpg" );
@@ -129,38 +128,14 @@ public class LoadData implements Serializable {
                 "based on those of the previous games. Another returning feature from earlier installments is the \n" +
                 "ability to renovate buildings, which then generate income that is deposited in the bank and must \n" +
                 "be collected regularly.",
-                "file:Gamepics\\acRogue.png", 13.65, "URL");
+                "file:Gamepics\\acRogue.png", 13.65, serverAddress+"ACRogue");
 
         game5.setGamePlayImages("file:Gamepics\\acRogue1.jpeg",
                 "file:Gamepics\\acRogue2.jpeg",
                 "file:Gamepics\\acRogue3.jpeg","file:Gamepics\\Stronghold.jpeg" );
 
-        Game game6 = new Game("Assassin's Creed 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
-                "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
-                "fog, and rain. The seasons can also change i.e., Summer and Winter, which not only affect visuals but \n" +
-                "also gameplay, as the player will find that they run slower in deep snow. Snowfall can reduce visibility \n" +
-                "for the player and enemies, aiding stealth. The game also features a wide variety of animals, both \n" +
-                "domestic and wild. \n" +
-                "\n" +
-                "A revamped version of the recruitment system introduced in Assassin's Creed: Brotherhood returns as \n" +
-                "players can enlist citizens to the Assassins' cause by completing optional \"Liberation\" missions. Unlike \n" +
-                "previous games, the player is limited to only six Assassin recruits, but these recruits are each given \n" +
-                "distinct personalities and backstories, and have a much larger skill set, allowing them to start riots, \n" +
-                "provide a cover escort, and set up an ambush, among others.\n" +
-                "\n" +
-                "The Remastered version of the game features more revamped mechanics. Players can now whistle \n" +
-                "from anywhere while hidden, whereas the original version only allowed whistling from corners. \n" +
-                "Double assassinations have been improved so as not to require entering high-profile mode to do \n" +
-                "so. Free-aiming with ranged weapons was also made possible, allowing Connor more control over \n" +
-                "his bow and pistols. The mini-map and the UI were upgraded with better-looking and easier-to-\n" +
-                "recognize icons for ease of accessibility, figuring out where enemies will point next.",
-                "file:Gamepics\\acRoguep.png", 24.25, "URL");
 
-        game6.setGamePlayImages("file:Gamepics\\acRoguep1.png",
-                "file:Gamepics\\acRoguep2.png",
-                "file:Gamepics\\acRoguep3.png","file:Gamepics\\Stronghold.jpg" );
-
-        Game game7 = new Game("Hitman: Absolution",
+        Game game6 = new Game("Hitman: Absolution",
                 "Hitman Absolution is a stealth game in which the player assumes the role of a hitman named Agent 47.\n" +
                 "Presented from a third-person perspective, the gameplay centers around completing set objectives \n" +
                 "within a series of levels. Objectives can range from simply reaching the end of the level, to \n" +
@@ -179,12 +154,36 @@ public class LoadData implements Serializable {
                 "missions and decide which non-player characters (NPCs) are required to be eliminated, what weapon \n" +
                 "must be used to eliminate each target, what disguise is required, whether the body must be hidden or \n" +
                 "not and if the player is allowed to be spotted by the AI.",
-                "file:Gamepics\\hitman.png", 22.25, "URL");
+                "file:Gamepics\\hitman.png", 22.25, serverAddress+"Hitman");
 
-        game7.setGamePlayImages("file:Gamepics\\hitman1.png",
+        game6.setGamePlayImages("file:Gamepics\\hitman1.png",
                 "file:Gamepics\\hitman2.png",
                 "file:Gamepics\\hitman3.png","file:Gamepics\\Stronghold.jpg" );
 
+        Game game7 = new Game("Assassin's Creed 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
+                "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
+                "fog, and rain. The seasons can also change i.e., Summer and Winter, which not only affect visuals but \n" +
+                "also gameplay, as the player will find that they run slower in deep snow. Snowfall can reduce visibility \n" +
+                "for the player and enemies, aiding stealth. The game also features a wide variety of animals, both \n" +
+                "domestic and wild. \n" +
+                "\n" +
+                "A revamped version of the recruitment system introduced in Assassin's Creed: Brotherhood returns as \n" +
+                "players can enlist citizens to the Assassins' cause by completing optional \"Liberation\" missions. Unlike \n" +
+                "previous games, the player is limited to only six Assassin recruits, but these recruits are each given \n" +
+                "distinct personalities and backstories, and have a much larger skill set, allowing them to start riots, \n" +
+                "provide a cover escort, and set up an ambush, among others.\n" +
+                "\n" +
+                "The Remastered version of the game features more revamped mechanics. Players can now whistle \n" +
+                "from anywhere while hidden, whereas the original version only allowed whistling from corners. \n" +
+                "Double assassinations have been improved so as not to require entering high-profile mode to do \n" +
+                "so. Free-aiming with ranged weapons was also made possible, allowing Connor more control over \n" +
+                "his bow and pistols. The mini-map and the UI were upgraded with better-looking and easier-to-\n" +
+                "recognize icons for ease of accessibility, figuring out where enemies will point next.",
+                "file:Gamepics\\ac3p.png", 24.25, serverAddress+"AC3");
+
+        game7.setGamePlayImages("file:Gamepics\\ac3p1.png",
+                "file:Gamepics\\ac3p2.png",
+                "file:Gamepics\\ac3p3.png","file:Gamepics\\Stronghold.jpg" );
 
         Game game8 = new Game("Prototype 2", "Prototype 2 is a 2012 open world action-adventure video game. The game features a new protagonist, \n" +
                 "James Heller, as he goes on a quest to destroy the Blacklight virus. The story is one of revenge, as \n" +
@@ -205,22 +204,20 @@ public class LoadData implements Serializable {
                 "There are many more ways to kill enemies, ranging from throwing a car at a group of Blackwatch \n" +
                 "soldiers, hacking off a mutant's head or using powers. Consuming has not changed since the original \n" +
                 "Prototype, with the exception of some enemies, which are consumed upon grabbing them.",
-                "file:Gamepics\\prototype.png", 21.00, "URL");
+                "file:Gamepics\\prototype.png", 21.00, serverAddress+"Prototype");
 
-        game8.setGamePlayImages("file:Gamepics\\prototype1.png",
-                "file:Gamepics\\prototype2.png",
-                "file:Gamepics\\prototype3.png","file:Gamepics\\Stronghold.jpg" );
-
-
+        game8.setGamePlayImages("file:Gamepics\\prototype1.jpeg",
+                "file:Gamepics\\prototype2.jpeg",
+                "file:Gamepics\\prototype3.jpeg","file:Gamepics\\Stronghold.jpg" );
 
         gamesData[0] = game1;
-       gamesData[1] = game2;
-       gamesData[2] = game3;
-       gamesData[3] = game4;
-       gamesData[4] = game5;
-       gamesData[5] = game6;
-       gamesData[6] = game7;
-       gamesData[7] = game8;
+        gamesData[1] = game2;
+        gamesData[2] = game3;
+        gamesData[3] = game4;
+        gamesData[4] = game5;
+        gamesData[5] = game6;
+        gamesData[6] = game7;
+        gamesData[7] = game8;
 
 
        FileOutputStream fileOutputStream = new FileOutputStream(fileName);

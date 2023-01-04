@@ -187,14 +187,14 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox6" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Hitman: " textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="13.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Abosolution" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Absolution" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
@@ -235,9 +235,9 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox7" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Assassin's " textFill="WHITE">
+                                                            <Label fx:id="vbox7" prefHeight="22.0" prefWidth="100.0" text="Assassin's " textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
@@ -280,7 +280,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox8" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Prototype 2" textFill="WHITE">
                                                                <font>
@@ -315,7 +315,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox9" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty:" textFill="WHITE">
                                                                <font>
@@ -355,7 +355,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox10" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="World of" textFill="WHITE">
                                                                <font>
@@ -413,7 +413,7 @@
                                              <children>
                                                 <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                                    <children>
-                                                      <ImageView fitHeight="78.0" fitWidth="155.0" onMouseClicked="#ImageCLick" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="78.0" fitWidth="155.0" onMouseClicked="#handleClick" pickOnBounds="true" preserveRatio="true">
                                                          <image>
                                                             <Image url="@Games/gtavc.png" />
                                                          </image>
@@ -421,7 +421,7 @@
                                                             <Insets left="5.0" top="8.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vboxDesc" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox1" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Grand Theft Auto" textFill="WHITE">
                                                                <font>
@@ -461,7 +461,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="game1" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox2" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Stronghold" textFill="WHITE">
                                                                <font>
@@ -501,7 +501,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vBox3" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox3" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Resident" textFill="WHITE">
                                                                <font>
@@ -541,7 +541,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vBox4" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox4" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Dishonored" textFill="WHITE">
                                                                <font>
@@ -584,7 +584,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vBox5" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox5" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Assassin's" textFill="WHITE">
                                                                <font>
