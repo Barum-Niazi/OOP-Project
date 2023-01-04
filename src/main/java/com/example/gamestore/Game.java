@@ -6,6 +6,7 @@ import javafx.beans.property.StringProperty;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Game implements Serializable {
     public static final long serialVersionUID = 6971099465370920165L;
@@ -81,4 +82,61 @@ String adminPrice;
         System.out.println("huz");
 
         return searchGameObj;
+    }
+
+    public static Game gameLoader(String gameName,String n) throws Exception{
+        LoadData.loadData();
+        Game searchGameObj=null;
+        Game gamesRead[] = new Game[10];
+        int i;
+        System.out.println("xxx");
+        boolean flag;
+
+        FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
+        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+//        first:
+//        for( i = 0; i < 10; i++){
+//
+//            Object game = (Game) objectInputStream.readObject();
+//            gamesRead[i] = (Game) game;
+//            if(gameName.equalsIgnoreCase(gamesRead[i].name)){
+//                searchGameObj = gamesRead[i];
+//                System.out.println("Barum");
+//                return searchGameObj;
+//            }
+//        }
+        String currentName = gameName.toLowerCase();
+        System.out.println(currentName);
+        for( i = 0; i < 10; i++){
+            Object game = (Game) objectInputStream.readObject();
+            gamesRead[i] = (Game) game;
+            System.out.println("___________________");
+            System.out.println(gamesRead[i].name);
+            System.out.println(gameName);
+
+            for(int k = 0;k<= (gamesRead[i].name.length()-gameName.length());k++){
+                if(gamesRead[i].name.toLowerCase().regionMatches(k,currentName,0,gameName.length())){
+                    System.out.println("potato");
+                    searchGameObj = gamesRead[i];
+                    return searchGameObj;
+                }
+
+            //Object game = (Game) objectInputStream.readObject();
+            //gamesRead[i] = (Game) game;
+//            if(gameName.equalsIgnoreCase(gamesRead[i].name)){
+//                searchGameObj = gamesRead[i];
+//                System.out.println("Barum");
+//                return searchGameObj;
+            }
+        }
+
+
+        fileInputStream.close();
+        objectInputStream.close();
+        System.out.println("huz");
+
+        return searchGameObj;
     }}
+
+
+

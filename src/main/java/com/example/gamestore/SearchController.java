@@ -57,10 +57,12 @@ public class SearchController extends HelloApplication implements Initializable 
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+
         try {
             Game search = new Game();
             System.out.println("test");
-            search = Game.gameLoader(Game.searchGame);
+            System.out.println(Game.searchGame);
+            search = Game.gameLoader(Game.searchGame,"banana");
             System.out.println(search.name);
             dynamicTextArea.setText(search.src.description);
             img1.setImage(new Image(search.src.descImage));
