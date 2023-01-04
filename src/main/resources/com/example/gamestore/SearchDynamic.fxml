@@ -63,7 +63,6 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Enter" />
                   <Label fx:id="currentUser" prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
