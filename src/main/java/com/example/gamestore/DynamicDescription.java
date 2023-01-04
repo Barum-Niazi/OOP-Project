@@ -61,6 +61,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         tempStr = Game.counter;
         temp = tempStr;
     }
+    public void initialize(URL url, ResourceBundle resourceBundle,String name){};
     public void addCurrentGame(ActionEvent e) throws Exception{
 
         ArrayList<String> downloadUrl = new ArrayList<>();

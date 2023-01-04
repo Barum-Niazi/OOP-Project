@@ -24,12 +24,12 @@ public class LoadData implements Serializable {
                 "\n" +
                 " Composed of two main islands and several smaller areas, the world is much larger in area than \n" +
                 "earlier entries in the series. The islands are unlocked for the player as the story progresses.",
-                "file:Gamepics\\GTAVC.jpg",
+                "file:Gamepics\\GTAVC.png",
                 15.59,serverAddress + "ViceCity.zip");
 
         game1.setGamePlayImages("file:Gamepics\\GTAVC1.jpg",
                 "file:Gamepics\\GTAVC2.jpg",
-                "file:Gamepics\\GTAVC3.jpg", "file:Gamepics\\GTAVC.jpg");
+                "file:Gamepics\\GTAVC3.png", "file:Gamepics\\GTAVC.png");
 
         Game game2 = new Game("Stronghold Crusader",
                 "Stronghold: Crusader is the successor to Firefly Studios's 2001 real-time strategy video game Stronghold.\n" +
@@ -54,7 +54,7 @@ public class LoadData implements Serializable {
 
         game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
                 "file:Gamepics\\Strongholdg2.jpg",
-                "file:Gamepics\\Strongholdg3.jpg","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\Strongholdg3.jpg","file:Gamepics\\lib.png" );
 
         Game game3 = new Game("Resident Evil 2", "A survival horror game, Resident Evil 2 features the same basic gameplay mechanics as its predecessor, \n" +
                 "Resident Evil. The player explores a fictional city while solving puzzles and fighting monsters. \n" +

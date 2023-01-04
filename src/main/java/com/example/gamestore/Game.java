@@ -46,6 +46,9 @@ String adminPrice;
             for(int i = 0; i <= counter; i++){
                 Object game = (Game) objectInputStream.readObject();
                 gamesRead[i] = (Game) game;
+
+
+
             }
             objectInputStream.close();
         }catch (Exception e){
