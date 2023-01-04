@@ -6,14 +6,14 @@ public class LibUrls {
 
     ArrayList<String> LibUrlsMethod(ArrayList<String> temp) throws Exception {
 
-        temp.add(Game.gameLoader(0).src.descImage);
-        temp.add(Game.gameLoader(1).src.descImage);
-        temp.add(Game.gameLoader(2).src.descImage);
-        temp.add(Game.gameLoader(3).src.descImage);
-        temp.add(Game.gameLoader(4).src.descImage);
-        temp.add(Game.gameLoader(5).src.descImage);
-        temp.add(Game.gameLoader(6).src.descImage);
-        temp.add(Game.gameLoader(7).src.descImage);
+        temp.add(Game.gameLoader(0).src.libraryImg);
+        temp.add(Game.gameLoader(1).src.libraryImg);
+        temp.add(Game.gameLoader(2).src.libraryImg);
+        temp.add(Game.gameLoader(3).src.libraryImg);
+        temp.add(Game.gameLoader(4).src.libraryImg);
+        temp.add(Game.gameLoader(5).src.libraryImg);
+        temp.add(Game.gameLoader(6).src.libraryImg);
+        temp.add(Game.gameLoader(7).src.libraryImg);
     return temp;
     }
 

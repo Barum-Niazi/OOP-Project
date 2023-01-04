@@ -43,6 +43,7 @@ public class HelloApplication extends Application {
     }
 
     public void downloadGame(String downloadUrl) {
+
         getHostServices().showDocument(downloadUrl);
     }
 

@@ -44,6 +44,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public void initialize(URL url, ResourceBundle resourceBundle) {
         currentUser.setText(SignInController.currentUser);
         labelExist.setVisible(false);
+        dynamicTextArea.setEditable(false);
         try {
             Game currentGame = new Game();
             currentGame = Game.gameLoader(Game.counter);
@@ -71,7 +72,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         HelloApplication forDownload = new HelloApplication();
         forDownload.downloadGame(downloadUrl.get(Game.counter));
        //User usr = new User(SignInController.currentUser);
-        User usr =fileDataFetchGames();
+        User usr = fileDataFetchGames();
         String h = SignInController.currentUser;
         for(int i =0;i<usr.gamesList.size();i++){
             if(tempStr == usr.gamesList.get(i)){
@@ -79,7 +80,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
                 return;
             }
         }
-        usr.gamesList.add(tempStr);
+        usr.gamesList.add(tempStr); // tempStr is game.counter
         FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
         out.writeObject(usr);

@@ -9,6 +9,5 @@ public class URL implements Serializable {
     String gamePlayImg1;
     String gamePlayImg2;
     String gamePlayImg3;
-
     String libraryImg;
 }
