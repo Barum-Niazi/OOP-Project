@@ -12,10 +12,9 @@ public class User implements Serializable {
 
     public static final long serialVersionUID = -617565425006163870L;
     public double wallet;
-    public User(String name, String password, String email){
+    public User(String name, String password){
         this.name = name;
         this.password = password;
-        this.email = email;
     }
     public User(String name){
 

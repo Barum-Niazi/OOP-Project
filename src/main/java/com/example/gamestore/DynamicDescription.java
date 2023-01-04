@@ -34,6 +34,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public ImageView img4;
     @FXML
     private Label price;
+    public Label labelExist;
     @FXML
     private Label currentUser;
     public static int temp;
@@ -41,12 +42,15 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     public double gamePrice;
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        currentUser.setText(SignInController.currentUser);
+        labelExist.setVisible(false);
+        dynamicTextArea.setEditable(false);
         try {
             Game currentGame = new Game();
             currentGame = Game.gameLoader(Game.counter);
+            System.out.println(currentGame.name);
             dynamicTextArea.setText(currentGame.src.description);
-            img1.setImage(new Image(currentGame.src.image1));
+            img1.setImage(new Image(currentGame.src.descImage));
             price.setText("$" + (currentGame.price));
             labelName.setText(currentGame.name);
             gamePrice = currentGame.price;
@@ -68,15 +72,15 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         HelloApplication forDownload = new HelloApplication();
         forDownload.downloadGame(downloadUrl.get(Game.counter));
        //User usr = new User(SignInController.currentUser);
-        User usr =fileDataFetchGames();
+        User usr = fileDataFetchGames();
         String h = SignInController.currentUser;
         for(int i =0;i<usr.gamesList.size();i++){
             if(tempStr == usr.gamesList.get(i)){
-                System.out.println("Game is added already");
+                labelExist.setVisible(true);
                 return;
             }
         }
-        usr.gamesList.add(tempStr);
+        usr.gamesList.add(tempStr); // tempStr is game.counter
         FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\"+h+".txt");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
         out.writeObject(usr);
@@ -107,7 +111,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 //
 //    }
 
-    public void handleLogout(ActionEvent e) throws IOException {
+    public void handleLogout(ActionEvent e) throws Exception {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 

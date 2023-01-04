@@ -117,20 +117,6 @@
                   </Label>
                </children>
             </HBox>
-            <HBox fx:id="cart" alignment="CENTER" layoutX="15.0" layoutY="106.0" onMouseClicked="#handleCart" prefHeight="36.0" prefWidth="154.0" spacing="5.0" style="-fx-background-color: #1f2328; -fx-opacity: 1;">
-               <children>
-                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
-                     <image>
-                        <Image url="@pics/cart.png" />
-                     </image>
-                  </ImageView>
-                  <Label onMouseClicked="#handleCart" text="CART" textFill="#b5a5a5">
-                     <font>
-                        <Font name="Arial Black" size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
             <Separator opacity="0.18" prefWidth="200.0">
                <opaqueInsets>
                   <Insets />
@@ -142,7 +128,7 @@
                   <Insets left="5.0" right="5.0" />
                </VBox.margin>
             </Separator>
-            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #116b6a;" text="Log out">
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #116b6a; -fx-background-radius: 8px;" text="Log out">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" />
                </VBox.margin>
@@ -171,12 +157,12 @@
                      <children>
                         <VBox prefHeight="1400.0" prefWidth="1175.0" spacing="10.0" style="-fx-background-color: #27282d;">
                            <children>
-                              <Label prefHeight="24.0" prefWidth="269.0" text="FEATURED AND RECOMMENDED" textFill="#b5a5a5">
+                              <Label prefHeight="24.0" prefWidth="269.0" text="UPCOMING" textFill="#b5a5a5">
                                  <VBox.margin>
                                     <Insets left="20.0" top="20.0" />
                                  </VBox.margin>
                                  <font>
-                                    <Font name="Bodoni MT Bold" size="16.0" />
+                                    <Font name="Bodoni MT Bold" size="18.0" />
                                  </font>
                               </Label>
                               <ScrollPane prefHeight="165.0" prefWidth="1116.0">
@@ -195,20 +181,20 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194208.png" />
+                                                            <Image url="@Games/hitman.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox6" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Red Dead" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Hitman: " textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="13.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Redemption 2" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Absolution" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
@@ -218,9 +204,9 @@
                                                                   <Insets />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$14.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$22.25 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -243,20 +229,20 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194011.png" />
+                                                            <Image url="@Games/acRoguep.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox7" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Grand Theft" textFill="WHITE">
+                                                            <Label fx:id="vbox7" prefHeight="22.0" prefWidth="100.0" text="Assassin's " textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Auto V" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Creed 3" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
@@ -266,9 +252,9 @@
                                                                   <Insets />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$24.25 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -288,25 +274,20 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                                            <Image url="@Games/prototype.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox8" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="The hunter :" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Prototype 2" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Call of wild" textFill="WHITE">
-                                                               <font>
-                                                                  <Font name="Franklin Gothic Demi" size="14.0" />
-                                                               </font>
-                                                            </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$4.45 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$21.00 USD" textFill="WHITE">
                                                                <padding>
                                                                   <Insets top="20.0" />
                                                                </padding>
@@ -334,7 +315,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox9" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty:" textFill="WHITE">
                                                                <font>
@@ -374,7 +355,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox10" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="World of" textFill="WHITE">
                                                                <font>
@@ -410,9 +391,9 @@
                                     <Insets left="20.0" right="20.0" />
                                  </VBox.margin>
                               </ScrollPane>
-                              <Label prefHeight="24.0" prefWidth="238.0" text="SPECIAL OFFERS" textFill="#b5a5a5">
+                              <Label prefHeight="24.0" prefWidth="238.0" text="RECOMMENDED" textFill="#b5a5a5">
                                  <font>
-                                    <Font name="Bodoni MT Bold" size="16.0" />
+                                    <Font name="Bodoni MT Bold" size="18.0" />
                                  </font>
                                  <VBox.margin>
                                     <Insets left="20.0" top="10.0" />
@@ -432,15 +413,15 @@
                                              <children>
                                                 <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                                    <children>
-                                                      <ImageView fitHeight="78.0" fitWidth="155.0" onMouseClicked="#ImageCLick" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="78.0" fitWidth="155.0" onMouseClicked="#handleClick" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Games/GTAVC.jpg" />
+                                                            <Image url="@Games/gtavc.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="8.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vboxDesc" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox1" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Grand Theft Auto" textFill="WHITE">
                                                                <font>
@@ -452,14 +433,9 @@
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label text="Now available " textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
-                                                            </Label>
-                                                            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="61.0" text="\$14.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$15.59 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="15.0" />
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -485,7 +461,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="game1" onMouseClicked="#ImageCLick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox2" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Stronghold" textFill="WHITE">
                                                                <font>
@@ -497,14 +473,49 @@
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label style="-fx-background-color: #27282d; -fx-background-radius: 5px;" text="Top seller" textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
-                                                            </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$10.99 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="10.0" />
+                                                               </padding>
+                                                            </Label>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="5.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets top="5.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                   <effect>
+                                                      <DropShadow />
+                                                   </effect>
+                                                </HBox>
+                                                <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                                   <children>
+                                                      <ImageView fitHeight="87.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Games/residentevil.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" top="5.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                      <VBox fx:id="vBox3" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                         <children>
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Resident" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Franklin Gothic Demi" size="16.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Evil 2" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Franklin Gothic Demi" size="16.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER_RIGHT" text="\$34.19 USD" textFill="WHITE">
+                                                               <padding>
+                                                                  <Insets top="10.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -524,67 +535,30 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194103.png" />
+                                                            <Image url="@Games/dishonored.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox4" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty :" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Dishonored" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
-                                                            </Label>
-                                                            <Label text="Modern Warfare" textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
-                                                            </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="5.0" />
                                                                </padding>
                                                             </Label>
-                                                         </children>
-                                                         <padding>
-                                                            <Insets left="5.0" />
-                                                         </padding>
-                                                         <HBox.margin>
-                                                            <Insets top="5.0" />
-                                                         </HBox.margin>
-                                                      </VBox>
-                                                   </children>
-                                                   <effect>
-                                                      <DropShadow />
-                                                   </effect>
-                                                </HBox>
-                                                <HBox prefHeight="181.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                                   <children>
-                                                      <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20184152.png" />
-                                                         </image>
-                                                         <HBox.margin>
-                                                            <Insets left="5.0" top="5.0" />
-                                                         </HBox.margin>
-                                                      </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
-                                                         <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty:" textFill="WHITE">
-                                                               <font>
-                                                                  <Font name="Franklin Gothic Demi" size="16.0" />
-                                                               </font>
-                                                            </Label>
-                                                            <Label text="Modern Warfare" textFill="WHITE">
+                                                            <Label text="Now available " textFill="WHITE">
                                                                <VBox.margin>
-                                                                  <Insets />
+                                                                  <Insets top="5.0" />
                                                                </VBox.margin>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$22.65 USD" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="15.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>
@@ -604,27 +578,27 @@
                                                    <children>
                                                       <ImageView fitHeight="88.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@pics/Screenshot%202022-12-13%20194552.png" />
+                                                            <Image url="@Games/acRouge.png" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox5" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
-                                                            <Label prefHeight="22.0" prefWidth="100.0" text="World of" textFill="WHITE">
+                                                            <Label prefHeight="22.0" prefWidth="100.0" text="Assassin's" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label text="Tanks Blitz" textFill="WHITE">
-                                                               <VBox.margin>
-                                                                  <Insets />
-                                                               </VBox.margin>
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Creed Rogue" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Franklin Gothic Demi" size="16.0" />
+                                                               </font>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="Free to play" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="\$13.65" textFill="WHITE">
                                                                <padding>
-                                                                  <Insets top="20.0" />
+                                                                  <Insets top="15.0" />
                                                                </padding>
                                                             </Label>
                                                          </children>

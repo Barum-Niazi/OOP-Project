@@ -3,13 +3,13 @@ package com.example.gamestore;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
 import java.io.*;
+import java.net.URL;
+import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 
 public class SignInController extends HelloApplication {
     @FXML
@@ -17,12 +17,15 @@ public class SignInController extends HelloApplication {
     @FXML
     private PasswordField fieldPassword;
     @FXML
-    public  Label signupLabel;
+    public Label signupLabel;
+    public Label validateLabel;
     @FXML
     public Button btnIn;
 
+//    public ProgressBar progressSignIn;
+
     public static String currentUser;
-    public void handleSignIn(ActionEvent e) throws IOException, ClassNotFoundException {
+    public void handleSignIn(ActionEvent e) throws IOException, ClassNotFoundException, InterruptedException {
 //        for(int i = 0; i < User.users.size(); i++){
 //            System.out.println(User.users.get(i));
 //        }
@@ -48,22 +51,22 @@ public class SignInController extends HelloApplication {
             User user = new User();
             user = (User) in.readObject();
             if ((fieldUsername.getText().toString().equalsIgnoreCase(user.name)) &&
-                    fieldPassword.getText().toString().equalsIgnoreCase(user.password)) {
+                    fieldPassword.getText().toString().equals(user.password)) {
+                validateLabel.setText(null);
                 currentUser = fieldUsername.getText();
                 super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
-            }
-            if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
-                fieldUsername.setText("Please Enter your credentials");
             } else {
-                fieldUsername.setText("Wrong Username or Password");
+                validateLabel.setText("Wrong username or password!");
             }
         } else{
-            System.out.println("User does not exist");
+            if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty()) {
+                validateLabel.setText("Please enter your credentials!");
+            } else
+            validateLabel.setText("User does not exist!");
         }
 //        filein.close();
 //        in.close();
     }
-
 
 //        while(fileReader.read() != -1){
 //                rdcm = (User)in.readObject();
@@ -82,8 +85,6 @@ public class SignInController extends HelloApplication {
 //            //System.out.println("Age of criminal:"+((Criminal)rdcm).age);
 //             //System.out.println();
 //        }
-
-
 
     public void handleSignup(MouseEvent m) throws IOException{
         super.sceneSwitch("Sign up.fxml", 718, 476, m, "Sign up");

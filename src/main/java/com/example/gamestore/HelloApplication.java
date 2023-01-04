@@ -14,6 +14,7 @@ import java.io.Serializable;
 
 public class HelloApplication extends Application {
     Stage stage;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sign in.fxml"));
@@ -22,25 +23,30 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
+
     public void sceneSwitch(String sceneName, int x, int y, ActionEvent e, String title) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), x, y);
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
     }
-    public void sceneSwitch(String sceneName, int x, int y, MouseEvent e, String title) throws IOException{
+
+    public void sceneSwitch(String sceneName, int x, int y, MouseEvent e, String title) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), x, y);
         //stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
     }
-    public void downloadGame(String downloadUrl){
+
+    public void downloadGame(String downloadUrl) {
+
         getHostServices().showDocument(downloadUrl);
     }
+
     public static void main(String[] args) {
         launch();
     }

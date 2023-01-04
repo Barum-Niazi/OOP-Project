@@ -95,7 +95,7 @@ public class LibraryController extends HelloApplication implements Initializable
         super.sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
     }
 
-    public void handleLogout(ActionEvent e) throws IOException {
+    public void handleLogout(ActionEvent e) throws Exception {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
@@ -149,21 +149,21 @@ public class LibraryController extends HelloApplication implements Initializable
             for (int i = 0; i < TEMP.gamesList.size(); i++) {
                 System.out.println("banana");
                 String u = libTemp.get(TEMP.gamesList.get(i));
-                String gamePath = exePaths.get(TEMP.gamesList.get(i));
+//                String gamePath = exePaths.get(TEMP.gamesList.get(i));
                 System.out.println("apple");
                 System.out.println(u);
                 imgs[i].setImage(new Image(u));
-                imgs[i].setOnMouseClicked(new EventHandler<MouseEvent>() {
-                    @Override
-                    public void handle(MouseEvent mouseEvent) {
-                        System.out.println(gamePath);
-                        try {
-                            Runtime.getRuntime().exec(gamePath);
-                        }catch (Exception exception){
-                            exception.printStackTrace();
-                        }
-                    }
-                });
+//                imgs[i].setOnMouseClicked(new EventHandler<MouseEvent>() {
+//                    @Override
+//                    public void handle(MouseEvent mouseEvent) {
+//                        System.out.println(gamePath);
+//                        try {
+//                            Runtime.getRuntime().exec(gamePath);
+//                        }catch (Exception exception){
+//                            exception.printStackTrace();
+//                        }
+//                    }
+//                });
                 visibilityCounter++;
             }
 

@@ -35,7 +35,7 @@ public class DescriptionController extends HelloApplication{
 
 
 
-    public void handleLogout(ActionEvent e) throws IOException {
+    public void handleLogout(ActionEvent e) throws Exception {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
@@ -48,7 +48,7 @@ public class DescriptionController extends HelloApplication{
     public void handleCart(MouseEvent m) throws IOException{
         super.sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
     }
-    public void handleAddCart(ActionEvent e) throws IOException{
-        super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
-    }
+//    public void handleAddCart(ActionEvent e) throws IOException{
+//        super.sceneSwitch("Cart.fxml", 1280, 720, e, "Cart");
+//    }
 }
