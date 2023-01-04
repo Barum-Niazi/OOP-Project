@@ -15,6 +15,7 @@ public class Game implements Serializable {
     int id;
     String name;
     double price;
+    static String searchGame;
 String adminPrice;
     Game(String name, String description, String descImage, double price, String downloadUrl){
         this.name = name;
@@ -53,4 +54,31 @@ String adminPrice;
         }
         return gamesRead[counter];
    }
-}
+
+    public static Game gameLoader(String gameName) throws Exception{
+        LoadData.loadData();
+        Game searchGameObj=null;
+        Game gamesRead[] = new Game[10];
+        int i;
+        System.out.println("xxx");
+
+            FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+            first:
+            for( i = 0; i < 10; i++){
+                Object game = (Game) objectInputStream.readObject();
+                gamesRead[i] = (Game) game;
+                if(gameName.equalsIgnoreCase(gamesRead[i].name)){
+                    searchGameObj = gamesRead[i];
+                    System.out.println("Barum");
+                    return searchGameObj;
+                }
+            }
+
+
+            fileInputStream.close();
+            objectInputStream.close();
+        System.out.println("huz");
+
+        return searchGameObj;
+    }}
