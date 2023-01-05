@@ -91,8 +91,8 @@ public class LibraryController extends HelloApplication implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        labelName.setText(SignInController.currentUser);
-        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
+//        labelName.setText(SignInController.currentUser);
+//        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
         try {
             TEMP = fileTemp();
             for(int i=0;i <TEMP.gamesList.size();i++){

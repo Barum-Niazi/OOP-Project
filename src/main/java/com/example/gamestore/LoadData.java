@@ -29,7 +29,7 @@ public class LoadData implements Serializable {
 
         game1.setGamePlayImages("file:Gamepics\\GTAVC1.jpg",
                 "file:Gamepics\\GTAVC2.jpg",
-                "file:Gamepics\\GTAVC3.jpg", "file:Gamepics\\GTAVC.jpg");
+                "file:Gamepics\\GTAVC3.jpg", "file:Gamepics\\GTAVCr.png");
 
         Game game2 = new Game("Stronghold Crusader",
                 "Stronghold: Crusader is the successor to Firefly Studios's 2001 real-time strategy video game Stronghold.\n" +
@@ -54,7 +54,7 @@ public class LoadData implements Serializable {
 
         game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
                 "file:Gamepics\\Strongholdg2.jpg",
-                "file:Gamepics\\Strongholdg3.jpg","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\Strongholdg3.jpg","file:Gamepics\\Strongholdr.png" );
 
         Game game3 = new Game("Resident Evil 2", "A survival horror game, Resident Evil 2 features the same basic gameplay mechanics as its predecessor, \n" +
                 "Resident Evil. The player explores a fictional city while solving puzzles and fighting monsters. \n" +
@@ -80,7 +80,7 @@ public class LoadData implements Serializable {
 
         game3.setGamePlayImages("file:Gamepics\\residentEvil1.png",
                 "file:Gamepics\\residentEvil2.png",
-                "file:Gamepics\\residentEvil3.png","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\residentEvil3.png","file:Gamepics\\residentEvilr.png" );
 
         Game game4 = new Game("Dishonored", "Dishonored is an action-adventure game played from a first-person perspective with an emphasis \n" +
                 "on stealth action and the use of gadgets and the environment to eliminate opposing forces.\n" +
@@ -106,7 +106,7 @@ public class LoadData implements Serializable {
 
         game4.setGamePlayImages("file:Gamepics\\dishonored1.png",
                 "file:Gamepics\\dishonored2.png",
-                "file:Gamepics\\dishonored3.png","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\dishonored3.png","file:Gamepics\\dishonoredr.png" );
 
         Game game5 = new Game("Assassin's Creed Rogue", "Assassin's Creed Rogue is an action-adventure, stealth game set in an open world environment and \n" +
                 "played from a third-person perspective. The game features three main areas: the western North \n" +
@@ -132,7 +132,7 @@ public class LoadData implements Serializable {
 
         game5.setGamePlayImages("file:Gamepics\\acRogue1.jpeg",
                 "file:Gamepics\\acRogue2.jpeg",
-                "file:Gamepics\\acRogue3.jpeg","file:Gamepics\\Stronghold.jpeg" );
+                "file:Gamepics\\acRogue3.jpeg","file:Gamepics\\acRoguer.png" );
 
 
         Game game6 = new Game("Hitman: Absolution",
@@ -158,7 +158,7 @@ public class LoadData implements Serializable {
 
         game6.setGamePlayImages("file:Gamepics\\hitman1.png",
                 "file:Gamepics\\hitman2.png",
-                "file:Gamepics\\hitman3.png","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\hitman3.png","file:Gamepics\\hitmanr.png" );
 
         Game game7 = new Game("Assassin's Creed 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
                 "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
@@ -183,7 +183,7 @@ public class LoadData implements Serializable {
 
         game7.setGamePlayImages("file:Gamepics\\ac3p1.png",
                 "file:Gamepics\\ac3p2.png",
-                "file:Gamepics\\ac3p3.png","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\ac3p3.png","file:Gamepics\\ac3pr.png" );
 
         Game game8 = new Game("Prototype 2", "Prototype 2 is a 2012 open world action-adventure video game. The game features a new protagonist, \n" +
                 "James Heller, as he goes on a quest to destroy the Blacklight virus. The story is one of revenge, as \n" +
@@ -208,7 +208,7 @@ public class LoadData implements Serializable {
 
         game8.setGamePlayImages("file:Gamepics\\prototype1.jpeg",
                 "file:Gamepics\\prototype2.jpeg",
-                "file:Gamepics\\prototype3.jpeg","file:Gamepics\\Stronghold.jpg" );
+                "file:Gamepics\\prototype3.jpeg","file:Gamepics\\prototyper.png" );
 
         gamesData[0] = game1;
         gamesData[1] = game2;
