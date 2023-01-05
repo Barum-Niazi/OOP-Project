@@ -156,9 +156,9 @@ public class LoadData implements Serializable {
                 "not and if the player is allowed to be spotted by the AI.",
                 "file:Gamepics\\hitman.png", 22.25, serverAddress+"Hitman");
 
-        game6.setGamePlayImages("file:Gamepics\\hitman1.png",
-                "file:Gamepics\\hitman2.png",
-                "file:Gamepics\\hitman3.png","file:Gamepics\\Stronghold.jpg" );
+        game6.setGamePlayImages("file:Gamepics\\hitman1.jpeg",
+                "file:Gamepics\\hitman2.jpeg",
+                "file:Gamepics\\hitman3.jpeg","file:Gamepics\\Stronghold.jpg" );
 
         Game game7 = new Game("Assassin's Creed 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
                 "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
