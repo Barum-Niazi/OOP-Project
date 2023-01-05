@@ -1,76 +1,96 @@
 package com.example.gamestore;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-import java.text.DecimalFormat;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
-public class DynamicDescription extends HelloApplication implements Initializable{
+
+public class SearchController extends HelloApplication implements Initializable {
     @FXML
-    public Label libraryLabel, labelWallet;
-    public Label storeLabel;
-    public Button btnLogout;
-    public Label labelName;
+    private Button btnLogout;
+
     @FXML
-    public TextArea dynamicTextArea;
-    @FXML
-    public ImageView img1;
-    @FXML
-    public ImageView img2;
-    @FXML
-    public ImageView img3;
-    @FXML
-    public ImageView img4;
-    @FXML
-    private Label price;
-    public Label labelExist;
+    private Label cartLabel;
+
     @FXML
     private Label currentUser;
+
+    @FXML
+    private TextArea dynamicTextArea;
+
+    @FXML
+    private ImageView img1;
+
+    @FXML
+    private ImageView img2;
+
+    @FXML
+    private ImageView img3;
+
+    @FXML
+    private ImageView img4;
+
+    @FXML
+    private Label labelName;
+
+    @FXML
+    private Label libraryLabel;
+
+    @FXML
+    private Label price;
+
+    @FXML
+    private Label storeLabel;
     public static int temp;
-    public int tempStr=Game.counter;
+    public int tempStr;
     public double gamePrice;
-
-
-    Game currentGame = new Game();
+    public Label labelExist;
+    double gPrice;
+    Game search = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        labelName.setText(SignInController.currentUser);
-        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
+
         labelExist.setVisible(false);
-        dynamicTextArea.setEditable(false);
         try {
-            currentGame = Game.gameLoader(Game.counter);
-            System.out.println(currentGame.name);
-            dynamicTextArea.setText(currentGame.src.description);
-            img1.setImage(new Image(currentGame.src.descImage));
-            price.setText("$" + (currentGame.price));
-            labelName.setText(currentGame.name);
-            gamePrice = currentGame.price;
-            img2.setImage(new Image(currentGame.src.gamePlayImg1));
-            img3.setImage(new Image(currentGame.src.gamePlayImg2));
-            img4.setImage(new Image(currentGame.src.gamePlayImg3));
-        }catch (Exception e){
-            e.printStackTrace();
+            Game search = new Game();
+            System.out.println("test");
+            System.out.println(Game.searchGame);
+            //System.out.println("initilialize"+tempStr);
+            search = Game.gameLoader(Game.searchGame,"banana");
+            tempStr= search.gCounter;
+            System.out.println("initilialize"+tempStr);
+            System.out.println(search.name);
+            dynamicTextArea.setText(search.src.description);
+            img1.setImage(new Image(search.src.descImage));
+            price.setText("$" + (search.price));
+            labelName.setText(search.name);
+            img2.setImage(new Image(search.src.gamePlayImg1));
+            img3.setImage(new Image(search.src.gamePlayImg2));
+            img4.setImage(new Image(search.src.gamePlayImg3));
+            gPrice = search.price;
         }
-       //Action[Game.counter].Initialize(Action);
-        tempStr = Game.counter;
-        temp = tempStr;
+        catch (Exception e){
+            System.out.println(e);
+        }
     }
     public void addCurrentGame(ActionEvent e) throws Exception{
 
         User usr = fileDataFetchGames();
         usr.wallet = SignInController.userWallet;
-        if(usr.wallet < currentGame.price){
+//        System.out.println(usr.wallet);
+        System.out.println("Counter:"+tempStr);
+        System.out.println(gPrice);
+        if(usr.wallet < gPrice){
             labelExist.setVisible(true);
             labelExist.setText("You do not have enough funds!");
         } else {
@@ -78,7 +98,7 @@ public class DynamicDescription extends HelloApplication implements Initializabl
             downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
 
             HelloApplication forDownload = new HelloApplication();
-            forDownload.downloadGame(downloadUrl.get(Game.counter));
+            forDownload.downloadGame(downloadUrl.get(tempStr));
             File f = new File("C:\\Copter\\" + SignInController.currentUser);
             if(!f.exists())
                 f.mkdir();
@@ -91,7 +111,8 @@ public class DynamicDescription extends HelloApplication implements Initializabl
                 }
             }
             usr.gamesList.add(tempStr); // tempStr is game.counter
-            usr.wallet = usr.wallet - currentGame.price;
+            usr.wallet = usr.wallet - gPrice;
+            System.out.println(usr.wallet);
             SignInController.userWallet = usr.wallet;
             FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\" + h + ".txt");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -112,19 +133,11 @@ public class DynamicDescription extends HelloApplication implements Initializabl
 
         filein.close();
         in.close();
+        System.out.println(temp.wallet);
         return temp;
     }
 
-
-//        while((rdcm = in.readObject()) instanceof END ==false){
-//            ((User)rdcm).gamesList.add(temp);
-//        }
-//        filein.close();
-//        in.close();
-//
-//    }
-
-    public void handleLogout(ActionEvent e) throws Exception {
+    public void handleLogout(ActionEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
@@ -138,5 +151,3 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         super.sceneSwitch("Cart.fxml", 1280, 720, m, "Cart");
     }
 }
-
-

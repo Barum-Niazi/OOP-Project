@@ -30,8 +30,16 @@ public class LibUrls {
     }
 
     public static ArrayList<String> exePaths(ArrayList<String> exePaths){
-        exePaths.add("C:\\Program Files (x86)\\Labcenter Electronics\\Proteus 8 Professional\\BIN\\PDS.EXE");
-        exePaths.add("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
+        exePaths.add("cmd start C:\\Copter\\"+ SignInController.currentUser +"\\Grand Theft Auto Vice City\\gta-vc.exe");
+        exePaths.add("test");
+        exePaths.add("test");
+        exePaths.add("C:\\Copter\\"+ SignInController.currentUser +"\\Dishonored\\Binaries\\Win32\\Dishonored.exe");
+        exePaths.add("test");
+        exePaths.add("test");
+        exePaths.add("test");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser+ "\\Prototype 2\\prototype2.exe");
+        exePaths.add("test");
+        exePaths.add("test");
 
         return exePaths;
     }

@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -26,13 +27,17 @@ public class StoreController extends HelloApplication implements Initializable{
 
     Stage stage;
     @FXML
+    private TextField searchBar;
+    @FXML
+    private Button enter;
+    @FXML
     public HBox library;
     @FXML
     public HBox cart;
     @FXML
     public Button btnLogout;
     @FXML
-    public Label labelName;
+    public Label labelName, labelWallet;
     @FXML
     public VBox  vBox1 ,vBox2, vBox3, vBox4, vBox5, vBox6, vBox7, vBox8, vBox9, vBox10;
 
@@ -44,7 +49,7 @@ public class StoreController extends HelloApplication implements Initializable{
         try {
             sceneSwitch("Library.fxml", 1280, 720, m, "Library");
         } catch (Exception e){
-        System.out.println("string");
+            System.out.println("test");
         }
     }
     public void handleClick(MouseEvent e) throws Exception {
@@ -80,9 +85,15 @@ public class StoreController extends HelloApplication implements Initializable{
 //                break;
 //            }
         labelName.setText(SignInController.currentUser);
+        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
 
     }
 
+    public void handleClickEvent(ActionEvent e) throws Exception{
+        Game.searchGame = searchBar.getText();
+        sceneSwitch("SearchDynamic.fxml", 1280, 720, e, "SearchLibrary");
+
+    }
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{
 //        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
 //        stage = (Stage)((Node)e.getSource()).getScene().getWindow();

@@ -25,6 +25,8 @@ public class SignInController extends HelloApplication {
 //    public ProgressBar progressSignIn;
 
     public static String currentUser;
+
+    public static double userWallet;
     public void handleSignIn(ActionEvent e) throws IOException, ClassNotFoundException, InterruptedException {
 //        for(int i = 0; i < User.users.size(); i++){
 //            System.out.println(User.users.get(i));
@@ -54,6 +56,8 @@ public class SignInController extends HelloApplication {
                     fieldPassword.getText().toString().equals(user.password)) {
                 validateLabel.setText(null);
                 currentUser = fieldUsername.getText();
+                user.wallet = 0;
+                userWallet = user.wallet;
                 super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
             } else {
                 validateLabel.setText("Wrong username or password!");
