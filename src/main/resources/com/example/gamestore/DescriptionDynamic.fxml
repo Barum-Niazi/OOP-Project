@@ -53,15 +53,18 @@
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="353.0" spacing="7.0" />
             <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
                <children>
-                  <Label fx:id="labelWallet" alignment="CENTER" prefHeight="17.0" prefWidth="87.0" textFill="#116b6a">
+                  <Label fx:id="labelWallet" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="87.0" textFill="#116b6a">
                      <font>
-                        <Font name="Leelawadee UI" size="12.0" />
+                        <Font name="Leelawadee UI Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelName" prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
+                  <Label fx:id="labelUser" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
                      </font>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
                   </Label>
                   <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                      <image>

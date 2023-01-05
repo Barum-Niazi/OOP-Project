@@ -17,6 +17,9 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        String command = "powershell.exe \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+        Process powerShellProcess = Runtime.getRuntime().exec(command);
+        powerShellProcess.getOutputStream().close();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sign in.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 718, 476);
         stage.setTitle("Sign in");

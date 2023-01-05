@@ -36,15 +36,15 @@ public class DynamicDescription extends HelloApplication implements Initializabl
     private Label price;
     public Label labelExist;
     @FXML
-    private Label currentUser;
+    private Label labelUser;
     public static int temp;
     public int tempStr=Game.counter;
     public double gamePrice;
-
-
     Game currentGame = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        labelName.setText(SignInController.currentUser);
+        String user = SignInController.currentUser;
+        labelUser.setText(user);
+        labelName.setVisible(true);
         labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
         labelExist.setVisible(false);
         dynamicTextArea.setEditable(false);
