@@ -49,7 +49,7 @@ public class StoreController extends HelloApplication implements Initializable{
         try {
             sceneSwitch("Library.fxml", 1280, 720, m, "Library");
         } catch (Exception e){
-        e.printStackTrace();
+            System.out.println("test");
         }
     }
     public void handleClick(MouseEvent e) throws Exception {
