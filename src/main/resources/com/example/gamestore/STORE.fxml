@@ -640,7 +640,7 @@
                               </ScrollPane>
                               <FlowPane hgap="20.0" prefHeight="475.0" prefWidth="1348.0" vgap="20.0">
                                  <children>
-                                    <VBox alignment="TOP_CENTER" prefHeight="175.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox1" alignment="TOP_CENTER" onMouseClicked="#handleLower" prefHeight="175.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -673,7 +673,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox2" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -698,7 +698,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox3" alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -723,7 +723,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox4" alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -748,7 +748,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="430.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox5" alignment="TOP_CENTER" layoutX="430.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -778,7 +778,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox6" alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -808,7 +808,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox7" alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
@@ -838,7 +838,7 @@
                                           </Label>
                                        </children>
                                     </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
+                                    <VBox fx:id="lvbox8" alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" onMouseClicked="#handleLower" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
                                        <effect>
                                           <DropShadow />
                                        </effect>
