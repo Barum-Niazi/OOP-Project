@@ -33,7 +33,7 @@ public class LibUrls {
         exePaths.add("C:\\Users\\user\\Desktop\\Grand Theft Auto Vice City\\gta-vc.exe");
         exePaths.add("cmd /c C:\\Users\\user\\Desktop\\pepsiman\\Pepsiman.exe");
         exePaths.add("test");
-        exePaths.add("C:\\Copter\\barum\\Dishonored\\Binaries\\Win32\\Dishonored.exe");
+        exePaths.add("C:\\Copter\\"+ SignInController.currentUser +"\\Dishonored\\Binaries\\Win32\\Dishonored.exe");
         exePaths.add("test");
         exePaths.add("test");
         exePaths.add("test");

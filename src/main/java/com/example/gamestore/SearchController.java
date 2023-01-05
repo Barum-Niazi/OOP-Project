@@ -77,7 +77,7 @@ public class SearchController extends HelloApplication implements Initializable 
             img4.setImage(new Image(search.src.gamePlayImg3));
         }
         catch (Exception e){
-            System.out.println("HUUUZZZKUUTTA");
+            System.out.println(e);
         }
     }
     public void addCurrentGame(ActionEvent e) throws Exception{
