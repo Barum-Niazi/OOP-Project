@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class LoadData implements Serializable {
 
     static final String fileName = "Games";
-    static String serverAddress = "http://39.62.7.8/";
+    static String serverAddress = "http://172.20.10.5/";
 
     public static void loadData() throws Exception{
         Game[] gamesData = new Game[10];
@@ -25,7 +25,7 @@ public class LoadData implements Serializable {
                 " Composed of two main islands and several smaller areas, the world is much larger in area than \n" +
                 "earlier entries in the series. The islands are unlocked for the player as the story progresses.",
                 "file:Gamepics\\GTAVC.jpg",
-                15.59,serverAddress + "ViceCity.zip");
+                15.59,serverAddress + "GTAViceCity.zip", 0);
 
         game1.setGamePlayImages("file:Gamepics\\GTAVC1.jpg",
                 "file:Gamepics\\GTAVC2.jpg",
@@ -50,7 +50,7 @@ public class LoadData implements Serializable {
                 "\n" +
                 "The game adds new AI opponents and several new Arabian units purchasable from a mercenary post.",
                 "file:Gamepics\\Stronghold.jpg",
-                10.99, serverAddress + "Crusader.zip");
+                10.99, serverAddress + "Crusader.zip", 1);
 
         game2.setGamePlayImages("file:Gamepics\\Strongholdg1.jpg",
                 "file:Gamepics\\Strongholdg2.jpg",
@@ -76,7 +76,7 @@ public class LoadData implements Serializable {
                 "After each game, the player receives a ranking based on the total time taken to complete the scenario, \n" +
                 "and on the number of saves and special healing items. Depending on the player's accomplishments,\n" +
                 "bonus weapons and costumes may be unlocked as a reward.","file:Gamepics\\residentEvil.png",
-                34.19, serverAddress +"ResidentEvil");
+                34.19, serverAddress +"residentEvil2.zip", 2);
 
         game3.setGamePlayImages("file:Gamepics\\residentEvil1.png",
                 "file:Gamepics\\residentEvil2.png",
@@ -102,7 +102,7 @@ public class LoadData implements Serializable {
                 "presence or can actively search for them.Enemy artificial intelligence (AI) will respond to sound \n" +
                 "and can be distracted using sound to lure guards away from their positions. If the player remains \n" +
                 "concealed from guards, their alertness will drop to \"aware\", but it will not return to normal.",
-                "file:Gamepics\\dishonored.png", 22.65, serverAddress + "Dishonored");
+                "file:Gamepics\\dishonored.png", 22.65, serverAddress + "Dishonored", 3);
 
         game4.setGamePlayImages("file:Gamepics\\dishonored1.png",
                 "file:Gamepics\\dishonored2.png",
@@ -128,7 +128,7 @@ public class LoadData implements Serializable {
                 "based on those of the previous games. Another returning feature from earlier installments is the \n" +
                 "ability to renovate buildings, which then generate income that is deposited in the bank and must \n" +
                 "be collected regularly.",
-                "file:Gamepics\\acRogue.png", 13.65, serverAddress+"ACRogue");
+                "file:Gamepics\\acRogue.png", 13.65, serverAddress+"ACRogue.rar", 4);
 
         game5.setGamePlayImages("file:Gamepics\\acRogue1.jpeg",
                 "file:Gamepics\\acRogue2.jpeg",
@@ -154,7 +154,7 @@ public class LoadData implements Serializable {
                 "missions and decide which non-player characters (NPCs) are required to be eliminated, what weapon \n" +
                 "must be used to eliminate each target, what disguise is required, whether the body must be hidden or \n" +
                 "not and if the player is allowed to be spotted by the AI.",
-                "file:Gamepics\\hitman.png", 22.25, serverAddress+"Hitman");
+                "file:Gamepics\\hitman.png", 22.25, serverAddress+"Hitman.rar", 5);
 
         game6.setGamePlayImages("file:Gamepics\\hitman1.png",
                 "file:Gamepics\\hitman2.png",
@@ -179,7 +179,7 @@ public class LoadData implements Serializable {
                 "so. Free-aiming with ranged weapons was also made possible, allowing Connor more control over \n" +
                 "his bow and pistols. The mini-map and the UI were upgraded with better-looking and easier-to-\n" +
                 "recognize icons for ease of accessibility, figuring out where enemies will point next.",
-                "file:Gamepics\\ac3p.png", 24.25, serverAddress+"AC3");
+                "file:Gamepics\\ac3p.png", 24.25, serverAddress+"AC3.rar", 6);
 
         game7.setGamePlayImages("file:Gamepics\\ac3p1.png",
                 "file:Gamepics\\ac3p2.png",
@@ -204,7 +204,7 @@ public class LoadData implements Serializable {
                 "There are many more ways to kill enemies, ranging from throwing a car at a group of Blackwatch \n" +
                 "soldiers, hacking off a mutant's head or using powers. Consuming has not changed since the original \n" +
                 "Prototype, with the exception of some enemies, which are consumed upon grabbing them.",
-                "file:Gamepics\\prototype.png", 21.00, serverAddress+"Prototype");
+                "file:Gamepics\\prototype.png", 21.00, serverAddress+"Prototype2.rar", 7);
 
         game8.setGamePlayImages("file:Gamepics\\prototype1.jpeg",
                 "file:Gamepics\\prototype2.jpeg",
