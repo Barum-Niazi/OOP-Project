@@ -650,18 +650,23 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215331.png" />
+                                                <Image url="@Games/ac3v.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
+                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Assassin's" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$14.99 USD" textFill="WHITE">
+                                          <Label alignment="CENTER" layoutX="20.0" layoutY="118.0" prefHeight="22.0" prefWidth="100.0" text="Creed 3" textFill="WHITE">
+                                             <font>
+                                                <Font name="Franklin Gothic Demi" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$24.25 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -675,23 +680,18 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215317.png" />
+                                                <Image url="@Games/dishonoredv.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Stars Wars Jedi:" textFill="WHITE">
+                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Dishonored" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Survivor" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$12.95 USD" textFill="WHITE">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$22.65 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -705,18 +705,18 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215305.png" />
+                                                <Image url="@Games/prototypev.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Path of Exile" textFill="WHITE">
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Prototype 2" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$17.12 USD" textFill="WHITE">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$21.00 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -730,18 +730,18 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215248.png" />
+                                                <Image url="@Games/residentEvilv.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
+                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Resident Evil 2" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$21.99 USD" textFill="WHITE">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$34.19 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -755,18 +755,23 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215234.png" />
+                                                <Image url="@Games/GTAVCv.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="The path of Us" textFill="WHITE">
+                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Grand Theft" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$29.34 USD" textFill="WHITE">
+                                          <Label alignment="CENTER" layoutX="20.0" layoutY="118.0" prefHeight="22.0" prefWidth="100.0" text="Auto Vice City" textFill="WHITE">
+                                             <font>
+                                                <Font name="Franklin Gothic Demi" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$15.59 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -780,18 +785,23 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215331.png" />
+                                                <Image url="@Games/acRoguev.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
+                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Assassin's" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$14.99 USD" textFill="WHITE">
+                                          <Label alignment="CENTER" layoutX="20.0" layoutY="118.0" prefHeight="22.0" prefWidth="100.0" text="Creed Rogue" textFill="WHITE">
+                                             <font>
+                                                <Font name="Franklin Gothic Demi" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$13.65 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -805,23 +815,23 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215317.png" />
+                                                <Image url="@Games/hitmanv.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Stars Wars Jedi:" textFill="WHITE">
+                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Hitman:" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Survivor" textFill="WHITE">
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Absolution" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$12.95 USD" textFill="WHITE">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$22.25 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>
@@ -835,538 +845,23 @@
                                        <children>
                                           <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215305.png" />
+                                                <Image url="@Games/Strongholdv.jpg" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets left="5.0" right="5.0" top="10.0" />
                                              </VBox.margin>
                                           </ImageView>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Path of Exile" textFill="WHITE">
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Stronghold" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$17.12 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="430.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215248.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="118.0" prefHeight="22.0" prefWidth="100.0" text="Crusader" textFill="WHITE">
                                              <font>
                                                 <Font name="Franklin Gothic Demi" size="13.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$21.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215234.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="The path of Us" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$29.34 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="175.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215331.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$14.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215317.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Stars Wars Jedi:" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Survivor" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$12.95 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215305.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Path of Exile" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$17.12 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="430.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215248.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$21.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215234.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="The path of Us" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$29.34 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="710.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215331.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$14.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215317.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Stars Wars Jedi:" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Survivor" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$12.95 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215305.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Path of Exile" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$17.12 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="430.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215248.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$21.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215234.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="The path of Us" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$29.34 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="175.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215331.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$14.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215317.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Stars Wars Jedi:" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Survivor" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$12.95 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="290.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215305.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="100.0" text="Path of Exile" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$17.12 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="430.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215248.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$21.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215234.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="The path of Us" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$29.34 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="175.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215331.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label alignment="CENTER" prefHeight="22.0" prefWidth="100.0" text="Generation Zero" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$14.99 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215317.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="Stars Wars Jedi:" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="124.0" prefHeight="22.0" prefWidth="100.0" text="Survivor" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$12.95 USD" textFill="WHITE">
-                                             <padding>
-                                                <Insets top="2.0" />
-                                             </padding>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="TOP_CENTER" layoutX="570.0" layoutY="10.0" prefHeight="168.0" prefWidth="120.0" style="-fx-background-color: #3D4146; -fx-background-radius: 10px;">
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <children>
-                                          <ImageView fitHeight="122.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@pics/Screenshot%202022-12-13%20215234.png" />
-                                             </image>
-                                             <VBox.margin>
-                                                <Insets left="5.0" right="5.0" top="10.0" />
-                                             </VBox.margin>
-                                          </ImageView>
-                                          <Label prefHeight="22.0" prefWidth="100.0" text="The path of Us" textFill="WHITE">
-                                             <font>
-                                                <Font name="Franklin Gothic Demi" size="13.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$29.34 USD" textFill="WHITE">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="62.0" text="\$10.99 USD" textFill="WHITE">
                                              <padding>
                                                 <Insets top="2.0" />
                                              </padding>

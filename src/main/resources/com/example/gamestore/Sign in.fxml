@@ -82,7 +82,10 @@
                   <PasswordField fx:id="fieldPassword" onAction="#handleSignIn" prefHeight="32.0" prefWidth="205.0" promptText="Password" style="-fx-background-radius: 10px; -fx-opacity: 0.3;" />
                </children>
             </HBox>
-            <Label fx:id="validateLabel" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" textFill="#ff001e" />
+            <Label fx:id="validateLabel" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="358.0" textFill="#ff001e">
+               <VBox.margin>
+                  <Insets right="25.0" />
+               </VBox.margin></Label>
             <Button fx:id="btnIn" alignment="CENTER" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #116b6a; -fx-background-radius: 5px;" text="Sign in">
                <VBox.margin>
                   <Insets left="130.0" top="10.0" />
