@@ -29,7 +29,7 @@ public class LoadData implements Serializable {
 
         game1.setGamePlayImages("file:Gamepics\\GTAVC1.jpg",
                 "file:Gamepics\\GTAVC2.jpg",
-                "file:Gamepics\\GTAVC3.jpg", "file:Gamepics\\GTAVCr.png");
+                "file:Gamepics\\GTAVC3.png", "file:Gamepics\\GTAVCr.png");
 
         Game game2 = new Game("Stronghold Crusader",
                 "Stronghold: Crusader is the successor to Firefly Studios's 2001 real-time strategy video game Stronghold.\n" +
@@ -156,9 +156,9 @@ public class LoadData implements Serializable {
                 "not and if the player is allowed to be spotted by the AI.",
                 "file:Gamepics\\hitman.png", 22.25, serverAddress+"Hitman");
 
-        game6.setGamePlayImages("file:Gamepics\\hitman1.png",
-                "file:Gamepics\\hitman2.png",
-                "file:Gamepics\\hitman3.png","file:Gamepics\\hitmanr.png" );
+        game6.setGamePlayImages("file:Gamepics\\hitman1.jpeg",
+                "file:Gamepics\\hitman2.jpeg",
+                "file:Gamepics\\hitman3.jpeg","file:Gamepics\\hitmanr.png" );
 
         Game game7 = new Game("Assassin's Creed 3", "Assassin's Creed III is an action-adventure, stealth game set in an open world environment and played \n" +
                 "from a third-person perspective. Assassin's Creed III features new weather simulations such as snow, \n" +
