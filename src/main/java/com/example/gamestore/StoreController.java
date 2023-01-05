@@ -43,6 +43,30 @@ public class StoreController extends HelloApplication implements Initializable{
     @FXML
     public Label gameNotFound;
 
+    @FXML
+    private VBox lvbox1;
+
+    @FXML
+    private VBox lvbox2;
+
+    @FXML
+    private VBox lvbox3;
+
+    @FXML
+    private VBox lvbox4;
+
+    @FXML
+    private VBox lvbox5;
+
+    @FXML
+    private VBox lvbox6;
+
+    @FXML
+    private VBox lvbox7;
+
+    @FXML
+    private VBox lvbox8;
+
     public void handleLogout(ActionEvent e) throws IOException, InterruptedException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
@@ -79,6 +103,35 @@ public class StoreController extends HelloApplication implements Initializable{
 
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
     }
+
+    public void handleLower (MouseEvent e) throws IOException{
+        try {
+            VBox present = (VBox) e.getSource();
+            if (present == lvbox1)
+                Game.counter = 6;
+            if (present == lvbox2)
+                Game.counter = 3;
+            if (present == lvbox3)
+                Game.counter = 7;
+            if (present == lvbox4)
+                Game.counter = 2;
+            if (present == lvbox5)
+                Game.counter = 0;
+            if (present == lvbox6)
+                Game.counter = 4;
+            if (present == lvbox7)
+                Game.counter = 5;
+            if (present == lvbox8)
+                Game.counter = 1;
+
+            super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "COPTER");
+        }catch(Exception exception) {
+
+        }
+
+    }
+
+
             @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 //        for(int i = 0; i < User.users.size(); i++){
