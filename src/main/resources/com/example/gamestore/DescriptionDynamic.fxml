@@ -269,7 +269,7 @@
                                     </HBox>
                                  </children>
                               </VBox>
-                              <Label fx:id="labelExist" alignment="CENTER" layoutX="484.0" layoutY="276.0" prefHeight="20.0" prefWidth="240.0" text="Game already exists in your library" textFill="WHITE">
+                              <Label fx:id="labelExist" alignment="CENTER" layoutX="455.0" layoutY="267.0" prefHeight="20.0" prefWidth="240.0" text="Game already exists in your library." textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
