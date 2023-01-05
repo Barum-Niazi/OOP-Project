@@ -30,7 +30,7 @@ public class LibUrls {
     }
 
     public static ArrayList<String> exePaths(ArrayList<String> exePaths){
-        exePaths.add("cmd start C:\\Copter\\"+ SignInController.currentUser +"\\Grand Theft Auto Vice City\\gta-vc.exe");
+        exePaths.add("powershell.exe");
         exePaths.add("test");
         exePaths.add("test");
         exePaths.add("C:\\Copter\\"+ SignInController.currentUser +"\\Dishonored\\Binaries\\Win32\\Dishonored.exe");
