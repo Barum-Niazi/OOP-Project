@@ -165,7 +165,7 @@
                      <children>
                         <VBox prefHeight="1400.0" prefWidth="1175.0" spacing="10.0" style="-fx-background-color: #27282d;">
                            <children>
-                              <Label prefHeight="24.0" prefWidth="269.0" text="UPCOMING" textFill="#b5a5a5">
+                              <Label prefHeight="24.0" prefWidth="269.0" text="FEATURED" textFill="#b5a5a5">
                                  <VBox.margin>
                                     <Insets left="20.0" top="20.0" />
                                  </VBox.margin>
