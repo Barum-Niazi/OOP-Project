@@ -10,7 +10,7 @@ public class LoadData implements Serializable {
     static String serverAddress = "http://172.20.10.5/";
 
     public static void loadData() throws Exception{
-        Game[] gamesData = new Game[10];
+        Game[] gamesData = new Game[8];
         Game game1 = new Game("Grand Theft Auto: Vice City",
                 "Grand Theft Auto: Vice City is an action-adventure game played from a third-person perspective.\n" +
                 "\n" +
