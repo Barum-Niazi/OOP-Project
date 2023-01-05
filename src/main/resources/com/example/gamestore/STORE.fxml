@@ -62,15 +62,18 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="315.0">
                <children>
-                  <Label fx:id="labelWallet" alignment="CENTER" prefHeight="17.0" prefWidth="82.0" textFill="#116b6a">
+                  <Label fx:id="labelWallet" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="82.0" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelName" prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
+                  <Label fx:id="labelName" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="87.0" text="Duaa Abrar" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
                      </font>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
                   </Label>
                   <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -162,7 +165,7 @@
                      <children>
                         <VBox prefHeight="1400.0" prefWidth="1175.0" spacing="10.0" style="-fx-background-color: #27282d;">
                            <children>
-                              <Label prefHeight="24.0" prefWidth="269.0" text="UPCOMING" textFill="#b5a5a5">
+                              <Label prefHeight="24.0" prefWidth="269.0" text="FEATURED" textFill="#b5a5a5">
                                  <VBox.margin>
                                     <Insets left="20.0" top="20.0" />
                                  </VBox.margin>
@@ -420,7 +423,7 @@
                                                    <children>
                                                       <ImageView fitHeight="78.0" fitWidth="155.0" onMouseClicked="#handleClick" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Games/gtavc.png" />
+                                                            <Image url="@Games/gtavc.jpg" />
                                                          </image>
                                                          <HBox.margin>
                                                             <Insets left="5.0" top="8.0" />
