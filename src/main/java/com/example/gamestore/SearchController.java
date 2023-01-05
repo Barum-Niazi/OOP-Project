@@ -56,6 +56,7 @@ public class SearchController extends HelloApplication implements Initializable 
     public int tempStr;
     public double gamePrice;
     public Label labelExist;
+    double gPrice;
     Game search = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -75,6 +76,7 @@ public class SearchController extends HelloApplication implements Initializable 
             img2.setImage(new Image(search.src.gamePlayImg1));
             img3.setImage(new Image(search.src.gamePlayImg2));
             img4.setImage(new Image(search.src.gamePlayImg3));
+            gPrice = search.price;
         }
         catch (Exception e){
             System.out.println(e);
@@ -84,9 +86,11 @@ public class SearchController extends HelloApplication implements Initializable 
 
         User usr = fileDataFetchGames();
         usr.wallet = SignInController.userWallet;
+//        System.out.println(usr.wallet);
         System.out.println("Counter:"+tempStr);
+        System.out.println(gPrice);
         if(usr.wallet < search.price){
-            labelExist.setVisible(true);
+            labelExist.setVisible(false);
             labelExist.setText("You do not have enough funds!");
         } else {
             ArrayList<String> downloadUrl = new ArrayList<>();
@@ -106,7 +110,8 @@ public class SearchController extends HelloApplication implements Initializable 
                 }
             }
             usr.gamesList.add(tempStr); // tempStr is game.counter
-            usr.wallet = usr.wallet - search.price;
+            usr.wallet = usr.wallet - gPrice;
+            System.out.println(usr.wallet);
             SignInController.userWallet = usr.wallet;
             FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\" + h + ".txt");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -127,6 +132,7 @@ public class SearchController extends HelloApplication implements Initializable 
 
         filein.close();
         in.close();
+        System.out.println(temp.wallet);
         return temp;
     }
 
