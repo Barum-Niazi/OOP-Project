@@ -63,8 +63,10 @@ public class SearchController extends HelloApplication implements Initializable 
             Game search = new Game();
             System.out.println("test");
             System.out.println(Game.searchGame);
-            tempStr= search.gCounter;
+            //System.out.println("initilialize"+tempStr);
             search = Game.gameLoader(Game.searchGame,"banana");
+            tempStr= search.gCounter;
+            System.out.println("initilialize"+tempStr);
             System.out.println(search.name);
             dynamicTextArea.setText(search.src.description);
             img1.setImage(new Image(search.src.descImage));
@@ -82,6 +84,7 @@ public class SearchController extends HelloApplication implements Initializable 
 
         User usr = fileDataFetchGames();
         usr.wallet = SignInController.userWallet;
+        System.out.println("Counter:"+tempStr);
         if(usr.wallet < search.price){
             labelExist.setVisible(true);
             labelExist.setText("You do not have enough funds!");
@@ -90,7 +93,7 @@ public class SearchController extends HelloApplication implements Initializable 
             downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
 
             HelloApplication forDownload = new HelloApplication();
-            forDownload.downloadGame(downloadUrl.get(search.gCounter));
+            forDownload.downloadGame(downloadUrl.get(tempStr));
             File f = new File("C:\\Copter\\" + SignInController.currentUser);
             if(!f.exists())
                 f.mkdir();
