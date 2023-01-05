@@ -30,17 +30,6 @@ public class StoreController extends HelloApplication implements Initializable{
     private TextField searchBar;
     @FXML
     private Button enter;
-
-    public void handleClickEvent(ActionEvent e) throws Exception{
-        Game.searchGame=searchBar.getText();
-        sceneSwitch("SearchDynamic.fxml", 1280, 720, e, "SearchLibrary");
-
-    }
-
-
-
-
-
     @FXML
     public HBox library;
     @FXML
@@ -100,6 +89,11 @@ public class StoreController extends HelloApplication implements Initializable{
 
     }
 
+    public void handleClickEvent(ActionEvent e) throws Exception{
+        Game.searchGame = searchBar.getText();
+        sceneSwitch("SearchDynamic.fxml", 1280, 720, e, "SearchLibrary");
+
+    }
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{
 //        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
 //        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
