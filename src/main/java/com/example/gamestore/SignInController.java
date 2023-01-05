@@ -56,7 +56,7 @@ public class SignInController extends HelloApplication {
                     fieldPassword.getText().toString().equals(user.password)) {
                 validateLabel.setText(null);
                 currentUser = fieldUsername.getText();
-                user.wallet = 500;
+//                user.wallet = 500;
                 userWallet = user.wallet;
                 super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
             } else {

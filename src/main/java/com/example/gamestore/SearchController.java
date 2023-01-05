@@ -52,6 +52,8 @@ public class SearchController extends HelloApplication implements Initializable 
 
     @FXML
     private Label storeLabel;
+
+    public Label labelWallet;
     public static int temp;
     public int tempStr;
     public double gamePrice;
@@ -60,7 +62,11 @@ public class SearchController extends HelloApplication implements Initializable 
     Game search = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        String user = SignInController.currentUser;
         labelExist.setVisible(false);
+        dynamicTextArea.setEditable(false);
+        labelName.setText(user);
+        labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
         try {
             Game search = new Game();
             System.out.println("test");
@@ -78,6 +84,13 @@ public class SearchController extends HelloApplication implements Initializable 
             img3.setImage(new Image(search.src.gamePlayImg2));
             img4.setImage(new Image(search.src.gamePlayImg3));
             gPrice = search.price;
+            User usr = fileDataFetchGames();
+            for (int i = 0; i < usr.gamesList.size(); i++) {
+                if (Game.counter == usr.gamesList.get(i)) {
+                    labelExist.setVisible(true);
+                    return;
+                }
+            }
         }
         catch (Exception e){
             System.out.println(e);
@@ -96,9 +109,12 @@ public class SearchController extends HelloApplication implements Initializable 
         } else {
             ArrayList<String> downloadUrl = new ArrayList<>();
             downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
-
-            HelloApplication forDownload = new HelloApplication();
-            forDownload.downloadGame(downloadUrl.get(tempStr));
+            if(!labelExist.isVisible()) {
+                HelloApplication forDownload = new HelloApplication();
+                forDownload.downloadGame(downloadUrl.get(Game.counter));
+                labelExist.setVisible(true);
+                labelExist.setText("Game is downloading!");
+            }
             File f = new File("C:\\Copter\\" + SignInController.currentUser);
             if(!f.exists())
                 f.mkdir();
