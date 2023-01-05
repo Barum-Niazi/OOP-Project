@@ -40,6 +40,8 @@ public class StoreController extends HelloApplication implements Initializable{
     public Label labelName, labelWallet;
     @FXML
     public VBox  vBox1 ,vBox2, vBox3, vBox4, vBox5, vBox6, vBox7, vBox8, vBox9, vBox10;
+    @FXML
+    public Label gameNotFound;
 
     public void handleLogout(ActionEvent e) throws IOException, InterruptedException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
@@ -84,6 +86,7 @@ public class StoreController extends HelloApplication implements Initializable{
 //            if(labelName.getText() != " "){
 //                break;
 //            }
+                gameNotFound.setVisible(false);
         labelName.setText(SignInController.currentUser);
         labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
 
@@ -91,8 +94,14 @@ public class StoreController extends HelloApplication implements Initializable{
 
     public void handleClickEvent(ActionEvent e) throws Exception{
         Game.searchGame = searchBar.getText();
-        sceneSwitch("SearchDynamic.fxml", 1280, 720, e, "SearchLibrary");
+        if(Game.gameLoader(Game.searchGame,"banana")!=null) {
+            sceneSwitch("SearchDynamic.fxml", 1280, 720, e, "SearchLibrary");
+        }
+        else{
+            gameNotFound.setVisible(true);
+            gameNotFound.setText("Game not found!");
 
+        }
     }
 //    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{
 //        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));

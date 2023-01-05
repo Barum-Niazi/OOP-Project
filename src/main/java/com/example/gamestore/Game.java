@@ -111,7 +111,7 @@ public class Game implements Serializable {
 //        }
         String currentName = gameName.toLowerCase();
         System.out.println(currentName);
-        for( i = 0; i < 10; i++){
+        for( i = 0; i < 8; i++){
             Object game = (Game) objectInputStream.readObject();
             gamesRead[i] = (Game) game;
             System.out.println("___________________");
