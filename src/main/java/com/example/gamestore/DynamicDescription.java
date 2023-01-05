@@ -59,6 +59,13 @@ public class DynamicDescription extends HelloApplication implements Initializabl
             img2.setImage(new Image(currentGame.src.gamePlayImg1));
             img3.setImage(new Image(currentGame.src.gamePlayImg2));
             img4.setImage(new Image(currentGame.src.gamePlayImg3));
+            User usr = fileDataFetchGames();
+            for (int i = 0; i < usr.gamesList.size(); i++) {
+                if (Game.counter == usr.gamesList.get(i)) {
+                    labelExist.setVisible(true);
+                    return;
+                }
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -76,9 +83,12 @@ public class DynamicDescription extends HelloApplication implements Initializabl
         } else {
             ArrayList<String> downloadUrl = new ArrayList<>();
             downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
-
-            HelloApplication forDownload = new HelloApplication();
-            forDownload.downloadGame(downloadUrl.get(Game.counter));
+            if(!labelExist.isVisible()) {
+                HelloApplication forDownload = new HelloApplication();
+                forDownload.downloadGame(downloadUrl.get(Game.counter));
+                labelExist.setVisible(true);
+                labelExist.setText("Game is downloading!");
+            }
             File f = new File("C:\\Copter\\" + SignInController.currentUser);
             if(!f.exists())
                 f.mkdir();
