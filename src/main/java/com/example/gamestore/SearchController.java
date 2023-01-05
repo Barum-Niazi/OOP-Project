@@ -60,6 +60,7 @@ public class SearchController extends HelloApplication implements Initializable 
     Game search = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        labelExist.setVisible(false);
         try {
             Game search = new Game();
             System.out.println("test");
@@ -89,8 +90,8 @@ public class SearchController extends HelloApplication implements Initializable 
 //        System.out.println(usr.wallet);
         System.out.println("Counter:"+tempStr);
         System.out.println(gPrice);
-        if(usr.wallet < search.price){
-            labelExist.setVisible(false);
+        if(usr.wallet < gPrice){
+            labelExist.setVisible(true);
             labelExist.setText("You do not have enough funds!");
         } else {
             ArrayList<String> downloadUrl = new ArrayList<>();
