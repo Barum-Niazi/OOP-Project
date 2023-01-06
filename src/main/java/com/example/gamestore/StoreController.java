@@ -96,10 +96,10 @@ public class StoreController extends HelloApplication implements Initializable{
             Game.counter=6;
         if(present == vBox8)
             Game.counter=7;
-        if(present == vBox9)
-            Game.counter=8;
-        if(present == vBox10)
-            Game.counter=9;
+//        if(present == vBox9)
+//            Game.counter=8;
+//        if(present == vBox10)
+//            Game.counter=9;
 
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
     }

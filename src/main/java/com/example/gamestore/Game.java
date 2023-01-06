@@ -65,7 +65,7 @@ public class Game implements Serializable {
         Game searchGameObj=null;
         Game gamesRead[] = new Game[10];
         int i;
-        System.out.println("xxx");
+        System.out.println("x");
 
             FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
