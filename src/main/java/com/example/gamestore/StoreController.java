@@ -17,8 +17,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-import java.io.Serializable;
+import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -66,6 +65,8 @@ public class StoreController extends HelloApplication implements Initializable{
 
     @FXML
     private VBox lvbox8;
+    public Label adminLabel;
+    public User current;
 
     public void handleLogout(ActionEvent e) throws IOException, InterruptedException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
@@ -100,10 +101,8 @@ public class StoreController extends HelloApplication implements Initializable{
 //            Game.counter=8;
 //        if(present == vBox10)
 //            Game.counter=9;
-
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
     }
-
     public void handleLower (MouseEvent e) throws IOException{
         try {
             VBox present = (VBox) e.getSource();
@@ -130,15 +129,25 @@ public class StoreController extends HelloApplication implements Initializable{
         }
 
     }
-
-
-            @Override
+    @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        for(int i = 0; i < User.users.size(); i++){
-//            labelName.setText(User.users.get(i).name);
-//            if(labelName.getText() != " "){
-//                break;
-//            }
+                try {
+                    String user = SignInController.currentUser;
+                    File f = new File("src\\main\\resources\\" + user + ".txt");
+                    System.out.println(f.exists());
+                    FileInputStream filein = new FileInputStream("src\\main\\resources\\" + user + ".txt");
+                    ObjectInputStream in = new ObjectInputStream(filein);
+
+                    current = (User) in.readObject();
+                    System.out.println(current.adminStatus);
+                    filein.close();
+                    in.close();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                if (current.adminStatus){
+                    adminLabel.setVisible(true);
+                }
                 gameNotFound.setVisible(false);
         labelName.setText(SignInController.currentUser);
         labelWallet.setText("$" + Game.df.format(SignInController.userWallet));

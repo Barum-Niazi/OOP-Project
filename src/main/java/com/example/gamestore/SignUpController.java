@@ -9,6 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 //class END implements Serializable{
 //    public static final long serialVersionUID = -617565425006163870L;
@@ -21,17 +23,22 @@ public class SignUpController extends HelloApplication implements Serializable {
     public Label signInLabel;
     public Label validateLabel;
     public Button btnSignUp;
-
     public String fileName;
-    public String generalName ="signIN";
+    public String regex = "^[0-9]+$";
     public void handleSignIn(MouseEvent e) throws IOException {
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
 
     public void handleSignUp(ActionEvent e) throws Exception {
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(fieldUsername.getText());
+        System.out.println(matcher.matches());
         if (fieldUsername.getText().isEmpty() || fieldPassword.getText().isEmpty() ) {
             validateLabel.setText("Enter complete information!");
-        } else {
+        } else if(matcher.matches() == true){
+            validateLabel.setText("Username must be alphanumeric");
+        }
+        else {
             User newUser = new User(fieldUsername.getText(), fieldPassword.getText());
             newUser.wallet = 0;
             String password = fieldPassword.getText();

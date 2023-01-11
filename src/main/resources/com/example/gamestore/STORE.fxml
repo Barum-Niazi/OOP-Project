@@ -56,6 +56,11 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
+                  <Label fx:id="adminLabel" alignment="CENTER" layoutX="49.0" layoutY="25.0" text="Admin Panel" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font>
+                  </Label>
                </children></Pane>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="353.0" spacing="7.0">
                <children>
