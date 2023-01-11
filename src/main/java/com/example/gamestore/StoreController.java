@@ -165,13 +165,5 @@ public class StoreController extends HelloApplication implements Initializable{
 
         }
     }
-//    public void sceneSwitch(String sceneName, int x, int y, ActionEvent e) throws IOException{
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(sceneName));
-//        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-//        Scene scene = new Scene(fxmlLoader.load(), x, y);
-//        stage.setTitle("Sign in");
-//        stage.setScene(scene);
-//        stage.show();
-//    }
 
 }
