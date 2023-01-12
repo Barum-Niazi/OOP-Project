@@ -56,7 +56,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Label fx:id="adminLabel" alignment="CENTER" layoutX="49.0" layoutY="25.0" text="Admin Panel" textFill="WHITE" visible="false">
+                  <Label fx:id="adminLabel" alignment="CENTER" layoutX="49.0" layoutY="25.0" onMouseClicked="#handleAdmin" text="Open Admin Panel" textFill="WHITE" visible="false">
                      <font>
                         <Font name="Leelawadee UI" size="14.0" />
                      </font>

@@ -166,14 +166,6 @@
                               <DropShadow />
                            </effect>
                            <children>
-                              <VBox layoutX="395.0" layoutY="101.0" prefHeight="175.0" prefWidth="351.0">
-                                 <opaqueInsets>
-                                    <Insets />
-                                 </opaqueInsets>
-                                 <padding>
-                                    <Insets left="50.0" />
-                                 </padding>
-                              </VBox>
                               <Label layoutX="39.0" layoutY="277.0" prefHeight="35.0" prefWidth="315.0" text="Enter Game Description" textFill="#b5a5a5">
                                  <font>
                                     <Font name="Leelawadee UI Bold" size="19.0" />
@@ -191,25 +183,25 @@
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField prefHeight="25.0" prefWidth="155.0" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <TextField fx:id="fieldName" prefHeight="25.0" prefWidth="155.0" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
                                     <Label text="Price:" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
-                                    <Label text="Store Image Path:" textFill="WHITE">
+                                    <TextField fx:id="fieldPrice" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <Label text="Image Path:" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
-                                    <Label text="Library Image Path:" textFill="WHITE">
+                                    <TextField fx:id="fieldDesc" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <Label text=" Counter" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <TextField fx:id="fieldCounter" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
                                  </children>
                                  <padding>
                                     <Insets left="30.0" />
@@ -241,43 +233,38 @@
                                     </HBox>
                                  </children>
                               </VBox>
-                              <VBox layoutX="336.0" layoutY="12.0" maxHeight="1000.0" prefHeight="263.0" prefWidth="257.0">
+                              <VBox layoutX="336.0" layoutY="95.0" maxHeight="1000.0" prefHeight="181.0" prefWidth="257.0">
                                  <children>
-                                    <Label prefHeight="75.0" prefWidth="220.0" textFill="#b5a5a5">
-                                       <font>
-                                          <Font name="Leelawadee UI Bold" size="24.0" />
-                                       </font>
-                                    </Label>
                                     <Label text="Gameplay Image" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField prefHeight="25.0" prefWidth="155.0" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <TextField fx:id="fieldImage1" prefHeight="25.0" prefWidth="155.0" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
                                     <Label text="Gameplay Image" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <TextField fx:id="fieldImage2" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
                                     <Label text="Gameplay Image" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
-                                    <Label text=" Counter" textFill="WHITE">
+                                    <TextField fx:id="fieldImage3" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <Label text="Download URL" textFill="WHITE">
                                        <font>
                                           <Font name="Leelawadee UI Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <TextField style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
+                                    <TextField fx:id="fieldDownload" style="-fx-opacity: 0.3; -fx-background-radius: 10px;" />
                                  </children>
                                  <padding>
                                     <Insets left="30.0" />
                                  </padding>
                               </VBox>
-                              <Button fx:id="addCartbtn" layoutX="812.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleAddCart" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #116b6a;" text="Add to Store">
+                              <Button fx:id="addStorebtn" layoutX="812.0" layoutY="130.0" mnemonicParsing="false" onAction="#addToFile" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #116b6a;" text="Add to File">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>

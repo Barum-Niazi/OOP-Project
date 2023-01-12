@@ -44,14 +44,15 @@ public class Game implements Serializable {
         this.src.libraryImg = libImage;
     }
     public static Game gameLoader(int counter) throws Exception{
-        LoadData.loadData();
+//        LoadData.loadData();
         Game gamesRead[] = new Game[10];
         try {
             FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            for(int i = 0; i <= counter; i++){
+            for(int i = 0; i <= gamesRead.length; i++){
                 Object game = (Game) objectInputStream.readObject();
                 gamesRead[i] = (Game) game;
+                System.out.println(gamesRead[i].name);
             }
             objectInputStream.close();
         }catch (Exception e){
