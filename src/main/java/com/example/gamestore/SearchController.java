@@ -61,7 +61,6 @@ public class SearchController extends HelloApplication implements Initializable 
     double gPrice;
     Game search = new Game();
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         String user = SignInController.currentUser;
         labelExist.setVisible(false);
         dynamicTextArea.setEditable(false);
@@ -100,9 +99,7 @@ public class SearchController extends HelloApplication implements Initializable 
 
         User usr = fileDataFetchGames();
         usr.wallet = SignInController.userWallet;
-//        System.out.println(usr.wallet);
-        System.out.println("Counter:"+ search.gCounter);
-        System.out.println(gPrice);
+
         if(usr.wallet < gPrice){
             labelExist.setVisible(true);
             labelExist.setText("You do not have enough funds!");
@@ -111,7 +108,6 @@ public class SearchController extends HelloApplication implements Initializable 
             downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
             if(!labelExist.isVisible()) {
                 HelloApplication forDownload = new HelloApplication();
-                System.out.println("search counter is: " + tempStr);
                 forDownload.downloadGame(downloadUrl.get(tempStr)); // tempStr is game counter
                 labelExist.setVisible(true);
                 labelExist.setText("Game is downloading!");
@@ -119,7 +115,6 @@ public class SearchController extends HelloApplication implements Initializable 
             File f = new File("C:\\Copter\\" + SignInController.currentUser);
             if(!f.exists())
                 f.mkdir();
-            //User usr = new User(SignInController.currentUser);
             String h = SignInController.currentUser;
             for (int i = 0; i < usr.gamesList.size(); i++) {
                 if (tempStr == usr.gamesList.get(i)) {
@@ -129,7 +124,6 @@ public class SearchController extends HelloApplication implements Initializable 
             }
             usr.gamesList.add(tempStr);
             usr.wallet = usr.wallet - gPrice;
-            System.out.println(usr.wallet);
             SignInController.userWallet = usr.wallet;
             FileOutputStream fileOut = new FileOutputStream("src\\main\\resources\\" + h + ".txt");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);

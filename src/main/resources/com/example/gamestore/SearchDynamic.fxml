@@ -61,7 +61,7 @@
                         <Font name="Leelawadee UI Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="currentUser" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
+                  <Label fx:id="labelName" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="87.0" textFill="#116b6a">
                      <font>
                         <Font name="Leelawadee UI Bold" size="15.0" />
                      </font>

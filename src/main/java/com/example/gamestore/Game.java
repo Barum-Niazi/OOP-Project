@@ -18,7 +18,6 @@ public class Game implements Serializable {
     int id;
     String name;
     double price;
-    String adminPrice;
     static String searchGame;
 
     public int gCounter;
@@ -33,7 +32,6 @@ public class Game implements Serializable {
     Game(String name, String image1, String price2){
         this.name = name;
         this.src.descImage = image1;
-        this.adminPrice = price2;
     }
     Game(){
     }
@@ -59,58 +57,19 @@ public class Game implements Serializable {
         }
         return gamesRead[counter];
     }
-
-    public static Game gameLoader(String gameName) throws Exception{
-        LoadData.loadData();
-        Game searchGameObj=null;
-        Game gamesRead[] = new Game[10];
-        int i;
-        System.out.println("x");
-
-            FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
-            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            first:
-            for( i = 0; i < 10; i++){
-                Object game = (Game) objectInputStream.readObject();
-                gamesRead[i] = (Game) game;
-                if(gameName.equalsIgnoreCase(gamesRead[i].name)){
-                    searchGameObj = gamesRead[i];
-                    System.out.println("Barum");
-                    return searchGameObj;
-                }
-            }
-
-
-            fileInputStream.close();
-            objectInputStream.close();
-        System.out.println("huz");
-
-        return searchGameObj;
-    }
-
     public static Game gameLoader(String gameName,String n) throws Exception{
         LoadData.loadData();
         Game searchGameObj=null;
         Game gamesRead[] = new Game[10];
         int i;
-        System.out.println("xxx");
         boolean flag;
 
         FileInputStream fileInputStream = new FileInputStream(LoadData.fileName);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-//        first:
-//        for( i = 0; i < 10; i++){
-//
-//            Object game = (Game) objectInputStream.readObject();
-//            gamesRead[i] = (Game) game;
-//            if(gameName.equalsIgnoreCase(gamesRead[i].name)){
-//                searchGameObj = gamesRead[i];
-//                System.out.println("Barum");
-//                return searchGameObj;
-//            }
-//        }
+
         String currentName = gameName.toLowerCase();
         System.out.println(currentName);
+
         for( i = 0; i < 8; i++){
             Object game = (Game) objectInputStream.readObject();
             gamesRead[i] = (Game) game;
@@ -120,24 +79,15 @@ public class Game implements Serializable {
 
             for(int k = 0;k<= (gamesRead[i].name.length()-gameName.length());k++){
                 if(gamesRead[i].name.toLowerCase().regionMatches(k,currentName,0,gameName.length())){
-                    System.out.println("potato");
+//                    System.out.println("potato");
                     searchGameObj = gamesRead[i];
                     return searchGameObj;
                 }
 
-            //Object game = (Game) objectInputStream.readObject();
-            //gamesRead[i] = (Game) game;
-//            if(gameName.equalsIgnoreCase(gamesRead[i].name)){
-//                searchGameObj = gamesRead[i];
-//                System.out.println("Barum");
-//                return searchGameObj;
             }
         }
-
-
         fileInputStream.close();
         objectInputStream.close();
-        System.out.println("huz");
 
         return searchGameObj;
     }

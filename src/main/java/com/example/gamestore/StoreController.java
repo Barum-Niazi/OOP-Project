@@ -41,38 +41,11 @@ public class StoreController extends HelloApplication implements Initializable{
     public VBox  vBox1 ,vBox2, vBox3, vBox4, vBox5, vBox6, vBox7, vBox8, vBox9, vBox10;
     @FXML
     public Label gameNotFound;
-
     @FXML
-    private VBox lvbox1;
-
+    private VBox lvbox1, lvbox2, lvbox3, lvbox4, lvbox5, lvbox6, lvbox7, lvbox8;
     @FXML
-    private VBox lvbox2;
-
-    @FXML
-    private VBox lvbox3;
-
-    @FXML
-    private VBox lvbox4;
-
-    @FXML
-    private VBox lvbox5;
-
-    @FXML
-    private VBox lvbox6;
-
-    @FXML
-    private VBox lvbox7;
-
-    @FXML
-    private VBox lvbox8;
-    public Label adminLabel;
     public User current;
 
-    public void handleAdmin(MouseEvent e) throws IOException{
-        if(adminLabel.isVisible()){
-            super.sceneSwitch("Admin.fxml", 1280, 720, e, "Admin");
-        }
-    }
     public void handleLogout(ActionEvent e) throws IOException, InterruptedException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
@@ -102,13 +75,10 @@ public class StoreController extends HelloApplication implements Initializable{
             Game.counter=6;
         if(present == vBox8)
             Game.counter=7;
-//        if(present == vBox9)
-//            Game.counter=8;
-//        if(present == vBox10)
-//            Game.counter=9;
+
         super.sceneSwitch("DescriptionDynamic.fxml", 1280, 720, e, "Description");
     }
-    public void handleLower (MouseEvent e) throws IOException{
+    public void handleLower(MouseEvent e) throws IOException{
         try {
             VBox present = (VBox) e.getSource();
             if (present == lvbox1)
@@ -149,9 +119,6 @@ public class StoreController extends HelloApplication implements Initializable{
                     in.close();
                 }catch (Exception e){
                     e.printStackTrace();
-                }
-                if (current.adminStatus){
-                    adminLabel.setVisible(true);
                 }
                 gameNotFound.setVisible(false);
         labelName.setText(SignInController.currentUser);
