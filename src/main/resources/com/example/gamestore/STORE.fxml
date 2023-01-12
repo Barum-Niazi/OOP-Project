@@ -335,7 +335,7 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vBox9" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox9" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="Call of duty:" textFill="WHITE">
                                                                <font>
@@ -347,7 +347,7 @@
                                                                   <Font name="Franklin Gothic Demi" size="13.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="\$69.99 USD" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="COMING SOON!" textFill="WHITE">
                                                                <padding>
                                                                   <Insets top="20.0" />
                                                                </padding>
@@ -375,19 +375,19 @@
                                                             <Insets left="5.0" top="5.0" />
                                                          </HBox.margin>
                                                       </ImageView>
-                                                      <VBox fx:id="vBox10" onMouseClicked="#handleClick" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
+                                                      <VBox fx:id="vBox10" prefHeight="100.0" prefWidth="103.0" style="-fx-background-radius: 10px;">
                                                          <children>
                                                             <Label prefHeight="22.0" prefWidth="100.0" text="World of" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="16.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Tans Blitz" textFill="WHITE">
+                                                            <Label layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="100.0" text="Tanks Blitz" textFill="WHITE">
                                                                <font>
                                                                   <Font name="Franklin Gothic Demi" size="14.0" />
                                                                </font>
                                                             </Label>
-                                                            <Label alignment="CENTER_RIGHT" text="Free to play" textFill="WHITE">
+                                                            <Label alignment="CENTER_RIGHT" text="COMING SOON!" textFill="WHITE">
                                                                <padding>
                                                                   <Insets top="20.0" />
                                                                </padding>

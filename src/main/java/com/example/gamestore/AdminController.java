@@ -10,7 +10,7 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class DescriptionController extends HelloApplication{
+public class AdminController extends HelloApplication{
     @FXML
     public Label libraryLabel;
     public Label cartLabel;

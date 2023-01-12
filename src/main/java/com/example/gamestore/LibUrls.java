@@ -30,17 +30,14 @@ public class LibUrls {
     }
 
     public static ArrayList<String> exePaths(ArrayList<String> exePaths){
-        exePaths.add("powershell.exe");
-        exePaths.add("test");
-        exePaths.add("test");
-        exePaths.add("C:\\Copter\\"+ SignInController.currentUser +"\\Dishonored\\Binaries\\Win32\\Dishonored.exe");
-        exePaths.add("test");
-        exePaths.add("test");
-        exePaths.add("test");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser + "\\GTA Vice City\\gta-vc.exe");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser + "\\Stronghold Crusader\\Stronghold Crusader.exe");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser + "\\Resident Evil 2\\Resident Evil2.exe");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser +"\\Dishonored\\Binaries\\Win32\\Dishonored.exe");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser + "\\Assasin's Creed Rogue\\ACRogue.exe");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser + "\\Hitman Absolution\\Hitman.exe");
+        exePaths.add("C:\\Copter\\" + SignInController.currentUser + "\\Assasin's Creed 3\\AC3.exe");
         exePaths.add("C:\\Copter\\" + SignInController.currentUser+ "\\Prototype 2\\prototype2.exe");
-        exePaths.add("test");
-        exePaths.add("test");
-//
         return exePaths;
     }
 }

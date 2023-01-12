@@ -40,7 +40,7 @@ public class SignUpController extends HelloApplication implements Serializable {
         }
         else {
             User newUser = new User(fieldUsername.getText(), fieldPassword.getText());
-            newUser.wallet = 0;
+            newUser.wallet = 300;
             String password = fieldPassword.getText();
             if (password.length() < 8) {
                 validateLabel.setText("Password must be 8 characters or longer!");

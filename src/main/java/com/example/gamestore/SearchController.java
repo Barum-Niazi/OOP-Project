@@ -74,7 +74,7 @@ public class SearchController extends HelloApplication implements Initializable 
             //System.out.println("initilialize"+tempStr);
             search = Game.gameLoader(Game.searchGame,"banana");
             tempStr= search.gCounter;
-            System.out.println("initilialize"+tempStr);
+            System.out.println("initilialize" + search.gCounter);
             System.out.println(search.name);
             dynamicTextArea.setText(search.src.description);
             img1.setImage(new Image(search.src.descImage));
@@ -86,7 +86,7 @@ public class SearchController extends HelloApplication implements Initializable 
             gPrice = search.price;
             User usr = fileDataFetchGames();
             for (int i = 0; i < usr.gamesList.size(); i++) {
-                if (Game.counter == usr.gamesList.get(i)) {
+                if (search.gCounter == usr.gamesList.get(i)) {
                     labelExist.setVisible(true);
                     return;
                 }
@@ -101,7 +101,7 @@ public class SearchController extends HelloApplication implements Initializable 
         User usr = fileDataFetchGames();
         usr.wallet = SignInController.userWallet;
 //        System.out.println(usr.wallet);
-        System.out.println("Counter:"+tempStr);
+        System.out.println("Counter:"+ search.gCounter);
         System.out.println(gPrice);
         if(usr.wallet < gPrice){
             labelExist.setVisible(true);
@@ -111,7 +111,8 @@ public class SearchController extends HelloApplication implements Initializable 
             downloadUrl = LibUrls.downloadUrlsMethod(downloadUrl);
             if(!labelExist.isVisible()) {
                 HelloApplication forDownload = new HelloApplication();
-                forDownload.downloadGame(downloadUrl.get(Game.counter));
+                System.out.println("search counter is: " + tempStr);
+                forDownload.downloadGame(downloadUrl.get(tempStr)); // tempStr is game counter
                 labelExist.setVisible(true);
                 labelExist.setText("Game is downloading!");
             }
@@ -126,7 +127,7 @@ public class SearchController extends HelloApplication implements Initializable 
                     return;
                 }
             }
-            usr.gamesList.add(tempStr); // tempStr is game.counter
+            usr.gamesList.add(tempStr);
             usr.wallet = usr.wallet - gPrice;
             System.out.println(usr.wallet);
             SignInController.userWallet = usr.wallet;

@@ -39,7 +39,7 @@ public class SignInController extends HelloApplication {
                 validateLabel.setText(null);
                 currentUser = fieldUsername.getText();
 //                user.wallet = 500;
-                user.setAdminStatus(true);
+//                user.setAdminStatus(true);
                 userWallet = user.wallet;
                 super.sceneSwitch("STORE.fxml", 1280, 720, e, "Store");
             } else {

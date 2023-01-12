@@ -68,6 +68,11 @@ public class StoreController extends HelloApplication implements Initializable{
     public Label adminLabel;
     public User current;
 
+    public void handleAdmin(MouseEvent e) throws IOException{
+        if(adminLabel.isVisible()){
+            super.sceneSwitch("Admin.fxml", 1280, 720, e, "Admin");
+        }
+    }
     public void handleLogout(ActionEvent e) throws IOException, InterruptedException{
         super.sceneSwitch("Sign in.fxml", 718, 476, e, "Sign in");
     }
