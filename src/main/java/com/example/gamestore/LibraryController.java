@@ -87,16 +87,16 @@ public class LibraryController extends HelloApplication implements Initializable
     ArrayList<String> libData = new ArrayList<String>();
     ArrayList<String> libTemp = new ArrayList<String>();
     ArrayList<String> exePaths = new ArrayList<>();
-    User TEMP;
+    User currentUser;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         labelName.setText(SignInController.currentUser);
         labelWallet.setText("$" + Game.df.format(SignInController.userWallet));
         try {
-            TEMP = fileTemp();
-            for(int i=0;i <TEMP.gamesList.size();i++){
-                System.out.println("Game bought "+TEMP.gamesList.get(i));
+            currentUser = fileTemp();
+            for(int i=0;i <currentUser.gamesList.size();i++){
+                System.out.println("Game bought "+currentUser.gamesList.get(i));
             }
             LibUrls lib = new LibUrls();
             libTemp = lib.LibUrlsMethod(libData);
@@ -128,13 +128,13 @@ public class LibraryController extends HelloApplication implements Initializable
 
         int visibilityCounter = 0;
 
-            for (int i = 0; i < TEMP.gamesList.size(); i++) {
+            for (int i = 0; i < currentUser.gamesList.size(); i++) {
                 System.out.println("banana");
-                String u = libTemp.get(TEMP.gamesList.get(i));
-                String gamePath = exePaths.get(TEMP.gamesList.get(i));
+                String libImage = libTemp.get(currentUser.gamesList.get(i));
+                String gamePath = exePaths.get(currentUser.gamesList.get(i));
                 System.out.println("apple");
-                System.out.println(u);
-                imgs[i].setImage(new Image(u));
+                System.out.println(libImage);
+                imgs[i].setImage(new Image(libImage));
                 imgs[i].setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent mouseEvent) {

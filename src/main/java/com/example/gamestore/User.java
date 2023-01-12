@@ -7,7 +7,7 @@ public class User implements Serializable {
     public String name;
     public String password;
 
-    public boolean adminStatus = true;
+    public boolean adminStatus;
     public ArrayList<Integer> gamesList = new ArrayList<Integer>();
 
     public static final long serialVersionUID = -617565425006163870L;
