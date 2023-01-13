@@ -114,7 +114,7 @@ public class StoreController extends HelloApplication implements Initializable{
                     ObjectInputStream in = new ObjectInputStream(filein);
 
                     current = (User) in.readObject();
-                    System.out.println(current.adminStatus);
+//                    System.out.println(current.adminStatus);
                     filein.close();
                     in.close();
                 }catch (Exception e){
